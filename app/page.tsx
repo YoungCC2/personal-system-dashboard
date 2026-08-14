@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import content from "../data/content.json";
 
 type DocumentItem = {
@@ -24,37 +26,18 @@ const tabs: { id: Tab; label: string; note: string }[] = [
   { id: "decisions", label: "行动决策", note: "选择与闭环" },
 ];
 
-function Inline({ text }: { text: string }) {
-  const parts = text.split(/(\*\*[^*]+\*\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g);
-  return parts.map((part, index) => {
-    if (part.startsWith("**") && part.endsWith("**")) return <strong key={index}>{part.slice(2, -2)}</strong>;
-    if (part.startsWith("`") && part.endsWith("`")) return <code key={index}>{part.slice(1, -1)}</code>;
-    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-    if (link) return <a key={index} href={link[2]} target="_blank" rel="noreferrer">{link[1]}</a>;
-    return part;
-  });
-}
-
 function Markdown({ body }: { body: string }) {
-  const lines = body.split("\n");
   return (
     <div className="markdown">
-      {lines.map((raw, index) => {
-        const line = raw.trim();
-        if (!line || line === "---") return <div className="md-gap" key={index} />;
-        if (line.startsWith("### ")) return <h3 key={index}><Inline text={line.slice(4)} /></h3>;
-        if (line.startsWith("## ")) return <h2 key={index}><Inline text={line.slice(3)} /></h2>;
-        if (line.startsWith("# ")) return <h1 key={index}><Inline text={line.slice(2)} /></h1>;
-        if (line.startsWith("> ")) return <blockquote key={index}><Inline text={line.slice(2)} /></blockquote>;
-        if (/^[-*] \[[ xX]\]/.test(line)) {
-          const done = /^[-*] \[[xX]\]/.test(line);
-          return <div className={`md-check ${done ? "done" : ""}`} key={index}><span>{done ? "✓" : "○"}</span><Inline text={line.replace(/^[-*] \[[ xX]\]\s*/, "")} /></div>;
-        }
-        if (/^[-*] /.test(line)) return <div className="md-list" key={index}><span>•</span><Inline text={line.slice(2)} /></div>;
-        if (/^\d+\. /.test(line)) return <div className="md-list numbered" key={index}><span>{line.match(/^\d+/)?.[0]}.</span><Inline text={line.replace(/^\d+\.\s*/, "")} /></div>;
-        if (line.startsWith("|")) return null;
-        return <p key={index}><Inline text={line} /></p>;
-      })}
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          a: ({ href, children }) => <a href={href} target="_blank" rel="noreferrer">{children}</a>,
+          table: ({ children }) => <div className="table-wrap"><table>{children}</table></div>,
+        }}
+      >
+        {body}
+      </ReactMarkdown>
     </div>
   );
 }
