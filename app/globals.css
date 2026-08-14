@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root { --ink:#1d2a24; --muted:#718079; --line:#dde3dd; --paper:#f5f6f1; --white:#fff; --green:#123f32; --lime:#d9ed87; --amber:#e8a94d; }
+:root { --ink:#1d2a24; --muted:#718079; --line:#dde3dd; --paper:#f5f6f1; --white:#fff; --green:#123f32; --lime:#d9ed87; --amber:#e8a94d; --font-geist:Inter,ui-sans-serif,system-ui,sans-serif; --font-mono:"SFMono-Regular",Consolas,monospace; --font-serif:"Songti SC","STSong",serif; }
 * { box-sizing:border-box; }
 html { background:var(--paper); }
 body { margin:0; color:var(--ink); background:var(--paper); font-family:var(--font-geist), "PingFang SC", sans-serif; }
