@@ -19,6 +19,17 @@ type DocumentItem = {
 
 type Tab = "overview" | "education" | "growth" | "decisions";
 
+type DashboardContent = {
+  generatedAt: string;
+  generatedAtIso: string;
+  latestReportDate: string;
+  latestDailyDate: string;
+  freshness: { status: "current" | "recent" | "stale"; label: string };
+  calendar: { isoWeek: number; monthLabel: string; yearLabel: string };
+  metrics: { educationWeekly: number; growthWeekly: number; actionCards: number; practiceRecords: number };
+  documents: DocumentItem[];
+};
+
 const tabs: { id: Tab; label: string; note: string }[] = [
   { id: "overview", label: "总览", note: "本周状态" },
   { id: "education", label: "教育雷达", note: "行业与机会" },
@@ -49,7 +60,8 @@ function formatDate(date: string) {
 }
 
 export default function Home() {
-  const documents = content.documents as DocumentItem[];
+  const dashboard = content as DashboardContent;
+  const documents = dashboard.documents;
   const [tab, setTab] = useState<Tab>("overview");
   const [selectedId, setSelectedId] = useState(documents[0]?.id ?? "");
   const [readerOpen, setReaderOpen] = useState(false);
@@ -88,8 +100,8 @@ export default function Home() {
         </nav>
 
         <div className="sidebar-status">
-          <div className="pulse" />
-          <div><strong>Codex 接管运行</strong><span>最后更新 {content.generatedAt}</span></div>
+          <div className={`pulse ${dashboard.freshness.status}`} />
+          <div><strong>Codex 接管运行</strong><span>{dashboard.freshness.label} · {dashboard.generatedAt}</span></div>
         </div>
       </aside>
 
@@ -99,8 +111,13 @@ export default function Home() {
             <p className="eyebrow">D先生 · 个人成长与决策系统</p>
             <h1>{tabs.find((item) => item.id === tab)?.label}</h1>
           </div>
-          <div className="date-chip"><span>第 33 周</span><strong>2026年8月</strong></div>
+          <div className="date-chip"><span>第 {dashboard.calendar.isoWeek} 周</span><strong>{dashboard.calendar.yearLabel}{dashboard.calendar.monthLabel}</strong></div>
         </header>
+
+        <section className={`freshness-bar ${dashboard.freshness.status}`} aria-label="数据新鲜度">
+          <div><i /><strong>{dashboard.freshness.label}</strong><span>最新日报 {formatDate(dashboard.latestDailyDate)}</span></div>
+          <div><span>最新周报 {formatDate(dashboard.latestReportDate)}</span><span>同步时间 {dashboard.generatedAt}</span></div>
+        </section>
 
         <section className="hero-card">
           <div className="hero-copy">
@@ -115,26 +132,26 @@ export default function Home() {
         </section>
 
         <section className="metrics" aria-label="系统指标">
-          <article><span className="metric-icon amber">教</span><div><small>教育周报</small><strong>{content.metrics.educationWeekly}</strong><em>期历史产出</em></div></article>
-          <article><span className="metric-icon blue">长</span><div><small>成长周报</small><strong>{content.metrics.growthWeekly}</strong><em>期历史产出</em></div></article>
-          <article><span className="metric-icon green">行</span><div><small>行动卡</small><strong>{content.metrics.actionCards}</strong><em>张待回收</em></div></article>
-          <article><span className="metric-icon violet">践</span><div><small>实践记录</small><strong>{content.metrics.practiceRecords}</strong><em>条真实输入</em></div></article>
+          <article><span className="metric-icon amber">教</span><div><small>教育周报</small><strong>{dashboard.metrics.educationWeekly}</strong><em>期历史产出</em></div></article>
+          <article><span className="metric-icon blue">长</span><div><small>成长周报</small><strong>{dashboard.metrics.growthWeekly}</strong><em>期历史产出</em></div></article>
+          <article><span className="metric-icon green">行</span><div><small>行动卡</small><strong>{dashboard.metrics.actionCards}</strong><em>张历史记录</em></div></article>
+          <article><span className="metric-icon violet">践</span><div><small>实践记录</small><strong>{dashboard.metrics.practiceRecords}</strong><em>条真实输入</em></div></article>
         </section>
 
         {tab === "overview" && (
           <section className="focus-grid">
-            <article className="focus-card education" onClick={() => latestEducation && openDocument(latestEducation)}>
+            <button type="button" className="focus-card education" onClick={() => latestEducation && openDocument(latestEducation)}>
               <div className="card-top"><span>EDUCATION RADAR</span><b>教育行业</b></div>
               <h3>{latestEducation?.title ?? "暂无教育周报"}</h3>
               <p>{latestEducation?.excerpt}</p>
-              <footer><span>{latestEducation?.period}</span><button>阅读周报 →</button></footer>
-            </article>
-            <article className="focus-card growth" onClick={() => latestGrowth && openDocument(latestGrowth)}>
+              <footer><span>{latestEducation?.period}</span><b className="card-link">阅读周报 →</b></footer>
+            </button>
+            <button type="button" className="focus-card growth" onClick={() => latestGrowth && openDocument(latestGrowth)}>
               <div className="card-top"><span>GROWTH REVIEW</span><b>个人成长</b></div>
               <h3>{latestGrowth?.title ?? "暂无成长周报"}</h3>
               <p>{latestGrowth?.excerpt}</p>
-              <footer><span>{latestGrowth?.period}</span><button>阅读周报 →</button></footer>
-            </article>
+              <footer><span>{latestGrowth?.period}</span><b className="card-link">阅读周报 →</b></footer>
+            </button>
           </section>
         )}
 

@@ -10,6 +10,46 @@ function files(relativeDir) {
   return fs.existsSync(dir) ? fs.readdirSync(dir).filter((name) => name.endsWith(".md")).sort().reverse() : [];
 }
 
+function fileDates(relativeDir) {
+  return files(relativeDir)
+    .map((name) => name.match(/^(\d{4}-\d{2}-\d{2})\.md$/)?.[1])
+    .filter(Boolean);
+}
+
+function shanghaiParts(now = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "Asia/Shanghai",
+  }).formatToParts(now);
+  return Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+}
+
+function shanghaiDate(now = new Date()) {
+  const parts = shanghaiParts(now);
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function isoWeek(dateText) {
+  const date = new Date(`${dateText}T12:00:00+08:00`);
+  const utc = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const day = utc.getUTCDay() || 7;
+  utc.setUTCDate(utc.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(utc.getUTCFullYear(), 0, 1));
+  return Math.ceil((((utc - yearStart) / 86400000) + 1) / 7);
+}
+
+function actionCardStatus(body, type) {
+  if (type === "decision") return false;
+  const section = body.match(/(?:^|\n)#{2,3}\s*(?:本周)?行动卡\s*\n([\s\S]*?)(?=\n#{2,3}\s|$)/)?.[1] ?? "";
+  if (!section) return false;
+  return !/(?:不新增|无新增|没有|未生成|不生成).{0,8}行动卡|行动卡.{0,8}(?:无|0\s*张)/.test(section);
+}
+
 function firstMeaningful(body) {
   return body.split("\n").map((line) => line.trim()).find((line) => line && !line.startsWith("#") && !line.startsWith(">") && line !== "---" && !line.startsWith("|") && !line.startsWith("- **来源"))?.replace(/^[-*]\s*/, "").replace(/\*\*/g, "").slice(0, 130) || "暂无摘要";
 }
@@ -18,9 +58,13 @@ function parse(relativePath, type) {
   const full = path.join(root, relativePath);
   const body = fs.readFileSync(full, "utf8");
   const title = body.match(/^#\s+(.+)$/m)?.[1]?.trim() || path.basename(relativePath, ".md");
-  const date = body.match(/(?:生成日期|生成时间|复盘日期)[：:]\s*(\d{4}-\d{2}-\d{2})/)?.[1] || relativePath.match(/(\d{4}-\d{2}-\d{2})/)?.[1] || "";
-  const period = title.match(/[（(]([^）)]+)[）)]/)?.[1] || date;
-  return { id: relativePath.replaceAll("/", "-"), type, title, date, period, excerpt: firstMeaningful(body), body, path: relativePath, actionCard: /行动卡/.test(body) && !/本周无新增行动卡/.test(body) };
+  const explicitDate = body.match(/(?:生成日期|生成时间|复盘日期)[：:]\s*(\d{4}-\d{2}-\d{2})/)?.[1]
+    || relativePath.match(/(\d{4}-\d{2}-\d{2})/)?.[1];
+  const date = explicitDate || (type !== "decision" ? shanghaiDate(fs.statSync(full).mtime) : "");
+  const period = body.match(/(?:素材覆盖|采集周期|覆盖周期)[：:]\s*([^\n]+)/)?.[1]?.trim()
+    || title.match(/[（(]([^）)]+)[）)]/)?.[1]
+    || date;
+  return { id: relativePath.replaceAll("/", "-"), type, title, date, period, excerpt: firstMeaningful(body), body, path: relativePath, actionCard: actionCardStatus(body, type) };
 }
 
 const documents = [
@@ -36,6 +80,49 @@ const metrics = {
   practiceRecords: files("growth/daily").length,
 };
 
+const now = new Date();
+const nowParts = shanghaiParts(now);
+const today = `${nowParts.year}-${nowParts.month}-${nowParts.day}`;
+let generatedAt = `${nowParts.year}-${nowParts.month}-${nowParts.day} ${nowParts.hour}:${nowParts.minute}`;
+let generatedAtIso = now.toISOString();
+const reportDates = documents.filter((item) => item.type !== "decision" && item.date).map((item) => item.date).sort().reverse();
+const dailyDates = [...fileDates("education/inbox"), ...fileDates("growth/inbox")].sort().reverse();
+const latestReportDate = reportDates[0] || "";
+const latestDailyDate = dailyDates[0] || "";
+const ageDays = latestDailyDate ? Math.floor((new Date(`${today}T12:00:00+08:00`) - new Date(`${latestDailyDate}T12:00:00+08:00`)) / 86400000) : null;
+const freshness = ageDays === null || ageDays > 3
+  ? { status: "stale", label: "数据需要同步" }
+  : ageDays > 1
+    ? { status: "recent", label: "数据近期更新" }
+    : { status: "current", label: "数据已同步" };
+
+const calendar = {
+  isoWeek: isoWeek(today),
+  monthLabel: `${Number(nowParts.month)}月`,
+  yearLabel: `${nowParts.year}年`,
+};
+
+const stableContent = { latestReportDate, latestDailyDate, freshness, calendar, metrics, documents };
+if (fs.existsSync(output)) {
+  try {
+    const previous = JSON.parse(fs.readFileSync(output, "utf8"));
+    const previousStable = {
+      latestReportDate: previous.latestReportDate,
+      latestDailyDate: previous.latestDailyDate,
+      freshness: previous.freshness,
+      calendar: previous.calendar,
+      metrics: previous.metrics,
+      documents: previous.documents,
+    };
+    if (JSON.stringify(previousStable) === JSON.stringify(stableContent)) {
+      generatedAt = previous.generatedAt || generatedAt;
+      generatedAtIso = previous.generatedAtIso || generatedAtIso;
+    }
+  } catch {
+    // Invalid or legacy output is replaced with a complete current payload.
+  }
+}
+
 fs.mkdirSync(path.dirname(output), { recursive: true });
-fs.writeFileSync(output, JSON.stringify({ generatedAt: new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "Asia/Shanghai" }).format(new Date()), metrics, documents }, null, 2));
+fs.writeFileSync(output, JSON.stringify({ generatedAt, generatedAtIso, ...stableContent }, null, 2));
 console.log(`Generated ${documents.length} documents.`);
