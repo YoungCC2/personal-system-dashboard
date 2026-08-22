@@ -1,6 +1,15 @@
 # 个人成长与决策系统
 
-用于展示教育观察、个人成长周报、行动卡和决策复盘的静态前端。
+用于展示教育与成长的每日外部信号、周报、行动卡和决策复盘的静态前端。
+
+## 展示范围与隐私边界
+
+GitHub Pages 是公开展示层，数据生成脚本采用明确白名单：
+
+- 发布：`education/inbox/`、`growth/inbox/`、`education/weekly/`、`growth/weekly/`、`decisions.md`
+- 不发布：`growth/daily/`、英语学习资料、历史归档、系统配置和其他本地文件
+
+`growth/daily/` 被视为个人实践输入，默认不进入公开仓库。新增展示目录前必须先检查隐私与公开发布边界。
 
 ## 线上发布
 
@@ -35,7 +44,7 @@ npm run dev
 npm run build:pages
 ```
 
-完整验证：
+完整验证（包含每日素材完整性、公开白名单、动态周报识别和 Pages 构建）：
 
 ```bash
 npm test
