@@ -10,12 +10,6 @@ function files(relativeDir) {
   return fs.existsSync(dir) ? fs.readdirSync(dir).filter((name) => name.endsWith(".md")).sort().reverse() : [];
 }
 
-function fileDates(relativeDir) {
-  return files(relativeDir)
-    .map((name) => name.match(/^(\d{4}-\d{2}-\d{2})\.md$/)?.[1])
-    .filter(Boolean);
-}
-
 function shanghaiParts(now = new Date()) {
   const parts = new Intl.DateTimeFormat("en-CA", {
     year: "numeric",
@@ -43,18 +37,31 @@ function isoWeek(dateText) {
   return Math.ceil((((utc - yearStart) / 86400000) + 1) / 7);
 }
 
-function actionCardStatus(body, type) {
-  if (type === "decision") return false;
+function actionCardStatus(body, kind) {
+  if (kind !== "weekly") return false;
   const section = body.match(/(?:^|\n)#{2,3}\s*(?:本周)?行动卡\s*\n([\s\S]*?)(?=\n#{2,3}\s|$)/)?.[1] ?? "";
   if (!section) return false;
   return !/(?:不新增|无新增|没有|未生成|不生成).{0,8}行动卡|行动卡.{0,8}(?:无|0\s*张)/.test(section);
+}
+
+function signalCount(body, kind) {
+  if (kind !== "daily") return null;
+  if (/今日无重大更新/.test(body)) return 0;
+
+  const explicit = body.match(/今日收录\s*\**(\d+)\**\s*条/)
+    || body.match(/达标(?:素材|信号)[：:]?\s*\**(\d+)\**\s*条/)
+    || body.match(/保留\s*\**(\d+)\**\s*条达标信号/);
+  if (explicit) return Number(explicit[1]);
+
+  const numberedSignals = body.match(/^##\s+\d+[.、]\s+/gm);
+  return numberedSignals?.length ?? null;
 }
 
 function firstMeaningful(body) {
   return body.split("\n").map((line) => line.trim()).find((line) => line && !line.startsWith("#") && !line.startsWith(">") && line !== "---" && !line.startsWith("|") && !line.startsWith("- **来源"))?.replace(/^[-*]\s*/, "").replace(/\*\*/g, "").slice(0, 130) || "暂无摘要";
 }
 
-function parse(relativePath, type) {
+function parse(relativePath, type, kind) {
   const full = path.join(root, relativePath);
   const body = fs.readFileSync(full, "utf8");
   const title = body.match(/^#\s+(.+)$/m)?.[1]?.trim() || path.basename(relativePath, ".md");
@@ -64,18 +71,40 @@ function parse(relativePath, type) {
   const period = body.match(/(?:素材覆盖|采集周期|覆盖周期)[：:]\s*([^\n]+)/)?.[1]?.trim()
     || title.match(/[（(]([^）)]+)[）)]/)?.[1]
     || date;
-  return { id: relativePath.replaceAll("/", "-"), type, title, date, period, excerpt: firstMeaningful(body), body, path: relativePath, actionCard: actionCardStatus(body, type) };
+  return {
+    id: relativePath.replaceAll("/", "-"),
+    type,
+    kind,
+    title,
+    date,
+    period,
+    excerpt: firstMeaningful(body),
+    body,
+    path: relativePath,
+    actionCard: actionCardStatus(body, kind),
+    signalCount: signalCount(body, kind),
+  };
 }
 
 const documents = [
-  ...files("education/weekly").map((name) => parse(`education/weekly/${name}`, "education")),
-  ...files("growth/weekly").map((name) => parse(`growth/weekly/${name}`, "growth")),
-  parse("decisions.md", "decision"),
+  ...files("education/inbox").map((name) => parse(`education/inbox/${name}`, "education", "daily")),
+  ...files("growth/inbox").map((name) => parse(`growth/inbox/${name}`, "growth", "daily")),
+  ...files("education/weekly").map((name) => parse(`education/weekly/${name}`, "education", "weekly")),
+  ...files("growth/weekly").map((name) => parse(`growth/weekly/${name}`, "growth", "weekly")),
+  parse("decisions.md", "decision", "decision"),
 ].sort((a, b) => (b.date || b.path).localeCompare(a.date || a.path));
+
+const dailyDocuments = documents.filter((item) => item.kind === "daily");
+const dailyDates = dailyDocuments.map((item) => item.date).filter(Boolean).sort().reverse();
+const latestDailyDate = dailyDates[0] || "";
+const latestDailyDocuments = dailyDocuments.filter((item) => item.date === latestDailyDate);
 
 const metrics = {
   educationWeekly: files("education/weekly").length,
   growthWeekly: files("growth/weekly").length,
+  educationDaily: files("education/inbox").length,
+  growthDaily: files("growth/inbox").length,
+  latestSignals: latestDailyDocuments.reduce((total, item) => total + (item.signalCount ?? 0), 0),
   actionCards: documents.filter((item) => item.actionCard).length,
   practiceRecords: files("growth/daily").length,
 };
@@ -85,10 +114,8 @@ const nowParts = shanghaiParts(now);
 const today = `${nowParts.year}-${nowParts.month}-${nowParts.day}`;
 let generatedAt = `${nowParts.year}-${nowParts.month}-${nowParts.day} ${nowParts.hour}:${nowParts.minute}`;
 let generatedAtIso = now.toISOString();
-const reportDates = documents.filter((item) => item.type !== "decision" && item.date).map((item) => item.date).sort().reverse();
-const dailyDates = [...fileDates("education/inbox"), ...fileDates("growth/inbox")].sort().reverse();
+const reportDates = documents.filter((item) => item.kind === "weekly" && item.date).map((item) => item.date).sort().reverse();
 const latestReportDate = reportDates[0] || "";
-const latestDailyDate = dailyDates[0] || "";
 const ageDays = latestDailyDate ? Math.floor((new Date(`${today}T12:00:00+08:00`) - new Date(`${latestDailyDate}T12:00:00+08:00`)) / 86400000) : null;
 const freshness = ageDays === null || ageDays > 3
   ? { status: "stale", label: "数据需要同步" }
