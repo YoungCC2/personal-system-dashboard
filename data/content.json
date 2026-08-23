@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-22 22:13",
-  "generatedAtIso": "2026-08-22T14:13:05.736Z",
+  "generatedAt": "2026-08-23 21:12",
+  "generatedAtIso": "2026-08-23T13:12:56.686Z",
   "latestReportDate": "2026-08-20",
-  "latestDailyDate": "2026-08-22",
+  "latestDailyDate": "2026-08-23",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 4,
     "growthWeekly": 5,
-    "educationDaily": 21,
-    "growthDaily": 19,
-    "latestSignals": 2,
+    "educationDaily": 22,
+    "growthDaily": 20,
+    "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 0
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-08-23.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-08-23",
+      "date": "2026-08-23",
+      "period": "2026-08-23",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-08-23\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-23\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)、[加拿大 IRCC](https://www.canada.ca/en/immigration-refugees-citizenship/news.html)、[英国 Student visa](https://www.gov.uk/student-visa)、[澳大利亚 Home Affairs](https://immi.homeaffairs.gov.au/news-media/archive)，以及新东方、好未来、51Talk、有道和少儿英语竞品的官方入口。\n- **检索结果**：未发现确认发布于 2026-08-22 至 2026-08-23、且新颖度、可靠度、相关度、可行动性合计达到 5/8 的新增事实。教育部最新可核验工作动态仍早于本次窗口，IELTS 与 TOEFL 没有新公告，主要留学目的地也未出现新的学生签证变化；指定竞品官方入口未见明确的产品、价格、渠道或财报更新。\n- **处理原则**：不把旧政策、既有考试改革、搜索摘要或仅含“体验优化”“修复问题”的版本记录重复包装为今日信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-08-23.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-08-23.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-08-23",
+      "date": "2026-08-23",
+      "period": "2026-08-23",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-08-23\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-23\n- **已检查方向**：AI/编程技术、开发工具与效率方法。\n- **主要核验来源**：[GitHub Changelog](https://github.blog/changelog/)、[OpenAI 产品发布](https://openai.com/index/)、[OpenAI 开发者文档](https://learn.chatgpt.com/docs/changelog)、[Anthropic Newsroom](https://www.anthropic.com/news)、[VS Code 更新日志](https://code.visualstudio.com/updates)。\n- **检索结果**：未发现确认发布于 2026-08-22 至 2026-08-23、且总评分达到 5/8 的新增官方或权威技术信号。近期可核验的 Codex CLI、VS Code 和 GitHub Copilot 变化已于前两日收录，其余结果为更早发布、企业治理类变化或与当前个人开发工作流相关度不足的内容。\n- **处理原则**：不重复收录既有发布，也不将本次自动化执行或外部产品公告冒充为 D先生的个人实践。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- `growth/daily/` 未写入任何推测性实践；本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-08-23.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-08-22.md",
