@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-08-23 21:12",
-  "generatedAtIso": "2026-08-23T13:12:56.686Z",
+  "generatedAt": "2026-08-24 21:34",
+  "generatedAtIso": "2026-08-24T13:34:02.064Z",
   "latestReportDate": "2026-08-20",
-  "latestDailyDate": "2026-08-23",
+  "latestDailyDate": "2026-08-24",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 34,
+    "isoWeek": 35,
     "monthLabel": "8月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 4,
     "growthWeekly": 5,
-    "educationDaily": 22,
-    "growthDaily": 20,
-    "latestSignals": 0,
+    "educationDaily": 23,
+    "growthDaily": 21,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 0
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-08-24.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-08-24",
+      "date": "2026-08-24",
+      "period": "2026-08-24",
+      "excerpt": "今日收录 1 条高价值教育信号。",
+      "body": "# 教育行业素材｜2026-08-24\n\n## 今日结论\n\n今日收录 1 条高价值教育信号。\n\n## 1. 加拿大 2026 年上半年新国际学生入境量继续大幅收缩\n\n- **来源**：[加拿大 IRCC：国际学生与临时工关键数据](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/statistics-open-data/immigration-stats/students-workers.html)\n- **发布日期/更新日期**：2026-08-20（页面更正日期；数据截至 2026-06-30）\n- **抓取日期**：2026-08-24\n- **事实**：加拿大 IRCC 公布，2026 年 1—6 月新国际学生入境人数为 22,405，较 2024 年同期减少 82%；2026 年全年新学生入境目标为 155,000。月度数据具有明显季节性，IRCC 提醒秋季开学前的 8 月通常会回升。这里统计的是当月获发学习许可并入境的人数，不含许可延期，也不等同于申请量或获批量。\n- **意义**：加拿大留学需求与实际入境规模仍处于强收缩周期，对以加拿大为主要目的地的招生、咨询和语言培训机构构成持续压力。短期判断应继续观察 8—9 月入境高峰，不能仅凭上半年数字推断全年完成度；产品侧更适合降低对单一目的地的依赖，并强化多国方案与政策解释能力。\n- **置信度**：高（加拿大移民主管部门官方统计；页面注明数据为近似值且可能修订）\n- **评分**：新颖度 2/2；可靠度 2/2；相关度 2/2；可行动性 1/2；**总分 7/8**\n- **标签**：`留学` `加拿大` `学习许可` `国际学生` `市场趋势`\n\n## 筛选说明\n\n- 同期核验了教育部、IELTS、ETS、英国和澳大利亚移民主管部门，以及指定竞品官网与上市公司 IR；未发现 2026-08-23 至 2026-08-24 期间其他达到门槛的新增事实。\n- 本条是对 2026-08-20 官方数据页的漏采补录；不把旧政策、搜索摘要或无实质说明的版本更新包装为今日新闻。\n",
+      "path": "education/inbox/2026-08-24.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-08-24.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-08-24",
+      "date": "2026-08-24",
+      "period": "2026-08-24",
+      "excerpt": "今日收录 1 条高价值外部信号。",
+      "body": "# 成长外部信号素材｜2026-08-24\n\n## 今日结论\n\n今日收录 1 条高价值外部信号。\n\n## 1. GPT-5.6 Sol 的 API 与信用额度价格阶段性下调超过 20%\n\n- **来源**：[OpenAI：GPT-5.6 发布页](https://openai.com/index/gpt-5-6/)\n- **发布日期/更新日期**：2026-08-21\n- **抓取日期**：2026-08-24\n- **事实**：OpenAI 在 GPT-5.6 官方发布页追加更新，将 GPT-5.6 Sol 的 API 与信用额度价格下调超过 20%，优惠期为三个月。该调整针对 Sol，不代表 GPT-5.6 全系列或所有 ChatGPT 套餐价格同步变化。\n- **意义**：对使用 Sol 执行高复杂度编码、研究或长任务的工作流，短期成本门槛下降；若后续存在稳定批量调用，应在真实任务上比较 Sol 与 Terra/Luna 的质量、耗时和单位成本，再决定是否调整默认模型。该信号不代表已经发生个人试用或成本验证。\n- **置信度**：高（OpenAI 官方产品发布页）\n- **评分**：新颖度 2/2；可靠度 2/2；相关度 2/2；可行动性 2/2；**总分 8/8**\n- **标签**：`AI/编程技术` `OpenAI API` `GPT-5.6` `成本优化` `模型选择`\n\n## 筛选说明\n\n- 同期核验了 GitHub Changelog、OpenAI 新闻与开发者入口、Anthropic Newsroom 和 VS Code 更新日志；未发现 2026-08-23 至 2026-08-24 期间其他达到门槛的新增开发工具信号。\n- 本条是对 2026-08-21 官方页面更新的漏采补录；本文件只记录外部信号，未写入 `growth/daily/`，也未冒充 D先生的个人实践。\n",
+      "path": "growth/inbox/2026-08-24.md",
+      "actionCard": false,
+      "signalCount": 1
     },
     {
       "id": "education-inbox-2026-08-23.md",
