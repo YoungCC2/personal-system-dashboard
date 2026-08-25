@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-25 11:36",
-  "generatedAtIso": "2026-08-25T03:36:36.257Z",
+  "generatedAt": "2026-08-25 21:11",
+  "generatedAtIso": "2026-08-25T13:11:10.281Z",
   "latestReportDate": "2026-08-25",
-  "latestDailyDate": "2026-08-24",
+  "latestDailyDate": "2026-08-25",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 5,
     "growthWeekly": 5,
-    "educationDaily": 23,
-    "growthDaily": 21,
-    "latestSignals": 2,
+    "educationDaily": 24,
+    "growthDaily": 22,
+    "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 0
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-08-25.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-08-25",
+      "date": "2026-08-25",
+      "period": "2026-08-25",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-08-25\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-25\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)、加拿大 IRCC、英国 Student visa、澳大利亚 Home Affairs，以及斑马 AI、伴鱼、VIPKID、叽里呱啦和上市教育公司的官方入口。\n- **检索结果**：未发现确认发布于 2026-08-24 至 2026-08-25、且总评分达到 5/8 的新增事实。教育部可核验的近期内容主要为 8 月 24 日高校育人案例及更早的教师节、职业教育通知，与当前重点方向的相关度或可行动性不足；考试、签证和指定竞品也未见明确新变化。\n- **处理原则**：不把一般性高校工作案例、旧政策、搜索摘要或仅含“体验优化”“修复问题”的版本记录包装为高价值信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-08-25.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-08-25.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-08-25",
+      "date": "2026-08-25",
+      "period": "2026-08-25",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-08-25\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-25\n- **已检查方向**：AI/编程技术、开发工具与效率方法。\n- **主要核验来源**：[GitHub Changelog](https://github.blog/changelog/)、[OpenAI 产品发布](https://openai.com/index/)、[OpenAI 开发者入口](https://learn.chatgpt.com/)、[Anthropic Newsroom](https://www.anthropic.com/news)、[VS Code 更新日志](https://code.visualstudio.com/updates)。\n- **检索结果**：未发现确认发布于 2026-08-24 至 2026-08-25、且总评分达到 5/8 的新增开发或效率信号。OpenAI 当日关于打击隐蔽影响行动的公告属于全球事务与安全案例，对当前个人开发工作流缺少直接可行动性；GitHub、Anthropic 与 VS Code 官方入口也未显示新的正式发布。\n- **处理原则**：不重复收录既有版本，不以泛 AI 新闻填充素材，也不将自动化执行记录冒充为 D先生的个人实践。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- `growth/daily/` 未写入任何推测性实践；本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-08-25.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-weekly-2026-W35.md",
