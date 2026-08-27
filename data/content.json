@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-27 12:50",
-  "generatedAtIso": "2026-08-27T04:50:12.824Z",
+  "generatedAt": "2026-08-27 21:13",
+  "generatedAtIso": "2026-08-27T13:13:48.271Z",
   "latestReportDate": "2026-08-27",
-  "latestDailyDate": "2026-08-26",
+  "latestDailyDate": "2026-08-27",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 5,
     "growthWeekly": 6,
-    "educationDaily": 25,
-    "growthDaily": 23,
-    "latestSignals": 0,
+    "educationDaily": 26,
+    "growthDaily": 24,
+    "latestSignals": 1,
     "actionCards": 1,
     "practiceRecords": 0
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-08-27.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-08-27",
+      "date": "2026-08-27",
+      "period": "2026-08-27",
+      "excerpt": "发布日期：2026-08-20",
+      "body": "# 教育行业素材｜2026-08-27\n\n## 1. 有道学习服务增长 20.9%，智能硬件收入下降 31.5%\n\n- **来源**：[有道投资者关系首页](https://ir.youdao.com/)、[有道 2026 年第二季度业绩公告](https://en.prnasia.com/releases/global/youdao-reports-second-quarter-2026-unaudited-financial-results-544665.shtml)\n- **发布日期**：2026-08-20\n- **抓取日期**：2026-08-27\n- **事实**：有道 2026 年第二季度净收入为 15 亿元，同比增长 3.5%；其中学习服务收入 7.956 亿元，同比增长 20.9%，智能硬件收入 8680 万元，同比下降 31.5%。季度毛利率由 43.0% 升至 48.9%，经营利润 1.115 亿元，约为上年同期的 2.9 倍；学习服务毛利率由 59.8% 升至 65.5%。公司称学习服务增长受到辅导服务、有道领世及 AI 订阅产品组合支持，但该因果解释属于管理层表述。\n- **意义**：同一家公司内部，服务收入与利润率明显改善，而智能学习硬件继续承压。这说明 AI 教育商业化当前更值得关注的可能是可持续订阅和服务规模效应，而不是仅依赖硬件销量；后续应观察学习服务增长能否连续、AI 订阅产品是否披露独立用户或收入指标。\n- **置信度**：高（公司官方 IR 已列示该业绩公告，财务数字来自公司发布的未经审计业绩；业务驱动因素为管理层口径）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#竞品 #网易有道 #学习服务 #智能硬件 #AI教育 #财报\n\n## 今日结论\n\n- 达标素材：1 条\n- 本条为对 2026-08-20 官方财报的漏采补录，不把其发布日期表述为今日。\n- 同期检查了教育政策、留学签证、托福/雅思、少儿英语竞品和其他上市教育公司官方入口；未发现第二条达到 5/8 的新增变化。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-08-27.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-08-27.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-08-27",
+      "date": "2026-08-27",
+      "period": "2026-08-27",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-08-27\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-27\n- **已检查方向**：AI/编程技术、开发工具与效率方法。\n- **主要核验来源**：[OpenAI 开发者入口](https://developers.openai.com/)、[OpenAI 产品发布](https://openai.com/index/)、[GitHub Changelog](https://github.blog/changelog/)、[VS Code 更新日志](https://code.visualstudio.com/updates)、[Anthropic Newsroom](https://www.anthropic.com/news)。\n- **检索结果**：未发现确认发布于 2026-08-26 至 2026-08-27、且总评分达到 5/8 的新增官方技术信号。OpenAI 开发者入口当前展示的近期文章与 GPT-5.6 价格/速度信息分别发布于 8 月 25 日、8 月 21 日或更早；GitHub Changelog、VS Code 与 Anthropic 官方入口也未出现比本周已收录素材更新且达到门槛的变化，因此不重复保存。\n- **处理原则**：以官方发布日期和原始文档为准，不把首页重新抓取、旧内容再次曝光或营销活动包装成新发布，也不冒充 D先生的个人实践。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- `growth/daily/` 未写入任何推测性实践；本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-08-27.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "growth-weekly-2026-W35.md",
