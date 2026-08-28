@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-27 21:13",
-  "generatedAtIso": "2026-08-27T13:13:48.271Z",
+  "generatedAt": "2026-08-28 21:10",
+  "generatedAtIso": "2026-08-28T13:10:30.783Z",
   "latestReportDate": "2026-08-27",
-  "latestDailyDate": "2026-08-27",
+  "latestDailyDate": "2026-08-28",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 5,
     "growthWeekly": 6,
-    "educationDaily": 26,
-    "growthDaily": 24,
+    "educationDaily": 27,
+    "growthDaily": 25,
     "latestSignals": 1,
     "actionCards": 1,
     "practiceRecords": 0
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-08-28.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-08-28",
+      "date": "2026-08-28",
+      "period": "2026-08-28",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-08-28\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-28\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)、英国 Student visa、加拿大 IRCC，以及指定少儿英语竞品和上市教育公司的官方入口。\n- **检索结果**：未发现确认发布于 2026-08-27 至 2026-08-28、且总评分达到 5/8 的新增事实。IELTS 官方最新新闻仍为 6 月更新，ETS 当前可见内容以 8 月上旬及更早资料为主；教育政策、签证与指定竞品官方入口也未见明确的新产品、价格、渠道、财报或政策变化。\n- **处理原则**：不将旧政策、搜索结果重新抓取、一般活动或无实质说明的版本更新包装为高价值信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-08-28.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-08-28.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-08-28",
+      "date": "2026-08-28",
+      "period": "2026-08-28",
+      "excerpt": "发布日期：2026-08-26",
+      "body": "# 成长外部信号素材｜2026-08-28\n\n## 1. VS Code 1.135 支持续接外部代理会话与第二模型复核\n\n- **来源**：[Visual Studio Code 1.135 官方发布说明](https://code.visualstudio.com/updates/v1_135)\n- **发布日期**：2026-08-26\n- **抓取日期**：2026-08-28\n- **事实**：VS Code 1.135 可在 Sessions 列表中显示并续接从其他应用创建的近期 Copilot 或 Claude 代理会话；实验性 `/rubber-duck` 命令可调用互补模型检查代理结果中的遗漏与边界情况；聊天响应页脚新增逐轮、逐模型的输入、缓存输入和输出 token 明细。Agents 窗口也默认采用更精简的单窗格布局。外部会话续接仍需 Copilot 订阅，Rubber Duck 明确处于实验阶段。\n- **意义**：代理工作流的重点正在从“单次生成”转向跨工具连续协作、独立复核与成本可观察性。对长任务而言，续接会话能减少上下文切换，第二模型复核有助于暴露盲点，而 token 明细让模型选择和成本判断有更直接的数据依据。\n- **置信度**：高（微软官方正式版发布说明；实验功能与订阅条件已明确标注）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#VSCode #Agent #Copilot #Claude #模型复核 #成本可观察性\n\n## 今日结论\n\n- 达标素材：1 条\n- 本条为对 2026-08-26 正式版本的漏采补录，不把其发布日期表述为今日。\n- 同期核验了 OpenAI、GitHub Changelog 与 Anthropic 官方入口，未发现第二条比本周已收录内容更新且达到门槛的开发信号。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；`growth/daily/` 未写入任何推测性实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-08-28.md",
+      "actionCard": false,
+      "signalCount": 1
     },
     {
       "id": "education-inbox-2026-08-27.md",
