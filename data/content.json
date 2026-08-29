@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-28 21:10",
-  "generatedAtIso": "2026-08-28T13:10:30.783Z",
+  "generatedAt": "2026-08-29 21:11",
+  "generatedAtIso": "2026-08-29T13:11:03.393Z",
   "latestReportDate": "2026-08-27",
-  "latestDailyDate": "2026-08-28",
+  "latestDailyDate": "2026-08-29",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 5,
     "growthWeekly": 6,
-    "educationDaily": 27,
-    "growthDaily": 25,
-    "latestSignals": 1,
+    "educationDaily": 28,
+    "growthDaily": 26,
+    "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 0
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-08-29.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-08-29",
+      "date": "2026-08-29",
+      "period": "2026-08-29",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-08-29\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-29\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)、英国 Student visa、加拿大 IRCC，以及指定少儿英语竞品和上市教育公司的官方入口。\n- **检索结果**：未发现确认发布于 2026-08-28 至 2026-08-29、且总评分达到 5/8 的新增事实。IELTS 官方最新新闻仍停留在 6 月，ETS 可见更新以 8 月上旬及更早内容为主；教育部检索结果、签证入口和指定竞品官方渠道也未见明确的新政策、产品、价格、渠道或财报变化。\n- **处理原则**：不将旧政策重新抓取、一般教育活动、搜索摘要或无实质说明的版本更新包装为高价值信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-08-29.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-08-29.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-08-29",
+      "date": "2026-08-29",
+      "period": "2026-08-29",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-08-29\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-29\n- **已检查方向**：AI/编程技术、开发工具与效率方法。\n- **主要核验来源**：[OpenAI 开发者入口](https://developers.openai.com/)、[OpenAI 产品发布](https://openai.com/index/)、[GitHub Changelog](https://github.blog/changelog/)、[VS Code 更新日志](https://code.visualstudio.com/updates)、[Anthropic Newsroom](https://www.anthropic.com/news)。\n- **检索结果**：未发现确认发布于 2026-08-28 至 2026-08-29、且总评分达到 5/8 的新增官方技术信号。OpenAI 当日可见内容主要是 Codex 社区 meetup 与 hackathon 活动，不构成产品能力变化；GitHub、VS Code 与 Anthropic 官方入口也未出现比本周已收录素材更新的实质发布。\n- **处理原则**：不将社区活动、首页重新抓取、旧功能再次曝光或营销信息包装成技术更新，也不冒充 D先生的个人实践。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- `growth/daily/` 未写入任何推测性实践；本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-08-29.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-08-28.md",
