@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-08-30 22:14",
-  "generatedAtIso": "2026-08-30T14:14:26.206Z",
+  "generatedAt": "2026-08-31 21:12",
+  "generatedAtIso": "2026-08-31T13:12:28.355Z",
   "latestReportDate": "2026-08-27",
-  "latestDailyDate": "2026-08-30",
+  "latestDailyDate": "2026-08-31",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 35,
+    "isoWeek": 36,
     "monthLabel": "8月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 5,
     "growthWeekly": 6,
-    "educationDaily": 29,
-    "growthDaily": 27,
+    "educationDaily": 30,
+    "growthDaily": 28,
     "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 0
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-08-31.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-08-31",
+      "date": "2026-08-31",
+      "period": "2026-08-31",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-08-31\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-31\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：教育部、IELTS、ETS TOEFL、英国 Student visa、加拿大 IRCC，以及指定少儿英语竞品和上市教育公司的官方入口。\n- **检索结果**：未发现确认发布于 2026-08-30 至 2026-08-31、且总评分达到 5/8 的新增事实。IELTS 最新新闻仍停留在 6 月，ETS 可见内容为 8 月上旬或更早；未发现新的政策、产品、价格、渠道或财务事实。\n- **处理原则**：不将旧政策重新抓取、一般活动、搜索摘要或无实质说明的版本更新包装为高价值信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-08-31.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-08-31.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长素材｜2026-08-31",
+      "date": "2026-08-31",
+      "period": "2026-08-31",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长素材｜2026-08-31\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-08-31\n- **已检查方向**：AI 与编程技术、开发工具、效率方法。\n- **主要核验来源**：OpenAI 官方开发者与产品入口、GitHub Changelog、Visual Studio Code 官方更新、Anthropic Newsroom 与 Google Developers Blog。\n- **检索结果**：未发现确认发布于 2026-08-30 至 2026-08-31、且总评分达到 5/8 的新增官方信号。检索结果主要为旧公告、社区讨论，或此前已覆盖的产品变化。\n- **处理原则**：不将社区帖子、旧内容重新抓取、活动预告或无实质变化的页面更新作为成长信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 边界说明\n\n- 本文件仅记录外部信号；未向 `growth/daily/` 写入内容，也未将外部信息冒充个人实践。\n",
+      "path": "growth/inbox/2026-08-31.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-08-30.md",
