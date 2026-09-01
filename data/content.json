@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-01 10:15",
-  "generatedAtIso": "2026-09-01T02:15:44.757Z",
+  "generatedAt": "2026-09-01 21:11",
+  "generatedAtIso": "2026-09-01T13:11:16.865Z",
   "latestReportDate": "2026-09-01",
-  "latestDailyDate": "2026-08-31",
+  "latestDailyDate": "2026-09-01",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 6,
     "growthWeekly": 6,
-    "educationDaily": 30,
-    "growthDaily": 28,
-    "latestSignals": 0,
+    "educationDaily": 31,
+    "growthDaily": 29,
+    "latestSignals": 3,
     "actionCards": 1,
     "practiceRecords": 0
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-01.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-01",
+      "date": "2026-09-01",
+      "period": "2026-09-01",
+      "excerpt": "发布日期：页面于 2026-08-28 前后更新；新标准自 2026-09-01 起适用",
+      "body": "# 教育行业素材｜2026-09-01\n\n## 1. 加拿大提高学习许可申请的生活费证明门槛\n\n- **来源**：[加拿大 IRCC：学习许可资金证明要求](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html)\n- **发布日期**：页面于 2026-08-28 前后更新；新标准自 2026-09-01 起适用\n- **抓取日期**：2026-09-01\n- **事实**：从 2026 年 9 月 1 日起提交的加拿大学习许可申请，在魁北克以外地区，单人每年需证明的生活费由 22,895 加元提高至 23,448 加元，不含学费和交通费；两人标准由 28,502 加元提高至 29,192 加元，三人由 35,040 加元提高至 35,888 加元。魁北克继续适用本省要求。\n- **意义**：新门槛直接影响今天起递交的申请材料和家庭预算核算。增幅不大，但留学咨询、申请检查表和费用说明应采用新金额，避免沿用旧标准导致资金证明不足。\n- **置信度**：高（加拿大移民主管部门官方申请指引，适用日期和金额明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#加拿大留学 #学习许可 #资金证明 #签证政策\n\n## 今日结论\n\n- 达标素材：1 条\n- 本条属于 9 月 1 日生效的申请标准变化，不把页面更新日期表述为今日发布。\n- 同期检查了教育政策、托福/雅思、少儿英语与指定竞品官方入口，未发现第二条达到 5/8 的新增变化。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-01.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-09-01.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-01",
+      "date": "2026-09-01",
+      "period": "2026-09-01",
+      "excerpt": "发布日期：2026-07-31；弃用日期为 2026-09-01",
+      "body": "# 成长外部信号素材｜2026-09-01\n\n## 1. GitHub Copilot 今日弃用多款旧模型\n\n- **来源**：[GitHub Changelog：Upcoming August 2026 model deprecations in GitHub Copilot](https://github.blog/changelog/2026-07-31-upcoming-august-2026-model-deprecations-in-github-copilot/)\n- **发布日期**：2026-07-31；弃用日期为 2026-09-01\n- **抓取日期**：2026-09-01\n- **事实**：GitHub 自 9 月 1 日起在 Copilot Chat、内联编辑、Ask、Agent 模式和代码补全中弃用 Gemini 3.1 Pro、Claude Opus 4.5、Claude Opus 4.6、Claude Sonnet 4.5、Claude Sonnet 4.6 和 Raptor Mini，并给出 Gemini 3.6 Flash、Claude Opus 4.7/4.8/5、Claude Sonnet 5 和 MAI-Code-1-Flash 等替代选项。按年付费的 Copilot 个人订阅用户仍可继续使用 Claude Sonnet 4.6；企业管理员可能需要在模型策略中启用替代模型。\n- **意义**：依赖固定模型名的提示模板、团队规范或自动化流程可能从今天起失效。实际使用 Copilot 的团队应检查模型选择器与企业策略，并把关键流程迁移到仍受支持的模型。\n- **置信度**：高（GitHub 官方变更公告，弃用范围、日期、例外与替代方案明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #模型弃用 #开发工具 #迁移\n\n## 2. Claude Sonnet 5 首发优惠价结束\n\n- **来源**：[Anthropic：Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5)\n- **发布日期**：2026-06-30；标准价格自 2026-09-01 起适用\n- **抓取日期**：2026-09-01\n- **事实**：Claude Sonnet 5 的 API 首发价格为每百万输入 token 2 美元、输出 token 10 美元，优惠持续至 8 月 31 日；此后标准价格变为输入 3 美元、输出 15 美元，输入和输出单价均提高 50%。\n- **意义**：持续使用 `claude-sonnet-5` 的开发和代理工作流，单位 token 成本从今天起明显上升。成本估算、模型路由和预算上限应基于标准价，而不是沿用首发价格。\n- **置信度**：高（Anthropic 官方发布，型号、价格和优惠截止日期明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#Anthropic #ClaudeSonnet5 #API定价 #成本管理\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均为此前公告在 2026-09-01 到达生效节点，不把原公告表述为今日发布。\n- GitHub 8 月 31 日的 VS Code Copilot 汇总与 8 月 28 日已收录的 VS Code 1.135 高度重复，未再次保存。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；`growth/daily/` 未写入任何推测性实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-01.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-weekly-2026-W36.md",
