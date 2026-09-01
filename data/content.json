@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-01 21:11",
-  "generatedAtIso": "2026-09-01T13:11:16.865Z",
+  "generatedAt": "2026-09-01 23:35",
+  "generatedAtIso": "2026-09-01T15:35:23.952Z",
   "latestReportDate": "2026-09-01",
   "latestDailyDate": "2026-09-01",
   "freshness": {
@@ -19,7 +19,7 @@
     "growthDaily": 29,
     "latestSignals": 3,
     "actionCards": 1,
-    "practiceRecords": 0
+    "practiceRecords": 5
   },
   "documents": [
     {
