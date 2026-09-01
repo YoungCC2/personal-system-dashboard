@@ -62,5 +62,5 @@ test("negative action-card sections are not counted as action cards", async () =
 
   assert.equal(education.actionCard, false);
   assert.equal(growth.actionCard, false);
-  assert.equal(content.metrics.practiceRecords, 0);
+  assert.equal(content.metrics.practiceRecords, await markdownCount("growth/daily/"));
 });
