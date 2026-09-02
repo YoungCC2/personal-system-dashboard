@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-01 23:35",
-  "generatedAtIso": "2026-09-01T15:35:23.952Z",
+  "generatedAt": "2026-09-02 21:11",
+  "generatedAtIso": "2026-09-02T13:11:56.132Z",
   "latestReportDate": "2026-09-01",
-  "latestDailyDate": "2026-09-01",
+  "latestDailyDate": "2026-09-02",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 6,
     "growthWeekly": 6,
-    "educationDaily": 31,
-    "growthDaily": 29,
-    "latestSignals": 3,
+    "educationDaily": 32,
+    "growthDaily": 30,
+    "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-02.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-02",
+      "date": "2026-09-02",
+      "period": "2026-09-02",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-02\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-02\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)、加拿大 IRCC、英国 Student visa，以及指定少儿英语竞品和上市教育公司的官方入口。\n- **检索结果**：未发现确认发布于 2026-09-01 至 2026-09-02、且总评分达到 5/8 的新增事实。搜索结果主要为一般活动、旧政策或与重点方向无关的页面；考试、签证和指定竞品官方入口未出现比 9 月 1 日已收录变化更新的实质信号。\n- **处理原则**：不重复收录加拿大 9 月 1 日生效的资金证明变化，不将活动、旧政策或搜索摘要包装为高价值信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-02.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-02.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-02",
+      "date": "2026-09-02",
+      "period": "2026-09-02",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-09-02\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-02\n- **已检查方向**：AI/编程技术、开发工具与效率方法。\n- **主要核验来源**：[OpenAI 开发者入口](https://developers.openai.com/)、[OpenAI 产品发布](https://openai.com/index/)、[GitHub Changelog](https://github.blog/changelog/)、[VS Code 更新日志](https://code.visualstudio.com/updates)、[Anthropic Newsroom](https://www.anthropic.com/news)。\n- **检索结果**：未发现确认发布于 2026-09-01 至 2026-09-02、且总评分达到 5/8 的新增官方技术信号。当天可见内容主要为社区讨论、meetup/Academy 活动或此前公告，没有新的产品能力、开发工具版本或权威技术发布。\n- **处理原则**：不重复收录 9 月 1 日已记录的 Copilot 模型弃用和 Claude Sonnet 5 标准价格，不把社区帖子或活动包装为技术更新。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；`growth/daily/` 未写入任何推测性实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-02.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-09-01.md",
