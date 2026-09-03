@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-03 09:13",
-  "generatedAtIso": "2026-09-03T01:13:32.812Z",
+  "generatedAt": "2026-09-03 21:10",
+  "generatedAtIso": "2026-09-03T13:10:31.086Z",
   "latestReportDate": "2026-09-03",
-  "latestDailyDate": "2026-09-02",
+  "latestDailyDate": "2026-09-03",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 6,
     "growthWeekly": 7,
-    "educationDaily": 32,
-    "growthDaily": 30,
-    "latestSignals": 0,
+    "educationDaily": 33,
+    "growthDaily": 31,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-03.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-03",
+      "date": "2026-09-03",
+      "period": "2026-09-03",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-03\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-03\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)、加拿大 IRCC、英国 Student visa，以及指定竞品官网、应用商店和上市教育公司 IR。\n- **检索结果**：未发现确认发布于 2026-09-02 至 2026-09-03、且总评分达到 5/8 的新增事实。检索到的 TOEFL 研究资料属于此前考试改革的延伸说明，加拿大学签页面主要延续 9 月 1 日已收录的资金证明变化；指定竞品和上市教育公司官方入口未出现新的实质更新。\n- **处理原则**：不重复收录既有签证变化，不把旧资料重新抓取、一般活动或无实质说明的页面更新包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-03.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-03.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-03",
+      "date": "2026-09-03",
+      "period": "2026-09-03",
+      "excerpt": "发布日期：2026-09-02",
+      "body": "# 成长外部信号素材｜2026-09-03\n\n## 1. Copilot App 与 CLI 正式遵守内容排除策略\n\n- **来源**：[GitHub Changelog：Content exclusions generally available in Copilot app and CLI](https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/)\n- **发布日期**：2026-09-02\n- **抓取日期**：2026-09-03\n- **事实**：GitHub Copilot App 和 Copilot CLI 已正式遵守企业、组织和仓库管理员配置的内容排除策略；被排除的文件不会作为代理工作流上下文使用。该能力面向 Copilot Business 和 Copilot Enterprise 客户。\n- **意义**：敏感代码的保护边界从编辑器内使用扩展到 App 和 CLI 代理流程。使用企业 Copilot 处理仓库任务时，可通过统一排除策略降低敏感文件被带入模型上下文的风险，但仍需验证组织和仓库规则是否实际配置完整。\n- **置信度**：高（GitHub 官方正式发布，适用范围和行为明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #内容排除 #敏感代码 #CLI #Agent\n\n## 2. Copilot 企业托管设置可指定任意默认模型\n\n- **来源**：[GitHub Changelog：Enterprise-managed settings support any default model](https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/)\n- **发布日期**：2026-09-02\n- **抓取日期**：2026-09-03\n- **事实**：Copilot Business 和 Enterprise 管理员可通过企业托管设置，为新会话指定默认模型；也可将 `model` 设为可覆盖，并通过 `team-mappings.json` 为不同团队分配不同默认模型。该能力已覆盖 Copilot App、Copilot CLI 和 VS Code。\n- **意义**：团队可以把模型选择从个人习惯升级为可治理的工作流默认值，按成本、能力或任务类型配置不同团队，同时保留受控覆盖空间。对个人用户价值有限，但对企业代理工具治理具有直接操作意义。\n- **置信度**：高（GitHub 官方正式更新，配置入口、适用产品和套餐明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 1/2｜可行动性 1/2｜总分 6/8\n- **标签**：#GitHubCopilot #企业管理 #模型治理 #默认模型\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均发布于 2026-09-02，本次为次日核验补录，不表述为 9 月 3 日发布。\n- VS Code 1.137 当前仍为持续变化的 Insiders 说明，且内容较零散，暂不作为正式版本信号保存。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；`growth/daily/` 未写入任何推测性实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-03.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "growth-weekly-2026-W36.md",
