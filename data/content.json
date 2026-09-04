@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-03 21:10",
-  "generatedAtIso": "2026-09-03T13:10:31.086Z",
+  "generatedAt": "2026-09-04 21:11",
+  "generatedAtIso": "2026-09-04T13:11:23.314Z",
   "latestReportDate": "2026-09-03",
-  "latestDailyDate": "2026-09-03",
+  "latestDailyDate": "2026-09-04",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 6,
     "growthWeekly": 7,
-    "educationDaily": 33,
-    "growthDaily": 31,
+    "educationDaily": 34,
+    "growthDaily": 32,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-04.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-04",
+      "date": "2026-09-04",
+      "period": "2026-09-04",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-04\n\n## 今日结论\n\n今日无重大更新。\n\n- **抓取日期**：2026-09-04\n- **达标素材**：0 条\n- **检查范围**：教育政策、教培、考试、留学签证、少儿英语与指定竞品。\n- **来源**：[教育部要闻](https://www.moe.gov.cn/jyb_sy/sy_jyyw/)、[IELTS](https://ielts.org/news-and-insights)、[伴鱼](https://www.banyu.com/)、[VIPKID](https://www.vipkid.com.cn/)、[51Talk IR](https://ir.51talk.com/)、[新东方 IR](https://investor.neworiental.org/zh-hans/)、[好未来 IR](https://ir-cn.tal.com/)。另检索 ETS 和加英签证官方域名。\n- **筛选说明**：教育部出现教师节新闻发布会、高校研究及地方劳动教育经验等内容，暂未获得与当前重点直接相关、可操作且达到门槛的新信号。竞品介绍缺少可确认的变更日期，不将当前营销页面当作新品发布；未核实到新的考试或签证变化。\n- **检查限制**：斑马与有道 IR 页面未返回有效正文；叽里呱啦官网及 App Store 入口读取失败。上述入口不能据此判定无更新，后续需重试。\n- **边界**：此结论仅指本次可核验范围内未发现达标素材，并非断言行业没有变化。\n",
+      "path": "education/inbox/2026-09-04.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-04.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-04",
+      "date": "2026-09-04",
+      "period": "2026-09-04",
+      "excerpt": "发布日期：2026-09-03",
+      "body": "# 成长外部信号素材｜2026-09-04\n\n## 1. GitHub CLI Linux 仓库签名密钥将于 9 月 5 日到期\n\n- **来源**：[GitHub 官方公告](https://github.blog/changelog/2026-09-03-github-cli-linux-package-signing-key-expires-september-5/)\n- **发布日期**：2026-09-03\n- **抓取日期**：2026-09-04\n- **事实**：现有 Linux 软件仓库 PGP 密钥于 9 月 5 日到期，之后首次发布开始，APT/RPM 元数据和新 RPM 包仅用替代密钥签名。4 月 8 日前通过官方仓库安装且未更新配置的用户应更新密钥环；自定义镜像和自动化也应核验是否信任替代密钥。macOS、Windows、Homebrew 和直接下载归档等方式不受影响。\n- **意义**：若 Linux 服务器或 CI 使用旧仓库配置，后续安装更新可能因签名验证失败中断。应先确认适用范围，不对当前 Mac 做无关变更。\n- **置信度**：高（官方公告明确日期与例外）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 1/2｜可行动性 2/2｜总分 7/8\n- **标签**：#GitHubCLI #Linux #供应链 #密钥轮换\n\n## 2. VS Code 1.136 增加 PR 收尾与多目录代理协作能力\n\n- **来源**：[VS Code 1.136 官方发布说明](https://code.visualstudio.com/updates/v1_136)\n- **发布日期**：2026-09-02\n- **抓取日期**：2026-09-04\n- **事实**：Agent Merge 预览功能用于处理 PR 评审反馈、失败检查和合并冲突；实验性多根工作区支持 Copilot/Claude 代理跨目录协作，但限编辑器窗口，hooks 仍选定单一主目录。相关聊天按会话层级组织并显示状态和待审批项。\n- **意义**：有助于管理多目录工程及 PR 收尾任务；预览与实验状态意味着应先在非关键任务验证，不能把代理处理结果视为已通过人工验收。\n- **置信度**：高（官方发布说明；限制已明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#VSCode #Agent #PR #多根工作区\n\n## 今日结论\n\n- 达标素材：2 条；均为此前发布、本次核验收录，不冒充今日发布。\n- 未新增个人实践或行动卡；未修改 `growth/daily/`。\n",
+      "path": "growth/inbox/2026-09-04.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-03.md",
