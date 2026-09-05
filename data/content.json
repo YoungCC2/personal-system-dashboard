@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-04 21:11",
-  "generatedAtIso": "2026-09-04T13:11:23.314Z",
+  "generatedAt": "2026-09-05 21:11",
+  "generatedAtIso": "2026-09-05T13:11:34.438Z",
   "latestReportDate": "2026-09-03",
-  "latestDailyDate": "2026-09-04",
+  "latestDailyDate": "2026-09-05",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 6,
     "growthWeekly": 7,
-    "educationDaily": 34,
-    "growthDaily": 32,
+    "educationDaily": 35,
+    "growthDaily": 33,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-05.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-05",
+      "date": "2026-09-05",
+      "period": "2026-09-05",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-05\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-05\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)、加拿大 IRCC、英国 Student visa，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：未发现确认发布于 2026-09-04 至 2026-09-05、且总评分达到 5/8 的新增事实。可见结果主要延续此前 TOEFL 评分改革和加拿大 9 月 1 日起执行的学签资金证明变化，未出现新的政策节点；指定竞品和上市教育公司也未检索到可由官方入口确认的实质更新。\n- **处理原则**：不重复收录既有考试或签证变化，不把页面抓取日期、旧资料重新曝光或一般活动包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-05.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-05.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-05",
+      "date": "2026-09-05",
+      "period": "2026-09-05",
+      "excerpt": "发布日期：2026-09-03",
+      "body": "# 成长外部信号素材｜2026-09-05\n\n## 1. OpenAI 限量发布 GPT-6 Astra\n\n- **来源**：[OpenAI 官方 Release Notes](https://openai.com/products/release-notes/)\n- **发布日期**：2026-09-03\n- **抓取日期**：2026-09-05\n- **事实**：OpenAI 发布 `gpt-6-astra`，面向编码、研究、电脑操作和复杂多步骤工作，并支持依据模板创建文档、表格和演示文稿。模型通过 Responses API 和 Chat Completions 提供，但当前仅向有限组织逐步开放，尚未普遍可用；官方还说明其不支持自定义 `temperature`、`top_p` 或 `logprobs`，并增加了针对长任务的控制和安全监测。\n- **意义**：它可能适合当前这种跨研究、文档和前端发布的长链路任务，但现阶段不能假设账号已有权限，也不能直接沿用依赖采样参数的现有调用配置。后续评估应先确认可用性、接口差异和实际成本，再考虑迁移。\n- **置信度**：高（OpenAI 官方产品发布说明；可用范围与限制明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#OpenAI #GPT6Astra #API #Agent #长任务\n\n## 2. Codex 增强浏览器和电脑使用的企业策略控制\n\n- **来源**：[OpenAI 官方 Release Notes](https://openai.com/products/release-notes/)\n- **发布日期**：2026-09-03\n- **抓取日期**：2026-09-05\n- **事实**：Codex 新增面向企业管理员的策略设置，可配置网站默认规则和例外，限制上传、下载、浏览历史及开发者访问，并控制自动审查、保存的批准和批准有效期；原生应用规则还可按 macOS 或 Windows 应用允许或阻止。允许某个网站或应用不会绕过其他策略或审批提示。\n- **意义**：浏览器与电脑自动化的权限边界变得更细，可降低长任务因宽泛授权产生的风险。对于当前系统，更适合作为未来自动化治理参考，而不是立即扩大采集或发布权限。\n- **置信度**：高（OpenAI 官方 Release Notes，能力范围与边界明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#Codex #浏览器 #电脑使用 #权限治理 #安全\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均发布于 2026-09-03，本次为延迟核验补录，不表述为 9 月 5 日发布。\n- VS Code 1.136 已在 9 月 4 日收录，GitHub CLI 密钥到期也不重复记录。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；`growth/daily/` 未写入任何推测性实践。\n- 本次未新增实践或行动卡，也未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-05.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-04.md",
