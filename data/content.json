@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-09-05 21:11",
-  "generatedAtIso": "2026-09-05T13:11:34.438Z",
+  "generatedAt": "2026-09-07 21:14",
+  "generatedAtIso": "2026-09-07T13:14:56.352Z",
   "latestReportDate": "2026-09-03",
-  "latestDailyDate": "2026-09-05",
+  "latestDailyDate": "2026-09-07",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 36,
+    "isoWeek": 37,
     "monthLabel": "9月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 6,
     "growthWeekly": 7,
-    "educationDaily": 35,
-    "growthDaily": 33,
-    "latestSignals": 2,
+    "educationDaily": 37,
+    "growthDaily": 35,
+    "latestSignals": 1,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,58 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-07.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-07",
+      "date": "2026-09-07",
+      "period": "2026-09-07",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-07\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-07\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)、加拿大 IRCC、英国 Student visa，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：未发现确认发布于 2026-09-06 至 2026-09-07、且总评分达到 5/8 的新增事实。未检索到新的教育政策、考试规则、留学签证节点或可由竞品官方入口确认的实质变化。\n- **处理原则**：不把页面重新抓取、既有规则说明或无明确发布日期的营销内容包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n",
+      "path": "education/inbox/2026-09-07.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-07.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-07",
+      "date": "2026-09-07",
+      "period": "2026-09-07",
+      "excerpt": "发布日期：2026-09-04",
+      "body": "# 成长外部信号素材｜2026-09-07\n\n## 1. GPT-6 Astra 已在 GitHub Copilot 多端逐步开放\n\n- **来源**：[GitHub Changelog：GPT-6 Astra is generally available in GitHub Copilot](https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/)\n- **发布日期**：2026-09-04\n- **抓取日期**：2026-09-07\n- **事实**：GPT-6 Astra 已面向 Copilot Pro+、Max、Business 和 Enterprise 用户逐步开放，可从 VS Code、Visual Studio、Copilot CLI、coding agent、Copilot App、GitHub 网页与移动端、JetBrains、Xcode 和 Eclipse 的模型选择器使用。按用量计费时采用提供商标价；企业管理员可通过模型策略管理访问。\n- **意义**：这与 9 月 5 日收录的 OpenAI API“仅限部分组织”不同：Copilot 用户获得了更直接的多端入口。若当前套餐支持，可用真实长任务比较 Astra 与现用模型的完成质量、步骤数和成本，但不应仅凭官方内部测试结论迁移默认模型。\n- **置信度**：高（GitHub 官方公告，套餐、客户端、计费和管理员控制均明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #GPT6Astra #模型选择 #Agent\n\n## 今日结论\n\n- 达标素材：1 条\n- 本条发布于 2026-09-04，本次为延迟核验补录；它记录 Copilot 渠道的普遍可用性，不重复声称模型本身再次发布。\n\n## 备注\n\n- 未新增个人实践或行动卡；未修改 `growth/daily/`。\n",
+      "path": "growth/inbox/2026-09-07.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "education-inbox-2026-09-06.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-06（回溯补录）",
+      "date": "2026-09-06",
+      "period": "回溯补录",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-06（回溯补录）\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **对应日期**：2026-09-06\n- **实际抓取日期**：2026-09-07\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **检索结果**：回溯核验未发现发布于 2026-09-05 至 2026-09-06、且总评分达到 5/8 的新增官方事实。可见结果仍主要是既有 TOEFL 信息和加拿大 9 月 1 日生效的学签资金证明变化。\n- **处理原则**：因 9 月 6 日自动采集未落盘，本文件仅作次日回溯补录；不把 9 月 7 日抓取结果冒充 9 月 6 日实时采集。\n\n## 评分结果\n\n- 达标素材：0 条\n\n",
+      "path": "education/inbox/2026-09-06.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-06.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-06（回溯补录）",
+      "date": "2026-09-06",
+      "period": "回溯补录",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-09-06（回溯补录）\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **对应日期**：2026-09-06\n- **实际抓取日期**：2026-09-07\n- **已检查方向**：AI/编程技术、开发工具与效率方法。\n- **检索结果**：回溯核验未发现发布于 2026-09-05 至 2026-09-06、且总评分达到 5/8 的新增官方技术信号。OpenAI、GitHub、VS Code 与 Anthropic 可见更新均发布于 9 月 4 日或更早。\n- **处理原则**：因 9 月 6 日自动采集未落盘，本文件仅作次日回溯补录；不重复此前已保存的 GPT-6 Astra、VS Code 1.136 或 GitHub CLI 密钥变化。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 未修改 `growth/daily/`，未将外部信息冒充个人实践。\n\n",
+      "path": "growth/inbox/2026-09-06.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-09-05.md",
