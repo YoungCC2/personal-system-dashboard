@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-08 09:14",
-  "generatedAtIso": "2026-09-08T01:14:46.761Z",
+  "generatedAt": "2026-09-08 21:45",
+  "generatedAtIso": "2026-09-08T13:45:29.003Z",
   "latestReportDate": "2026-09-08",
-  "latestDailyDate": "2026-09-07",
+  "latestDailyDate": "2026-09-08",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 7,
     "growthWeekly": 7,
-    "educationDaily": 37,
-    "growthDaily": 35,
-    "latestSignals": 1,
+    "educationDaily": 38,
+    "growthDaily": 36,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-08.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-08",
+      "date": "2026-09-08",
+      "period": "2026-09-08",
+      "excerpt": "发布日期：2026-09-07",
+      "body": "# 教育行业素材｜2026-09-08\n\n## 1. IELTS 调研显示考生优先考虑广泛认可度与目的地灵活性\n\n- **来源**：[IELTS 官方：Recognition matters most as globally mobile test takers keep options open](https://ielts.org/news-and-insights/recognition-matters-most-as-globally-mobile-test-takers-keep-options-open-ielts-research-finds)\n- **发布日期**：2026-09-07\n- **抓取日期**：2026-09-08\n- **事实**：IELTS Voices 调研覆盖 165 个国家的 8,395 名英语考试考生和潜在考生。82% 的受访者优先考虑被尽可能广泛认可的考试；42% 的留学用途 IELTS 考生会考虑多个目的地；43% 更希望从政府批准的考试清单中选择，而只有 20% 偏好政府指定单一考试。89% 认为成功结果与最低价格同等或更加重要。\n- **意义**：留学和语言考试内容应把认可范围、目的地备选路径及结果把握度讲清楚，而不是只用低价或单一目的地吸引用户。该结果可用于设计咨询信息结构，但不能用于推断 IELTS 的市场份额。\n- **置信度**：中高（IELTS 官方原始调研，样本量和范围明确；但属于机构自有研究，存在品牌与自选择偏差）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#IELTS #留学选择 #考试认可度 #用户调研\n\n## 今日结论\n\n- 达标素材：1 条\n- 本条发布于 9 月 7 日，本次为次日核验收录，不表述为 9 月 8 日发布。\n- 同期检查教育政策、留学签证、托福、少儿英语及指定竞品官方入口，未发现第二条达到门槛的新变化；OpenAI K-12 活动为既有基础课程的重复场次，不保存。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-08.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-09-08.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-08",
+      "date": "2026-09-08",
+      "period": "2026-09-08",
+      "excerpt": "发布日期：2026-09-06",
+      "body": "# 成长外部信号素材｜2026-09-08\n\n## 1. OpenAI 披露编码代理正改变研究工作流，但复杂任务仍依赖人工引导\n\n- **来源**：[OpenAI：Research acceleration — The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/)\n- **发布日期**：2026-09-06\n- **抓取日期**：2026-09-08\n- **事实**：OpenAI 报告称，截至 8 月中旬，其研究组织按标准 8 小时工作日折算，每个人类工作日使用约 3.1 个代理工作日；实验次数与 Codex 采用率同时增长，代理任务也从代码和基础设施扩展到技术支持与监控运行。不过，高层规划在代理输出中仍占很小比例，复杂任务仍需要大量人工引导。官方同时说明这些指标属于早期内部测量，代理使用与研究进展之间的因果关系尚不能确定。\n- **意义**：真正可复制的效率方法不是简单增加代理数量，而是把决定、设计、构建、运行、分析、沟通拆开，为代理安排可验证的执行任务，并保留人工对优先级、结果质量和停止条件的判断。评估个人工作流时应记录任务成功率和人工介入次数，而不是只看 token 或运行时长。\n- **置信度**：中高（OpenAI 官方内部数据和方法说明；具备原始性，但属于单一机构自报，且因果关系未确立）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#编码代理 #研究工作流 #Codex #效率评估 #人机协作\n\n## 今日结论\n\n- 达标素材：1 条\n- 本条发布于 9 月 6 日，本次为延迟核验补录，不表述为今日发布。\n- GPT-6 Astra 发布及其 Copilot 可用性已在 9 月 5 日和 7 日收录，本次不重复保存；社区讨论不作为技术事实来源。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-08.md",
+      "actionCard": false,
+      "signalCount": 1
     },
     {
       "id": "education-weekly-2026-W37.md",
