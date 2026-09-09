@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-08 21:45",
-  "generatedAtIso": "2026-09-08T13:45:29.003Z",
+  "generatedAt": "2026-09-09 21:12",
+  "generatedAtIso": "2026-09-09T13:12:18.648Z",
   "latestReportDate": "2026-09-08",
-  "latestDailyDate": "2026-09-08",
+  "latestDailyDate": "2026-09-09",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 7,
     "growthWeekly": 7,
-    "educationDaily": 38,
-    "growthDaily": 36,
+    "educationDaily": 39,
+    "growthDaily": 37,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-09.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-09",
+      "date": "2026-09-09",
+      "period": "2026-09-09",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-09\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-09\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：教育部当日发布的基础教育报道主要回顾既有政策与进展，没有新增规则或执行节点；考试、签证和指定竞品官方入口未出现可确认的实质变化。OpenAI K-12 基础培训是既有课程的重复场次，也不构成行业产品变化。\n- **处理原则**：不把回顾性报道、活动场次、页面重新抓取或无明确变化日期的营销内容包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-09.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-09.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-09",
+      "date": "2026-09-09",
+      "period": "2026-09-09",
+      "excerpt": "发布日期：2026-09-08",
+      "body": "# 成长外部信号素材｜2026-09-09\n\n## 1. GitHub Copilot for JetBrains 增加企业托管沙箱策略\n\n- **来源**：[GitHub Changelog：Enterprise-managed sandbox in Copilot for JetBrains](https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/)\n- **发布日期**：2026-09-08\n- **抓取日期**：2026-09-09\n- **事实**：GitHub Copilot for JetBrains 的企业管理员现在可以集中控制沙箱是否启用、文件系统和网络访问、代理设置、开发工具与 macOS Keychain 访问等；企业限制优先于用户本地设置，并提供策略诊断入口。沙箱策略目前为公开预览，同次更新还允许通过 `/ide` 将 Copilot CLI 会话连接到 JetBrains 的选择、诊断和文件上下文。\n- **意义**：代理在 IDE 和终端间协作时，权限边界可以由组织统一设定并验证。采用该能力前应先在非关键项目确认策略确实生效，不能因为有沙箱名称就默认所有本地资源都已隔离。\n- **置信度**：高（GitHub 官方发布，能力范围、优先级与预览状态明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 1/2｜可行动性 1/2｜总分 6/8\n- **标签**：#GitHubCopilot #JetBrains #Sandbox #企业治理 #CLI\n\n## 2. Dependabot 可无 PAT 读取获授权的私有 GitHub Packages\n\n- **来源**：[GitHub Changelog：Automatic Dependabot access to GitHub-hosted registries](https://github.blog/changelog/2026-09-08-automatic-dependabot-access-to-github-hosted-registries/)\n- **发布日期**：2026-09-08\n- **抓取日期**：2026-09-09\n- **事实**：Dependabot 的 `GITHUB_TOKEN` 现在可请求 `packages: read`，访问 `*.pkg.github.com` 和 `ghcr.io` 中已通过 Manage Actions access 向仓库授予读取权限的私有包，不再需要单独配置个人访问令牌。显式注册表凭据和正常路由仍优先；该能力曾因 npm 路由冲突回滚，本次以回退认证方式重新启用。\n- **意义**：使用 GitHub Packages 的仓库可以减少长期 PAT 和密钥轮换负担，缩小依赖更新自动化的凭据暴露面。启用前仍需逐个包授予仓库只读权限，并确认没有依赖显式凭据的特殊路由。\n- **置信度**：高（GitHub 官方公告，权限条件、启用步骤和历史回滚原因明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#Dependabot #GitHubPackages #供应链安全 #凭据管理\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均发布于 9 月 8 日，本次为次日核验收录，不表述为 9 月 9 日发布。\n- VS Code 1.136 已在 9 月 4 日收录；社区反馈与仍在变化的 Insiders 说明不作为新的正式技术信号。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-09.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-08.md",
