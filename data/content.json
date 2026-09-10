@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-10 09:13",
-  "generatedAtIso": "2026-09-10T01:13:00.156Z",
+  "generatedAt": "2026-09-10 21:15",
+  "generatedAtIso": "2026-09-10T13:15:34.510Z",
   "latestReportDate": "2026-09-10",
-  "latestDailyDate": "2026-09-09",
+  "latestDailyDate": "2026-09-10",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 7,
     "growthWeekly": 8,
-    "educationDaily": 39,
-    "growthDaily": 37,
+    "educationDaily": 40,
+    "growthDaily": 38,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-10.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-10",
+      "date": "2026-09-10",
+      "period": "2026-09-10",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-10\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-10\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：当日可见内容主要为教师节祝贺、既有政策回顾和地方活动报道，没有新增政策规则、考试或签证执行节点。指定少儿英语竞品与上市教育公司官方入口也未确认到产品、价格、渠道或经营层面的实质变化。\n- **处理原则**：不把节日宣传、回顾性文章、活动场次或无明确变化日期的营销页面包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-10.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-10.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-10",
+      "date": "2026-09-10",
+      "period": "2026-09-10",
+      "excerpt": "发布日期：2026-09-09",
+      "body": "# 成长外部信号素材｜2026-09-10\n\n## 1. GitHub Copilot 企业版可集中控制代理操作权限\n\n- **来源**：[GitHub Changelog：Enterprise managed permissions for GitHub Copilot agent operations](https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/)\n- **发布日期**：2026-09-09\n- **抓取日期**：2026-09-10\n- **事实**：Copilot Business 和 Enterprise 管理员现在可集中设置代理操作为阻止、需要人工批准或无需提示，覆盖 shell 命令、文件读取与编辑以及网络域名。企业限制不能被用户或工作区设置、自动批准或既有保存批准削弱，还可按团队配置不同策略；该能力已在 Copilot App、CLI 和使用 Agent Host 的 VS Code 会话中正式可用。\n- **意义**：代理权限治理从单一沙箱进一步细化到具体操作和团队策略。对自动化系统而言，关键不是一次性授予宽权限，而是把读取、写入、网络和发布分别设置边界，并确保本地便利配置不能覆盖上层限制。\n- **置信度**：高（GitHub 官方公告，操作范围、优先级与适用产品明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #Agent #权限治理 #企业策略 #安全\n\n## 2. GitHub Rulesets 可阻止含未解决密钥告警的 PR 合并\n\n- **来源**：[GitHub Changelog：Block pull requests with exposed secrets from merging](https://github.blog/changelog/2026-09-09-block-pull-requests-with-exposed-secrets-from-merging/)\n- **发布日期**：2026-09-09\n- **抓取日期**：2026-09-10\n- **事实**：GitHub 仓库规则集新增 `Require secret scanning alerts are resolved` 规则，可要求 PR 头提交完成密钥扫描且该 PR 引入的密钥告警全部关闭，否则无绕过权限的开发者不能合并。规则默认为提供商模式，也可增加自定义或通用模式；目前面向 GitHub Secret Protection 或 GitHub Advanced Security 客户公开预览。\n- **意义**：这在 push protection 之外增加了合并层防线，可覆盖未启用推送阻断或通用模式的场景。公开部署仓库可据套餐能力评估启用，但不能假设公共仓库默认获得该付费预览能力。\n- **置信度**：高（GitHub 官方公告，阻断条件、配置入口、预览状态和套餐范围明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#GitHub #SecretScanning #Rulesets #供应链安全 #PR\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均发布于 9 月 9 日，本次为次日核验收录，不表述为 9 月 10 日发布。\n- OpenAI Academy 和 Forum 的当日课程与活动不构成新的产品或技术发布；社区问题不作为事实来源。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-10.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "growth-weekly-2026-W37.md",
