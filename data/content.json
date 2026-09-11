@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-10 21:15",
-  "generatedAtIso": "2026-09-10T13:15:34.510Z",
+  "generatedAt": "2026-09-11 23:17",
+  "generatedAtIso": "2026-09-11T15:17:02.965Z",
   "latestReportDate": "2026-09-10",
-  "latestDailyDate": "2026-09-10",
+  "latestDailyDate": "2026-09-11",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 7,
     "growthWeekly": 8,
-    "educationDaily": 40,
-    "growthDaily": 38,
+    "educationDaily": 41,
+    "growthDaily": 39,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-11.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-11",
+      "date": "2026-09-11",
+      "period": "2026-09-11",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-11\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-11\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：当日可见官方内容仍以教师节工作部署、既有政策回顾和宣传活动为主，未出现新的教育政策、考试规则或留学签证执行节点。指定竞品官方入口未确认到产品、价格、渠道、财务或组织层面的实质变化。\n- **处理原则**：不把节日专题、回顾性文章、旧通知重新曝光或无明确变化日期的营销页面包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-11.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-11.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-11",
+      "date": "2026-09-11",
+      "period": "2026-09-11",
+      "excerpt": "发布日期：2026-09-10",
+      "body": "# 成长外部信号素材｜2026-09-11\n\n## 1. GitHub Actions 缓存新增工作流与任务级最小权限控制\n\n- **来源**：[GitHub Changelog：Control GitHub Actions cache access with cache-mode](https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/)\n- **发布日期**：2026-09-10\n- **抓取日期**：2026-09-11\n- **事实**：GitHub Actions 新增正式可用的 `cache-mode`，可在工作流或任务级选择 `read`、`write`、`write-only` 或 `none`；任务级配置优先，且被调用的可复用工作流不能获得超过调用方授予的缓存权限。低信任事件如 `pull_request_target` 默认只读，若显式授予写权限，GitHub 会显示缓存投毒风险警告。该能力适用于所有 GitHub 套餐。\n- **意义**：缓存不再是隐含的全读写资源，可按事件信任级别收窄权限，降低不受信任 PR 污染后续可信构建的风险。使用 Actions 的仓库可先盘点哪些任务只需恢复缓存，避免无必要的写入权限。\n- **置信度**：高（GitHub 官方公告，模式语义、继承关系、默认值和适用范围明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubActions #缓存安全 #最小权限 #供应链安全\n\n## 2. GitHub Copilot 正式弃用 MAI-Code-1-Flash\n\n- **来源**：[GitHub Changelog：MAI-Code-1-Flash deprecated](https://github.blog/changelog/2026-09-10-mai-code-1-flash-deprecated/)\n- **发布日期**：2026-09-10\n- **抓取日期**：2026-09-11\n- **事实**：GitHub 已于 9 月 10 日在 Copilot Chat、内联编辑、Ask、Agent 模式和代码补全中弃用 MAI-Code-1-Flash，建议迁移到 MAI-Code-1.1-Flash。企业管理员可能需要先在模型策略中启用替代模型；无需手动移除旧模型。\n- **意义**：任何固定引用旧模型名的 Copilot 工作流、团队说明或默认策略都可能失效。实际使用该模型时应更新配置并确认替代模型已在选择器可用；未使用者无需操作。\n- **置信度**：高（GitHub 官方弃用公告，生效日期、范围和替代模型明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 1/2｜可行动性 2/2｜总分 7/8\n- **标签**：#GitHubCopilot #模型弃用 #迁移 #开发工具\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均发布于 9 月 10 日，本次为次日核验收录，不表述为 9 月 11 日发布。\n- 当日其余可见内容主要为社区讨论、活动或与当前方向相关度较低的平台更新，不保存。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-11.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-10.md",
