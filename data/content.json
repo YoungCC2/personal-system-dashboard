@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-11 23:17",
-  "generatedAtIso": "2026-09-11T15:17:02.965Z",
+  "generatedAt": "2026-09-12 21:11",
+  "generatedAtIso": "2026-09-12T13:11:14.146Z",
   "latestReportDate": "2026-09-10",
-  "latestDailyDate": "2026-09-11",
+  "latestDailyDate": "2026-09-12",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 7,
     "growthWeekly": 8,
-    "educationDaily": 41,
-    "growthDaily": 39,
+    "educationDaily": 42,
+    "growthDaily": 40,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-12.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-12",
+      "date": "2026-09-12",
+      "period": "2026-09-12",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-12\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-12\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：未确认到新的教育政策、考试规则或留学签证执行节点。IELTS 近期调研已于 9 月 8 日收录，上市教育公司 IR 与指定竞品官方入口未出现产品、价格、渠道、财务或组织层面的实质变化。\n- **处理原则**：不重复收录已有调研，不把周末低频更新、营销页面、活动宣传或无明确变化日期的内容包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-12.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-12.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-12",
+      "date": "2026-09-12",
+      "period": "2026-09-12",
+      "excerpt": "发布日期：2026-09-10",
+      "body": "# 成长外部信号素材｜2026-09-12\n\n## 1. OpenAI Agents API 进入公开测试\n\n- **来源**：[OpenAI Release Notes：Agents API public beta](https://openai.com/products/release-notes/)\n- **发布日期**：2026-09-10\n- **抓取日期**：2026-09-12\n- **事实**：OpenAI 发布 Agents API 公开测试版，由托管的 Codex harness 处理会话编排、上下文压缩与恢复；支持可跨轮次继续的持久会话、进度流式传输、工具和 MCP 服务器接入，并可使用 OpenAI 托管沙箱，或连接自有基础设施及受支持提供商的沙箱。\n- **意义**：构建长期运行的智能体时，可以减少自行维护会话状态、恢复机制和执行环境编排的工作。若后续开发需要跨轮次任务或受控工具执行，可用小型原型比较 Agents API 与现有 Responses/自建编排方案的复杂度和可观测性；当前处于公测，不宜未经验证直接替换生产链路。\n- **置信度**：高（OpenAI 官方发布说明，状态、核心能力与运行方式明确）\n- **评分**：新颖度 1/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 7/8\n- **标签**：#OpenAI #AgentsAPI #智能体开发 #MCP #开发工具\n\n## 2. OpenAI 项目 API 密钥支持到期日与最长生命周期策略\n\n- **来源**：[OpenAI Release Notes：Project API key expiration and maximum lifetime controls](https://openai.com/products/release-notes/)\n- **发布日期**：2026-09-10\n- **抓取日期**：2026-09-12\n- **事实**：OpenAI 项目 API 密钥现可在创建时设置到期日期；管理员还可在平台设置中为组织或项目强制规定最长密钥生命周期，使新建密钥必须在限制期内失效。该功能已正式可用。\n- **意义**：长期不轮换的静态密钥可被组织策略直接约束，降低泄露后无限期有效的风险。使用 OpenAI API 的项目可盘点无到期密钥，并把有效期、轮换和部署凭据更新纳入密钥治理流程；策略只约束新建密钥时，应另行确认既有密钥的迁移安排。\n- **置信度**：高（OpenAI 官方发布说明，功能状态和组织/项目级范围明确）\n- **评分**：新颖度 1/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 7/8\n- **标签**：#OpenAIAPI #密钥治理 #安全 #生命周期\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均发布于 9 月 10 日，本次为补充核验收录，不表述为 9 月 12 日发布。\n- 9 月 10 日其余已收录 GitHub 更新不重复保存；活动、社区讨论和相关度较低的产品变化不保存。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-12.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-11.md",
