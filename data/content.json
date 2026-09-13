@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-12 21:11",
-  "generatedAtIso": "2026-09-12T13:11:14.146Z",
+  "generatedAt": "2026-09-13 21:11",
+  "generatedAtIso": "2026-09-13T13:11:18.001Z",
   "latestReportDate": "2026-09-10",
-  "latestDailyDate": "2026-09-12",
+  "latestDailyDate": "2026-09-13",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 7,
     "growthWeekly": 8,
-    "educationDaily": 42,
-    "growthDaily": 40,
-    "latestSignals": 2,
+    "educationDaily": 43,
+    "growthDaily": 41,
+    "latestSignals": 1,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-13.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-13",
+      "date": "2026-09-13",
+      "period": "2026-09-13",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-13\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-13\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：当日未确认到新的教育政策、考试规则或留学签证执行节点。教育部近期可见内容主要为教师节和国家通用语言文字推广普及宣传周专题；指定竞品与上市教育公司官方入口未确认到产品、价格、渠道、财务或组织层面的实质变化。\n- **处理原则**：不把专题宣传、活动信息、旧内容重新曝光、营销页面或无明确变化日期的内容包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-13.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-13.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-13",
+      "date": "2026-09-13",
+      "period": "2026-09-13",
+      "excerpt": "发布日期：2026-09-11",
+      "body": "# 成长外部信号素材｜2026-09-13\n\n## 1. GitHub Copilot 代码审查增强自动收口与执行验证\n\n- **来源**：[GitHub Changelog：Auto-resolution and analysis updates in Copilot code review](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/)\n- **发布日期**：2026-09-11\n- **抓取日期**：2026-09-13\n- **事实**：Copilot 代码审查在重新审查时会自动关闭已被后续提交修复的评论，应用其修复建议时会生成与改动相符的提交信息。分析侧现可在 Copilot agent firewall 后使用 Copilot SDK 的完整 shell 工具集运行构建、测试、定向脚本并调用可用工具或 API；Lite effort 也改为由多个智能体汇总审查结果。GitHub 公布的实验数据显示，多智能体方案使高、中、低严重度评论的平均被处理数量分别提高 47%、31% 和 11%，审查成本约降低 8%。\n- **意义**：自动审查开始从静态评论向“运行验证—跟踪修复—关闭反馈”闭环靠近，可减少人工清理已失效评论的时间。但自动关闭依赖重新审查判断，shell 执行也不等于覆盖项目全部验证条件；实际使用时仍应保留必需测试、分支保护和人工批准。\n- **置信度**：高（GitHub 官方公告，功能行为、执行边界和实验数据明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #代码审查 #多智能体 #自动验证 #开发效率\n\n## 今日结论\n\n- 达标素材：1 条\n- GitHub 同日新增的 VS Code Agents 用量指标主要服务企业管理员，与当前个人实践场景相关度不足，未保存。\n- 周末未发现其他尚未收录且达到门槛的官方 AI、编程或效率工具变化。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-13.md",
+      "actionCard": false,
+      "signalCount": 1
     },
     {
       "id": "education-inbox-2026-09-12.md",
