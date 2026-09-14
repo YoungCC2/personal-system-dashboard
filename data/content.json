@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-09-13 21:11",
-  "generatedAtIso": "2026-09-13T13:11:18.001Z",
+  "generatedAt": "2026-09-14 21:12",
+  "generatedAtIso": "2026-09-14T13:12:09.944Z",
   "latestReportDate": "2026-09-10",
-  "latestDailyDate": "2026-09-13",
+  "latestDailyDate": "2026-09-14",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 37,
+    "isoWeek": 38,
     "monthLabel": "9月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 7,
     "growthWeekly": 8,
-    "educationDaily": 43,
-    "growthDaily": 41,
-    "latestSignals": 1,
+    "educationDaily": 44,
+    "growthDaily": 42,
+    "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-14.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-14",
+      "date": "2026-09-14",
+      "period": "2026-09-14",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-14\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-14\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：当日可见教育部内容主要为此前已发布的国家通用语言文字推广普及宣传周与近视防控宣传教育月安排，属于活动执行信息，未形成新的政策、考试或留学签证变化。指定竞品与上市教育公司官方入口未确认到产品、价格、渠道、财务或组织层面的实质更新。\n- **处理原则**：不把活动启动日当作新政策发布日期，不重复收录旧通知，也不保存营销页面、模糊版本说明或无可靠官方核验的竞品线索。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-14.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-14.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-14",
+      "date": "2026-09-14",
+      "period": "2026-09-14",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-09-14\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-14\n- **已检查方向**：AI 与编程技术、开发工具、软件供应链安全和效率方法。\n- **主要核验来源**：[OpenAI Release Notes](https://openai.com/products/release-notes/)、[GitHub Changelog](https://github.blog/changelog/)、[Apple Developer News](https://developer.apple.com/news/) 及官方开发文档与项目公告。\n- **检索结果**：GitHub 最新高相关更新仍为 9 月 11 日的 Copilot 代码审查增强，已于前一日收录；OpenAI 最新相关发布已在 9 月 12 日收录。Apple 近期 SDK、设备适配和商店提交信息与当前已知实践关联不足，未达到保存门槛。\n- **处理原则**：不重复保存已收录更新，不把产品活动、编辑性修订、旧版本页面或缺乏当前行动场景的常规发布作为成长信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-14.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-09-13.md",
