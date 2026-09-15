@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-15 09:11",
-  "generatedAtIso": "2026-09-15T01:11:52.137Z",
+  "generatedAt": "2026-09-15 21:12",
+  "generatedAtIso": "2026-09-15T13:12:26.029Z",
   "latestReportDate": "2026-09-15",
-  "latestDailyDate": "2026-09-14",
+  "latestDailyDate": "2026-09-15",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 8,
     "growthWeekly": 8,
-    "educationDaily": 44,
-    "growthDaily": 42,
-    "latestSignals": 0,
+    "educationDaily": 45,
+    "growthDaily": 43,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-15.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-15",
+      "date": "2026-09-15",
+      "period": "2026-09-15",
+      "excerpt": "发布日期：2026-07-31",
+      "body": "# 教育行业素材｜2026-09-15\n\n## 1. 出境入境中介服务备案与合规新规正式施行\n\n- **来源**：[中国政府网：国务院关于出境入境管理的规定](https://www.gov.cn/zhengce/content/202607/content_7077172.htm)\n- **发布日期**：2026-07-31\n- **生效日期**：2026-09-15\n- **抓取日期**：2026-09-15\n- **事实**：国务院令第 841 号《国务院关于出境入境管理的规定》今日施行。接受出境入境人员委托、提供政策咨询、证件代办或手续办理等中介服务的机构和人员实行备案管理；新设机构应自设立之日起 15 日内备案，规定施行前已从业者应在施行之日起 90 日内办理。机构需具备专业人员、相适应的资金和场所，以及人员管理、教育培训、资料保存、数据安全和合规管理制度；不得发布虚假或误导性信息、协助提供虚假材料、泄露个人信息或超出备案范围经营。境外企业、机构不得在中国境内提供此类中介服务。\n- **意义**：留学咨询机构若实际提供签证政策咨询、材料或手续代办，可能进入该规定所称出境入境中介服务范围，需要尽快核对备案义务、服务边界、人员与数据制度以及对外宣传。是否适用于某项具体留学服务仍应结合后续备案办法和主管部门口径判断，不能仅凭业务名称自行排除。\n- **置信度**：高（国务院正式行政法规，发布日期、生效日、服务定义、备案期限与禁止行为明确；具体业务适用边界仍需主管部门解释）\n- **评分**：新颖度 1/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 7/8\n- **标签**：#留学服务 #出境入境 #中介备案 #合规 #数据安全\n\n## 今日结论\n\n- 达标素材：1 条\n- 本条法规发布于 7 月 31 日，今日是正式施行节点；不表述为今日发布。\n- 同期检查教育政策、语言考试、主要留学目的地签证与指定竞品官方入口，未发现第二条达到门槛的新变化。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-15.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-09-15.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-15",
+      "date": "2026-09-15",
+      "period": "2026-09-15",
+      "excerpt": "发布日期：2026-09-14",
+      "body": "# 成长外部信号素材｜2026-09-15\n\n## 1. GitHub Copilot 自动选模新增成本与质量偏好档位\n\n- **来源**：[GitHub Changelog：Configure cost and quality in Copilot auto model selection](https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/)\n- **发布日期**：2026-09-14\n- **抓取日期**：2026-09-15\n- **事实**：GitHub Copilot 的自动模型选择新增 `Efficiency`、`Balance` 和 `Intelligence` 三档，分别优先控制成本、综合权衡成本/质量/延迟，以及优先复杂任务质量。三档使用相同的可用模型集合，系统仍会逐条判断提示并选择模型，因此“智能”档处理简单任务时也可能使用小模型。功能正逐步推送到 Visual Studio Code、Copilot CLI 和 GitHub Copilot app；费用按实际选中的模型计算，付费订阅用户通过自动选择产生的用量继续享受 10% 折扣。\n- **意义**：自动选模不再只有单一黑盒策略，可以按任务类型预先设定取舍。日常编码可从 Balance 开始，批量低风险任务偏向 Efficiency，复杂调试或架构任务再切换 Intelligence；但档位不是固定模型或固定价格，评估成本时仍应查看实际模型和用量。\n- **置信度**：高（GitHub 官方发布，档位语义、模型选择方式、发布范围与计费方式明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #自动选模 #成本控制 #开发效率\n\n## 今日结论\n\n- 达标素材：1 条\n- 其余可见内容主要为已收录的前期更新、活动或与当前开发实践关联较弱的公告，不保存。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-15.md",
+      "actionCard": false,
+      "signalCount": 1
     },
     {
       "id": "education-weekly-2026-W38.md",
