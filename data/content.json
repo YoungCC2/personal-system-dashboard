@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-15 21:12",
-  "generatedAtIso": "2026-09-15T13:12:26.029Z",
+  "generatedAt": "2026-09-16 21:11",
+  "generatedAtIso": "2026-09-16T13:11:30.819Z",
   "latestReportDate": "2026-09-15",
-  "latestDailyDate": "2026-09-15",
+  "latestDailyDate": "2026-09-16",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 8,
     "growthWeekly": 8,
-    "educationDaily": 45,
-    "growthDaily": 43,
-    "latestSignals": 2,
+    "educationDaily": 46,
+    "growthDaily": 44,
+    "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-16.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-16",
+      "date": "2026-09-16",
+      "period": "2026-09-16",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-16\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-16\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：当日可见新增内容主要为应用语言学会议报道与既有教育政策、活动信息，未形成新的政策规则、考试安排或留学签证执行节点。前一日已收录出境入境中介服务新规的施行节点；指定竞品官方入口未确认到产品、价格、渠道、财务或组织层面的实质变化。\n- **处理原则**：不重复保存已收录法规，不把学术会议、活动宣传、旧内容重新曝光或无明确变化日期的营销页面包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-16.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-16.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-16",
+      "date": "2026-09-16",
+      "period": "2026-09-16",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-09-16\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-16\n- **已检查方向**：AI 与编程技术、开发工具、软件供应链安全和效率方法。\n- **主要核验来源**：[OpenAI Release Notes](https://openai.com/products/release-notes/)、[GitHub Changelog](https://github.blog/changelog/)、Anthropic 官方新闻与工程页面，以及官方开发文档和项目公告。\n- **检索结果**：GitHub 最新高相关产品更新仍为 9 月 14 日的 Copilot 自动选模档位，已于前一日收录；OpenAI 与 Anthropic 未确认到新的高相关产品或开发工具发布。可见新增内容主要为企业部署网络研讨会和线下培训活动，不构成产品能力变化。\n- **处理原则**：不重复保存已有更新，不把活动页面、营销课程、旧公告重新抓取或缺乏当前行动价值的内容作为成长信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-16.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-09-15.md",
