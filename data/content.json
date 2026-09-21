@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-09-20 23:37",
-  "generatedAtIso": "2026-09-20T15:37:55.500Z",
+  "generatedAt": "2026-09-21 21:11",
+  "generatedAtIso": "2026-09-21T13:11:32.313Z",
   "latestReportDate": "2026-09-17",
-  "latestDailyDate": "2026-09-20",
+  "latestDailyDate": "2026-09-21",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 38,
+    "isoWeek": 39,
     "monthLabel": "9月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 8,
     "growthWeekly": 9,
-    "educationDaily": 47,
-    "growthDaily": 45,
-    "latestSignals": 2,
+    "educationDaily": 48,
+    "growthDaily": 46,
+    "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-21.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-21",
+      "date": "2026-09-21",
+      "period": "2026-09-21",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-21\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-21\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：未确认到新的教育政策、考试规则、留学签证执行节点，或指定竞品在产品、价格、渠道、财务和组织层面的实质变化。近期可见内容仍以教育改革成效述评、活动宣传和既有考试安全科普为主。\n- **处理原则**：不把工作综述、活动宣传、安全科普、旧内容重新曝光或无明确变化日期的营销页面包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-21.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-21.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-21",
+      "date": "2026-09-21",
+      "period": "2026-09-21",
+      "excerpt": "今日无重大更新。",
+      "body": "# 成长外部信号素材｜2026-09-21\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-21\n- **已检查方向**：AI 与编程技术、开发工具、软件供应链安全和效率方法。\n- **主要核验来源**：[OpenAI 官方新闻与开发者文档](https://openai.com/news/)、[GitHub Changelog](https://github.blog/changelog/)，以及官方发布、原始文档和项目公告。\n- **检索结果**：GitHub 最新高相关变化仍是 9 月 17—18 日发布的 Actions 执行保护与 npm 暂存发布令牌，已于前一日收录；OpenAI 可见的 Agents API 等相关更新也已进入既有素材与周报。未确认到新的、尚未收录且具有当前行动价值的开发工具变化。\n- **处理原则**：不重复保存已有更新，不把开发者社区话题、活动页面、营销内容或旧公告重新曝光作为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-21.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-09-20.md",
