@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-22 09:10",
-  "generatedAtIso": "2026-09-22T01:10:52.602Z",
+  "generatedAt": "2026-09-22 21:11",
+  "generatedAtIso": "2026-09-22T13:11:49.246Z",
   "latestReportDate": "2026-09-22",
-  "latestDailyDate": "2026-09-21",
+  "latestDailyDate": "2026-09-22",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 9,
     "growthWeekly": 9,
-    "educationDaily": 48,
-    "growthDaily": 46,
-    "latestSignals": 0,
+    "educationDaily": 49,
+    "growthDaily": 47,
+    "latestSignals": 1,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-22.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-22",
+      "date": "2026-09-22",
+      "period": "2026-09-22",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-22\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-22\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：未确认到新的教育政策、考试规则、留学签证执行节点，或指定竞品在产品、价格、渠道、财务及组织方面的实质变化。搜索可见的教育部内容主要为既有简报与政策材料，不构成今日新信号。\n- **处理原则**：不把旧文档重新曝光、活动宣传、搜索摘要或无明确变化日期的营销页面包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-22.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-22.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-22",
+      "date": "2026-09-22",
+      "period": "2026-09-22",
+      "excerpt": "发布日期：2026-09-21",
+      "body": "# 成长外部信号素材｜2026-09-22\n\n## 1. GitHub Copilot 开始提供 Grok 4.7 模型\n\n- **来源**：[GitHub Changelog：Grok 4.7 is now available in GitHub Copilot](https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/)\n- **发布日期**：2026-09-21\n- **抓取日期**：2026-09-22\n- **事实**：GitHub 宣布 Grok 4.7 正逐步加入 Copilot 的模型选择器，覆盖 Pro、Pro+、Max、Business 和 Enterprise 计划，以及 VS Code、Visual Studio、Copilot CLI、云端智能体、Copilot app、JetBrains、Xcode 和 Eclipse 等入口。用量按提供方公开定价计费；Business 和 Enterprise 管理员可通过模型策略管理访问。\n- **意义**：使用 Copilot 处理多步编程任务时多了一个可选模型，但官方公告未提供与现有模型的可比实测结果。若账户已开放，可在同一小型、可验证任务上比较正确率、耗时与实际费用，再决定是否纳入常用模型；不能仅凭“适合复杂任务”的定位认定其更优。\n- **置信度**：高（GitHub 官方发布，覆盖计划、入口和计费方式明确；性能优劣未验证）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#GitHubCopilot #模型选择 #编程智能体 #成本评估\n\n## 今日结论\n\n- 达标素材：1 条\n- 其他可见更新主要为 GitHub 拉取请求列表界面改版及企业级凭证库存导出；当前关联度或行动价值不足，不保存。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-22.md",
+      "actionCard": false,
+      "signalCount": 1
     },
     {
       "id": "education-weekly-2026-W39.md",
