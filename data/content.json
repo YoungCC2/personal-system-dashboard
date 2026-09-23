@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-22 21:11",
-  "generatedAtIso": "2026-09-22T13:11:49.246Z",
+  "generatedAt": "2026-09-23 21:33",
+  "generatedAtIso": "2026-09-23T13:33:47.985Z",
   "latestReportDate": "2026-09-22",
-  "latestDailyDate": "2026-09-22",
+  "latestDailyDate": "2026-09-23",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 9,
     "growthWeekly": 9,
-    "educationDaily": 49,
-    "growthDaily": 47,
-    "latestSignals": 1,
+    "educationDaily": 50,
+    "growthDaily": 48,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-23.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-23",
+      "date": "2026-09-23",
+      "period": "2026-09-23",
+      "excerpt": "今日无重大更新。",
+      "body": "# 教育行业素材｜2026-09-23\n\n## 今日结论\n\n今日无重大更新。\n\n## 筛选说明\n\n- **抓取日期**：2026-09-23\n- **已检查方向**：教育政策、教培、留学签证、托福/雅思、少儿英语与指定竞品。\n- **主要核验来源**：[教育部](https://www.moe.gov.cn/)、[国务院](https://www.gov.cn/)、[IELTS](https://ielts.org/news-and-insights)、[ETS TOEFL](https://www.ets.org/toefl.html)，以及指定竞品官网和上市教育公司 IR。\n- **检索结果**：未确认到新的教育政策、考试规则、留学签证执行节点，或指定竞品在产品、价格、渠道、财务及组织方面的实质变化。可见结果主要为旧政策材料、招聘附件和活动信息，不构成今日新信号。\n- **处理原则**：不把旧文档重新曝光、活动宣传、搜索摘要或无明确变化日期的营销页面包装为新信号。\n\n## 评分结果\n\n- 达标素材：0 条\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-23.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-23.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-23",
+      "date": "2026-09-23",
+      "period": "2026-09-23",
+      "excerpt": "发布日期：2026-09-22",
+      "body": "# 成长外部信号素材｜2026-09-23\n\n## 1. GitHub Copilot 新增 GPT-6 Sol 与 GPT-6 Luna\n\n- **来源**：[GitHub Changelog：OpenAI’s GPT-6 Sol and GPT-6 Luna now available](https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/)\n- **发布日期**：2026-09-22\n- **抓取日期**：2026-09-23\n- **事实**：GitHub Copilot 正逐步加入 GPT-6 Sol 与 GPT-6 Luna。官方将 Sol 定位为适合交互式和智能体编程、强调多步验证的均衡模型；Luna 定位为小型快速任务的轻量、低成本选项。Sol 面向 Pro+、Max、Business 和 Enterprise，Luna 还覆盖 Pro；两者支持编辑器、Copilot CLI、云端智能体、Copilot app、GitHub 网页和移动端等入口，并按用量计费。\n- **意义**：同一 Copilot 工作流可以按任务复杂度在均衡能力和低成本之间选择，但官方定位不是独立性能证据。实际采用前应以一组可验证任务比较正确率、耗时和费用，避免仅凭型号切换常用模型。\n- **置信度**：高（GitHub 官方发布，模型定位、计划范围、入口和计费方式明确；实际性能尚未独立验证）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #GPT6Sol #GPT6Luna #模型选择 #成本控制\n\n## 2. GitHub Copilot app 支持用 OpenTelemetry 观测智能体执行\n\n- **来源**：[GitHub Changelog：OpenTelemetry in the GitHub Copilot app](https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/)\n- **发布日期**：2026-09-22\n- **抓取日期**：2026-09-23\n- **事实**：GitHub Copilot app 可通过企业托管设置配置 OpenTelemetry，把智能体会话、模型请求和工具调用等活动发送至兼容的监控系统。管理员可在 `managed-settings.json` 中配置 `telemetry` 和接收端点；提示词与响应内容默认不导出，启用前仍需检查内容采集设置。\n- **意义**：企业使用编程智能体时可以从聊天记录之外获得逐步追踪和集中观测，用于分析性能与调查异常。部署时应先明确遥测接收端、数据保留与内容采集边界，并以默认不采集提示词和响应为起点。\n- **置信度**：高（GitHub 官方发布，配置入口、观测范围和默认内容边界明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#GitHubCopilot #OpenTelemetry #智能体观测 #企业治理\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均来自 GitHub 官方发布，分别涉及模型选择和智能体可观测性；其余模型或客户端更新未继续扩充，避免同日同类信号过载。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-23.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-22.md",
