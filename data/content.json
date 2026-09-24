@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-24 09:11",
-  "generatedAtIso": "2026-09-24T01:11:30.102Z",
+  "generatedAt": "2026-09-24 21:13",
+  "generatedAtIso": "2026-09-24T13:13:11.435Z",
   "latestReportDate": "2026-09-24",
-  "latestDailyDate": "2026-09-23",
+  "latestDailyDate": "2026-09-24",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 9,
     "growthWeekly": 10,
-    "educationDaily": 50,
-    "growthDaily": 48,
-    "latestSignals": 2,
+    "educationDaily": 51,
+    "growthDaily": 49,
+    "latestSignals": 3,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-24.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-24",
+      "date": "2026-09-24",
+      "period": "2026-09-24",
+      "excerpt": "发布日期：2026-09-24（发布会于 2026-09-23 举行；规划于 2026-06-22 印发）",
+      "body": "# 教育行业素材｜2026-09-24\n\n## 1. 教育“十五五”实施重点进一步明确人口适配与优本扩容\n\n- **来源**：[教育部：中国教育报解读国新办教育主题发布会](https://www.moe.gov.cn/jyb_xwfb/s5147/202609/t20260924_1451831.html)、[国务院《教育发展“十五五”规划》原文](https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/202606/t20260629_1442045.html)\n- **发布日期**：2026-09-24（发布会于 2026-09-23 举行；规划于 2026-06-22 印发）\n- **抓取日期**：2026-09-24\n- **事实**：教育部在国新办发布会上说明“十五五”教育实施重点：建立健全学龄人口监测预警机制，按人口流动调配学位、师资和学校资源，增加完全中学和十二年一贯制学校供给，并因地制宜推进小班化教学；高等教育方面提出“双一流”高校本科招生数增加 10 万人以上，同时强调扩容要与结构优化和质量提升同步推进。发布会还提出完善覆盖全学段、贯通校内外的研学课程与安全保障体系。\n- **意义**：教育供给侧的可观察变量将更具体地落在“人口—学位—师资”动态配置、优质本科扩容和实践课程体系上。教培与教育产品判断可关注人口净流入地区、县中与完全中学扩容、研学课程标准化等后续执行文件，但不能把发布会目标直接当成已完成结果或市场需求规模。\n- **置信度**：高（教育部发布会信息与国务院规划原文相互印证；具体地方执行节奏仍待观察）\n- **评分**：新颖度 1/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 7/8\n- **标签**：#十五五教育 #学龄人口 #教育资源配置 #优本扩容 #研学实践\n\n## 今日结论\n\n- 达标素材：1 条\n- 指定竞品、语言考试与留学签证方向未确认到第二条达到门槛的新变化。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-24.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-09-24.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-24",
+      "date": "2026-09-24",
+      "period": "2026-09-24",
+      "excerpt": "发布日期：2026-09-23",
+      "body": "# 成长外部信号素材｜2026-09-24\n\n## 1. GitHub Copilot app 推出按项目配置的本地沙箱\n\n- **来源**：[GitHub Changelog：Local sandboxing in the GitHub Copilot app](https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/)\n- **发布日期**：2026-09-23\n- **抓取日期**：2026-09-24\n- **事实**：GitHub Copilot app 的本地仓库和工作树会话可按项目启用沙箱，分别配置文件系统额外读写、只读与拒绝目录、外网与本地网络，以及 Git 和 GitHub CLI 凭据。企业托管设置可以进一步收紧策略；若操作系统无法执行请求的策略，沙箱 shell 会报错而不是降级为无沙箱运行。该功能默认关闭、处于公开预览，只对新会话或重启后的会话生效，且与 Copilot CLI、云端及远程会话的沙箱分别配置。\n- **意义**：本地编程智能体的安全边界可以从临时确认提升为项目级默认策略。启用时应从最小文件、网络和凭据访问开始，并验证失败时是否真正阻止执行；也要避免误以为 app 的配置会自动覆盖 CLI、云端或远程环境。\n- **置信度**：高（GitHub 官方发布，配置范围、失败行为和适用边界明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #本地沙箱 #最小权限 #智能体安全\n\n## 2. GitHub Actions 已停止提供 Node 20 运行时\n\n- **来源**：[GitHub Changelog：Node 20 is no longer available in GitHub Actions](https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/)\n- **发布日期**：2026-09-23\n- **抓取日期**：2026-09-24\n- **事实**：GitHub Actions runner 已不再提供 Node 20，JavaScript actions 现在使用 Node 24，临时环境变量 `ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION` 也不再有效。action 维护者需将 `runs.using` 更新为 `node24` 并发布新版本，使用者需升级到支持 Node 24 的 action 版本。Node 24 不兼容 macOS 13.4 及更早版本，也不正式支持 ARM32，相应自托管 runner 不再受支持。\n- **意义**：依赖旧版 JavaScript action 或旧自托管 runner 的工作流可能直接失败。维护仓库时应检查 action 版本与自托管 runner 平台，优先升级依赖和系统，不再依赖已移除的临时绕过开关。\n- **置信度**：高（GitHub 官方最终通知，迁移目标与不兼容范围明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubActions #Node24 #兼容性 #CI迁移\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均为可直接影响智能体本地权限或 CI 兼容性的官方变化；未继续扩充同日低相关更新。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-24.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "growth-weekly-2026-W39.md",
