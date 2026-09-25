@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-24 21:13",
-  "generatedAtIso": "2026-09-24T13:13:11.435Z",
+  "generatedAt": "2026-09-26 01:01",
+  "generatedAtIso": "2026-09-25T17:01:01.925Z",
   "latestReportDate": "2026-09-24",
-  "latestDailyDate": "2026-09-24",
+  "latestDailyDate": "2026-09-25",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 9,
     "growthWeekly": 10,
-    "educationDaily": 51,
-    "growthDaily": 49,
-    "latestSignals": 3,
+    "educationDaily": 52,
+    "growthDaily": 50,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-25.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-25",
+      "date": "2026-09-25",
+      "period": "2026-09-25",
+      "excerpt": "已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-09-25\n\n## 今日无重大更新\n\n- 已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较 2026-09-24 已收录信息新增、且综合评分达到 5 分的实质变化；不重复收录昨日的教育“十五五”实施信号。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入周报候选池的新事实。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-25.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-25.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-25",
+      "date": "2026-09-25",
+      "period": "2026-09-25",
+      "excerpt": "发布日期：2026-09-24",
+      "body": "# 成长外部信号素材｜2026-09-25\n\n## 1. GitHub 调整企业 Copilot 功能的默认启用策略\n\n- **来源**：[GitHub Changelog：Default Enablement of Copilot Features for Copilot Business and Enterprise](https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/)\n- **发布日期**：2026-09-24\n- **抓取日期**：2026-09-25\n- **事实**：GitHub 为 Copilot Business 与 Enterprise 的符合条件正式功能和受支持客户端引入新的全局默认策略，企业管理员可在 28 天配置窗口内选择启用、禁用或交由组织决定；该策略将于 2026-10-22 生效。适用范围包括符合条件的功能与客户端、Copilot Code Review 以及 Copilot 中的 MCP servers。管理员已经对具体功能作出的显式选择会被保留，预览功能仍保持选择加入。\n- **意义**：企业不能再只依赖旧的隐含默认值管理 Copilot 能力。使用企业版时，应在生效日前盘点 Code Review、MCP 与客户端权限，明确哪些能力由企业统一控制、哪些下放组织，并记录显式决策以避免默认策略改变后意外开放或关闭。\n- **置信度**：高（GitHub 官方公告，生效日期、控制项和保留规则明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #企业治理 #MCP #权限策略\n\n## 2. GitHub 为高影响操作增加在场证明策略\n\n- **来源**：[GitHub Changelog：Require proof of presence for high-impact actions](https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/)\n- **发布日期**：2026-09-24\n- **抓取日期**：2026-09-25\n- **事实**：GitHub 面向使用 Microsoft Entra ID、通过 SAML 或 OIDC 登录的 Enterprise Managed Users 企业推出公开预览，可在创建令牌、编辑 webhook、更改组织安全设置或查看恢复码等高影响操作前，要求用户返回身份提供商完成交互式重新认证或多因素认证；不满足策略时操作会被阻止。成功验证后浏览器会话有效 2 小时，合并拉取请求的支持计划后续加入。\n- **意义**：这一机制把“已登录”与“此刻由本人执行敏感操作”分开，可降低会话 Cookie、令牌被盗或自动化代理越权继续操作的风险。适用企业可先在高风险管理动作中试点，并结合身份提供商条件访问策略验证阻断与恢复流程。\n- **置信度**：高（GitHub 官方公告，适用身份体系、保护动作和会话窗口明确；当前仍为公开预览）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#GitHubEnterprise #身份安全 #MFA #最小权限\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均来自 GitHub 官方公告，分别涉及 Copilot 企业治理和高影响操作的身份安全控制。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-25.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-24.md",
