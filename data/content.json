@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-26 01:01",
-  "generatedAtIso": "2026-09-25T17:01:01.925Z",
+  "generatedAt": "2026-09-26 21:11",
+  "generatedAtIso": "2026-09-26T13:11:04.662Z",
   "latestReportDate": "2026-09-24",
-  "latestDailyDate": "2026-09-25",
+  "latestDailyDate": "2026-09-26",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 9,
     "growthWeekly": 10,
-    "educationDaily": 52,
-    "growthDaily": 50,
+    "educationDaily": 53,
+    "growthDaily": 51,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-26.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-26",
+      "date": "2026-09-26",
+      "period": "2026-09-26",
+      "excerpt": "已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-09-26\n\n## 今日无重大更新\n\n- 已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；教育部近期内容仍以既有政策解读和专题回顾为主，语言考试与指定竞品也未确认到新的规则、产品、价格、渠道或财务变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入周报候选池的新事实。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-26.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-26.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-26",
+      "date": "2026-09-26",
+      "period": "2026-09-26",
+      "excerpt": "发布日期：2026-09-25",
+      "body": "# 成长外部信号素材｜2026-09-26\n\n## 1. GitHub Copilot 扩展 Slack 与 Teams 中的上下文和任务控制\n\n- **来源**：[GitHub Changelog：Updates to GitHub Copilot for Slack and Microsoft Teams](https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/)\n- **发布日期**：2026-09-25\n- **抓取日期**：2026-09-26\n- **事实**：GitHub Copilot 在 Slack 中新增对受支持文件、附件和消息链接的上下文读取，在 Microsoft Teams 中可使用内联图片、转发消息以及频道和线程历史。创建 GitHub 工作项前会检查相似 issue，并保留来源对话与生成结果之间的链接；用户还可在对话中切换模型，Slack 可设置默认负责人和仓库。GitHub 同时改进了长任务状态、断线恢复和仓库切换安全，避免已被替代的会话继续操作旧仓库。该功能面向 Copilot Business 与 Enterprise 组织公开预览，使用量计入现有权益和云端智能体预算。\n- **意义**：团队对话到代码任务的链路正在从“复制背景后手工建单”变成可追溯的代理工作流。试用时应先限定默认仓库、负责人和云端智能体策略，并检查附件、线程历史和来源链接是否按预期进入上下文，避免跨仓库或敏感信息误用。\n- **置信度**：高（GitHub 官方公告，功能范围、权限前置条件和可用计划明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #Slack #MicrosoftTeams #智能体工作流 #可追溯性\n\n## 2. GitHub Actions 大查询不再返回精确总数\n\n- **来源**：[GitHub Changelog：Changes to query results in the GitHub Actions API and UI](https://github.blog/changelog/2026-09-25-changes-to-query-results-in-the-github-actions-api-and-ui/)\n- **发布日期**：2026-09-25\n- **抓取日期**：2026-09-26\n- **事实**：GitHub Actions API 与界面按工作流、事件、状态、分支或操作者查询运行记录时，仍最多分页返回 1,000 条；匹配记录超过 2,500 条时，总数将显示为“2,500+”，不再尝试给出精确数字。GitHub 表示旧的大范围查询容易超时并返回不完整计数，新行为正在 github.com 与 GitHub Enterprise Cloud 推出。\n- **意义**：依赖精确总数或一次性扫描大量工作流记录的脚本、报表和审计逻辑可能产生错误判断。相关集成应改用日期范围等更窄过滤条件分段查询，并避免把“2,500+”当作可计算的精确值。\n- **置信度**：高（GitHub 官方公告，阈值、分页上限和迁移方式明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 1/2｜可行动性 1/2｜总分 6/8\n- **标签**：#GitHubActions #API变更 #自动化脚本 #数据准确性\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均来自 GitHub 官方公告，分别影响协作型智能体工作流和 Actions 数据查询兼容性。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-26.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-25.md",
