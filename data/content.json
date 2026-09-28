@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-09-27 23:18",
-  "generatedAtIso": "2026-09-27T15:18:48.929Z",
+  "generatedAt": "2026-09-28 21:11",
+  "generatedAtIso": "2026-09-28T13:11:45.264Z",
   "latestReportDate": "2026-09-24",
-  "latestDailyDate": "2026-09-27",
+  "latestDailyDate": "2026-09-28",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 39,
+    "isoWeek": 40,
     "monthLabel": "9月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 9,
     "growthWeekly": 10,
-    "educationDaily": 54,
-    "growthDaily": 52,
+    "educationDaily": 55,
+    "growthDaily": 53,
     "latestSignals": 1,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-28.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-28",
+      "date": "2026-09-28",
+      "period": "2026-09-28",
+      "excerpt": "已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-09-28\n\n## 今日无重大更新\n\n- 已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；教育部最新公开动态仍集中在 9 月 24 日及此前，语言考试和指定竞品也未确认到新的规则、产品、价格、渠道或财务变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入周报候选池的新事实。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-28.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-28.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-28",
+      "date": "2026-09-28",
+      "period": "2026-09-28",
+      "excerpt": "发布日期：2026-08-28",
+      "body": "# 成长外部信号素材｜2026-09-28\n\n## 1. GitHub Copilot 统一体验与代码审查默认值进入最早生效窗口\n\n- **来源**：[GitHub Changelog：Upcoming changes to GitHub Copilot policies and billing](https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/)\n- **发布日期**：2026-08-28\n- **抓取日期**：2026-09-28\n- **事实**：GitHub 此前公告，最早自 2026 年 9 月 28 日起，将 github.com Copilot Chat、GitHub Mobile 中的 Copilot Chat 与 Copilot cloud agent 合并为统一体验和统一策略，并默认启用；github.com 上的 Copilot 将迁移到 agent sessions，聊天数据保留期由 28 天变为账号生命周期。与此同时，Copilot code review 的 `Default` 审查强度将从 Lite 改为 Balanced；已显式选择 Lite 的组织或仓库不会被自动切换。公告只给出“最早自 9 月 28 日”的窗口，未在本次检查中确认所有账号均已完成上线。\n- **意义**：这是权限、数据保留和成本/质量默认值的组合变化，不能仅视为界面升级。使用 GitHub Copilot 的个人或组织应核对统一策略、会话保留预期和 code review 强度；若需保持 Lite，应显式配置，若对长期保存对话敏感，则应先确认数据治理要求再启用统一体验。\n- **置信度**：高（GitHub 官方提前公告；具体账号的实际上线时间仍可能分批）\n- **评分**：新颖度 1/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 7/8\n- **标签**：#GitHubCopilot #策略治理 #数据保留 #代码审查 #默认值变更\n\n## 今日结论\n\n- 达标素材：1 条\n- 这是此前公告进入最早生效窗口后的时点提醒；未把尚未确认的分批上线状态写成已全面生效。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-28.md",
+      "actionCard": false,
+      "signalCount": 1
     },
     {
       "id": "education-inbox-2026-09-27.md",
