@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-29 09:12",
-  "generatedAtIso": "2026-09-29T01:12:43.632Z",
+  "generatedAt": "2026-09-29 21:11",
+  "generatedAtIso": "2026-09-29T13:11:44.827Z",
   "latestReportDate": "2026-09-29",
-  "latestDailyDate": "2026-09-28",
+  "latestDailyDate": "2026-09-29",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 10,
     "growthWeekly": 10,
-    "educationDaily": 55,
-    "growthDaily": 53,
-    "latestSignals": 1,
+    "educationDaily": 56,
+    "growthDaily": 54,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-29.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-29",
+      "date": "2026-09-29",
+      "period": "2026-09-29",
+      "excerpt": "已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-09-29\n\n## 今日无重大更新\n\n- 已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；语言考试、留学签证与指定竞品未确认到新的规则、产品、价格、渠道、财务或组织变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入下一期周报候选池的新事实。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-29.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-29.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-29",
+      "date": "2026-09-29",
+      "period": "2026-09-29",
+      "excerpt": "发布日期：2026-09-28",
+      "body": "# 成长外部信号素材｜2026-09-29\n\n## 1. GitHub 提前执行自托管 runner 最低版本限制\n\n- **来源**：[GitHub Changelog：Self-hosted runner version enforcement date has moved](https://github.blog/changelog/2026-09-28-self-hosted-runner-version-enforcement-date-has-moved/)\n- **发布日期**：2026-09-28\n- **抓取日期**：2026-09-29\n- **事实**：GitHub Enterprise Cloud 的自托管 Actions runner 最低版本限制于 9 月 28 日开始发布，并从 9 月 29 日全面执行。低于 `2.329.0` 的 runner 无法注册或重新注册；低于作业执行最低版本的既有 runner 即使已经注册，也会停止运行工作流。该变化仅影响 GitHub Enterprise Cloud；GitHub Enterprise Server 不受影响，Data Residency 环境已于 7 月 31 日开始执行。\n- **意义**：仍使用旧 runner 的企业工作流可能直接中断。维护者应立即盘点 runner 版本、升级镜像或主机，并可使用 GitHub 提供的 runner version deprecations REST API 建立版本临期告警，避免以后再次依赖人工检查。\n- **置信度**：高（GitHub 官方最终通知，版本阈值、执行日期和影响范围明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubActions #SelfHostedRunner #版本兼容 #CI运维\n\n## 2. Claude Sonnet 5.5 在 GitHub Copilot 中正式可用\n\n- **来源**：[GitHub Changelog：Claude Sonnet 5.5 in GitHub Copilot](https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot/)\n- **发布日期**：2026-09-28\n- **抓取日期**：2026-09-29\n- **事实**：Claude Sonnet 5.5 已在 GitHub Copilot 中正式可用，覆盖 VS Code、Visual Studio、Copilot CLI、coding agent、Copilot app、github.com、移动端、JetBrains、Xcode 和 Eclipse，并面向 Pro、Pro+、Max、Business 与 Enterprise 用户逐步推出。GitHub 表示其早期测试中，该模型在编码任务上与 Sonnet 5 表现相当，但使用更少步骤、令牌和工具调用，完成速度更快；使用按模型提供方标价计费。企业管理员可通过模型策略控制访问，新模型在全局默认启用策略下会自动开启，除非被显式禁用。\n- **意义**：这是一个适合以日常功能开发和缺陷修复为场景验证的成本/速度候选，而不是仅凭厂商描述立即替换默认模型。团队可用同一组小任务比较完成质量、耗时、工具调用与实际费用，并同步核对企业模型默认启用策略。\n- **置信度**：高（GitHub 官方发布；效率结论来自厂商早期测试，仍需在自身任务上验证）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#GitHubCopilot #ClaudeSonnet55 #模型选择 #成本效率\n\n## 今日结论\n\n- 达标素材：2 条\n- 两条均来自 GitHub 官方公告，分别影响 CI 连续性和 Copilot 模型选择；OpenAI DevDay 在本次抓取时尚未发布新的正式产品公告，因此不以活动日程代替产品信号。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-29.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-weekly-2026-W40.md",
