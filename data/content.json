@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-29 21:11",
-  "generatedAtIso": "2026-09-29T13:11:44.827Z",
+  "generatedAt": "2026-09-30 21:15",
+  "generatedAtIso": "2026-09-30T13:15:34.381Z",
   "latestReportDate": "2026-09-29",
-  "latestDailyDate": "2026-09-29",
+  "latestDailyDate": "2026-09-30",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 10,
     "growthWeekly": 10,
-    "educationDaily": 56,
-    "growthDaily": 54,
+    "educationDaily": 57,
+    "growthDaily": 55,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-09-30.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-09-30",
+      "date": "2026-09-30",
+      "period": "2026-09-30",
+      "excerpt": "已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-09-30\n\n## 今日无重大更新\n\n- 已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；语言考试、留学签证与指定竞品未确认到新的规则、产品、价格、渠道、财务或组织变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入下一期周报候选池的新事实。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-09-30.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-09-30.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-09-30",
+      "date": "2026-09-30",
+      "period": "2026-09-30",
+      "excerpt": "发布日期：2026-09-29",
+      "body": "# 成长外部信号素材｜2026-09-30\n\n## 1. Codex Cloud 面向 Enterprise 提供可复用云环境与跨设备持续任务\n\n- **来源**：[OpenAI：ChatGPT Enterprise and Edu release notes](https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes)\n- **发布日期**：2026-09-29\n- **抓取日期**：2026-09-30\n- **事实**：OpenAI 在 Enterprise 与 Edu 发布说明中加入 Codex Cloud for Enterprise。获授权成员可以共享可复用的云环境，并从桌面、网页或移动端启动和继续 Codex 任务；每个任务使用独立工作区，电脑休眠后任务仍可继续。是否可用仍受企业工作区的云访问设置和成员权限控制。\n- **意义**：长任务不再必须绑定本地电脑在线状态，同时团队可以复用经审批的环境配置。适合先在低风险仓库验证环境隔离、权限边界、密钥处理和跨设备恢复，再决定是否把现有自动化迁移到云端执行。\n- **置信度**：高（OpenAI 官方产品发布说明，能力范围和权限条件明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#CodexCloud #Enterprise #云开发环境 #持续任务 #权限治理\n\n## 2. Codex Security 提供面向仓库的威胁建模、漏洞验证与补丁建议\n\n- **来源**：[OpenAI Help Center：Codex Security](https://help.openai.com/en/articles/20001107-codex-security)\n- **发布日期**：2026-09-30（官方帮助文档本次更新日期）\n- **抓取日期**：2026-09-30\n- **事实**：Codex Security 以研究预览形式面向 ChatGPT Enterprise、Edu、Business 与 Pro 用户提供。它连接 GitHub 仓库后建立可查看和编辑的威胁模型，可执行全仓库或 commit 扫描，在隔离环境中尝试验证候选漏洞，并提出供人工审查的补丁；不会自动修改代码。Enterprise 与 Edu 可通过角色或群组控制使用和管理权限，Cloud 扫描采用按 token 计费。\n- **意义**：该能力把“发现—验证—修复建议”连成一个可审查流程，但仍需人工确认风险与补丁质量。若试用，应从非生产或低风险仓库开始，先检查威胁模型和验证证据，并继续用正常 PR 与代码审查流程验证生成的补丁。\n- **置信度**：高（OpenAI 官方帮助文档，适用计划、工作方式、权限与计费条件明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#CodexSecurity #代码安全 #威胁建模 #漏洞验证 #人工审查\n\n## 今日结论\n\n- 达标素材：2 条\n- 两项更新分别降低长任务对本地设备的依赖，并把代码安全扫描推进到证据验证和可审查补丁阶段；均建议先在低风险范围内验证权限、成本与输出质量。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-09-30.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-09-29.md",
