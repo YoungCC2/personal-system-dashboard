@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-01 09:11",
-  "generatedAtIso": "2026-10-01T01:11:28.728Z",
+  "generatedAt": "2026-10-01 21:26",
+  "generatedAtIso": "2026-10-01T13:26:46.309Z",
   "latestReportDate": "2026-10-01",
-  "latestDailyDate": "2026-09-30",
+  "latestDailyDate": "2026-10-01",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 10,
     "growthWeekly": 11,
-    "educationDaily": 57,
-    "growthDaily": 55,
+    "educationDaily": 58,
+    "growthDaily": 56,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-01.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-01",
+      "date": "2026-10-01",
+      "period": "2026-10-01",
+      "excerpt": "已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-10-01\n\n## 今日无重大更新\n\n- 已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；语言考试、留学签证与指定竞品未确认到新的规则、产品、价格、渠道、财务或组织变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入下一期周报候选池的新事实。\n\n## 备注\n\n- 本次未修改历史文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-10-01.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-01.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-01",
+      "date": "2026-10-01",
+      "period": "2026-10-01",
+      "excerpt": "发布日期：2026-08-27（2026-09-15 补充影响范围说明）",
+      "body": "# 成长外部信号素材｜2026-10-01\n\n## 1. GitHub Actions 保留策略开始覆盖检查、工作流运行与状态\n\n- **来源**：[GitHub Changelog：Actions retention will cover checks, workflow runs, and statuses](https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/)\n- **发布日期**：2026-08-27（2026-09-15 补充影响范围说明）\n- **抓取日期**：2026-10-01\n- **事实**：自 2026 年 10 月 1 日起，GitHub Actions 的检查、工作流运行与状态开始服从原本用于制品和日志的同一保留设置，默认 90 天；过去它们通常保留 400 天以上。超过仓库、组织或企业所配置期限的数据会被自动清理，且删除后不会因后续提高期限而恢复。该范围也包括第三方应用创建的检查和状态；公共仓库上限为 90 天。\n- **意义**：依赖长期 Actions 历史进行审计、故障分析或指标统计的团队，可能在没有单独提醒的情况下失去旧记录。应立即核对实际保留期限，并在清理前导出必须长期保存的数据；提高期限时也要评估制品和日志带来的存储费用。\n- **置信度**：高（GitHub 官方公告，生效日期、清理范围与不可恢复性明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubActions #数据保留 #审计 #自动清理 #成本治理\n\n## 2. npm trusted publishing 可选择授权 dist-tag 管理\n\n- **来源**：[GitHub Changelog：Opt-in dist-tag permissions for npm trusted publishing](https://github.blog/changelog/2026-09-30-opt-in-dist-tag-permissions-for-npm-trusted-publishing/)\n- **发布日期**：2026-09-30\n- **抓取日期**：2026-10-01\n- **事实**：npm trusted publishing 配置现在可选择启用 `Allow npm dist-tag` 权限，通过短期 OIDC 凭据管理 `latest`、`next`、`beta` 等 dist-tag。该权限对新旧配置均默认关闭，与直接发布权限相互独立，因此只允许 staged publishing 的配置也可以单独获得 dist-tag 管理能力；既有基于令牌的方式继续可用。\n- **意义**：已采用 OIDC 发布但仍为版本推广或回滚保留长期访问令牌的项目，可以进一步移除该令牌并缩小凭据暴露面。启用时应只授权确实需要调整标签的发布配置，并验证 staged publishing、推广和回滚流程，而不是对所有配置统一开放。\n- **置信度**：高（GitHub/npm 官方发布，默认值、权限边界与兼容方式明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#npm #TrustedPublishing #OIDC #供应链安全 #最小权限\n\n## 今日结论\n\n- 达标素材：2 条\n- 两项变化都涉及自动化基础设施的治理：一项要求重新确认历史数据保留窗口，另一项可减少 npm 发布流程中的长期令牌。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-10-01.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "growth-weekly-2026-W40.md",
