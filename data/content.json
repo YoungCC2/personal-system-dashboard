@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-01 21:26",
-  "generatedAtIso": "2026-10-01T13:26:46.309Z",
+  "generatedAt": "2026-10-04 01:56",
+  "generatedAtIso": "2026-10-03T17:56:55.492Z",
   "latestReportDate": "2026-10-01",
-  "latestDailyDate": "2026-10-01",
+  "latestDailyDate": "2026-10-03",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 10,
     "growthWeekly": 11,
-    "educationDaily": 58,
-    "growthDaily": 56,
+    "educationDaily": 59,
+    "growthDaily": 57,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-03.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-03",
+      "date": "2026-10-03",
+      "period": "2026-10-03",
+      "excerpt": "已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-10-03\n\n## 今日无重大更新\n\n- 已按来源清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；IELTS 近期新增内容主要讨论高风险场景中的成绩可信度，未形成新的考试规则、认可政策或产品变化，指定竞品也未确认到新的价格、渠道、财务或组织变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入下一期周报候选池的新事实。\n\n## 备注\n\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-10-03.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-03.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-03",
+      "date": "2026-10-03",
+      "period": "2026-10-03",
+      "excerpt": "发布日期：2026-10-02",
+      "body": "# 成长外部信号素材｜2026-10-03\n\n## 1. GitHub App 安装令牌已全面切换到无状态长格式\n\n- **来源**：[GitHub Changelog：Stateless GitHub App installation tokens rolled out](https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out/)\n- **发布日期**：2026-10-02\n- **抓取日期**：2026-10-03\n- **事实**：GitHub 已完成无状态 GitHub App installation token 的分阶段上线，默认新签发令牌改为 `ghs_APPID_JWT` 格式，长度由约 40 个字符增加到约 520 个字符。权限、仓库范围、一小时有效期和 REST API 端点不变；旧令牌在到期前仍有效。用于提前请求新格式的临时请求头 `X-GitHub-Stateless-S2S-Token` 将于 2026-11-30 停用。\n- **意义**：任何把令牌长度固定为 40、限制字段长度、截断 Authorization header，或只按旧格式执行日志脱敏的集成都可能失效或泄露凭据。应把令牌视为不透明字符串，检查数据库、密钥存储、代理网关和日志规则，并在验证完成后于 11 月 30 日前移除临时请求头。\n- **置信度**：高（GitHub 官方最终上线公告，格式、兼容边界与临时机制停用日期明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubApp #InstallationToken #API兼容 #凭据安全 #日志脱敏\n\n## 2. Copilot Code Review 支持通过 API 发起并按请求设置审查强度\n\n- **来源**：[GitHub Changelog：Copilot code review: API support and new default effort level](https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/)\n- **发布日期**：2026-10-02\n- **抓取日期**：2026-10-03\n- **事实**：GitHub Copilot Code Review 现已可通过受支持的 REST 与 GraphQL API 发起，并可为每次请求选择审查强度，从而接入脚本、工作流和内部工具。Balanced 已成为使用 Copilot Code Review 的新旧仓库与组织的默认强度；此前明确选择 Lite 的配置会保留。企业、组织、仓库和个人层级均可配置，下级设置可覆盖上级设置。该变化面向 Copilot Pro、Pro+、Max、Business 与 Enterprise 正式可用。\n- **意义**：代码审查可以从手工点击转为可编排流程，但默认强度变化可能影响耗时、消耗和评论密度。接入前应固定一组 PR 对比 Lite 与 Balanced 的有效问题数、误报、等待时间和用量，再决定默认值，并避免让自动审查成为合并前唯一质量门槛。\n- **置信度**：高（GitHub 官方正式发布，API 能力、默认值和配置继承关系明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #CodeReview #RESTAPI #GraphQL #自动化评审\n\n## 今日结论\n\n- 达标素材：2 条\n- 两项变化都需要检查现有自动化：一项可能影响凭据存储与传输兼容性，另一项允许把 AI 代码审查接入工作流但仍需用真实 PR 验证质量和成本。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-10-03.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-01.md",
