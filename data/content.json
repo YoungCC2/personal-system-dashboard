@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-08 09:14",
-  "generatedAtIso": "2026-10-08T01:14:08.258Z",
+  "generatedAt": "2026-10-08 21:16",
+  "generatedAtIso": "2026-10-08T13:16:26.644Z",
   "latestReportDate": "2026-10-08",
-  "latestDailyDate": "2026-10-07",
+  "latestDailyDate": "2026-10-08",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 12,
-    "educationDaily": 62,
-    "growthDaily": 60,
+    "educationDaily": 63,
+    "growthDaily": 61,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-08.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-08",
+      "date": "2026-10-08",
+      "period": "2026-10-08",
+      "excerpt": "已按来源与竞品清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-10-08\n\n## 今日无重大更新\n\n- 已按来源与竞品清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；IELTS 官方最新可见内容仍为 10 月 1 日的成绩可信度主题文章，ETS 可见更新仍以既有 TOEFL 2026 研究资料为主，指定竞品也未确认到新的价格、渠道、财务或组织变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入下一期周报候选池的新事实。\n\n## 备注\n\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-10-08.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-08.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-08",
+      "date": "2026-10-08",
+      "period": "2026-10-08",
+      "excerpt": "发布日期：2026-10-07",
+      "body": "# 成长外部信号素材｜2026-10-08\n\n## 1. GitHub Copilot 本地沙箱正式可用，可用统一策略限制 agent 的本机权限\n\n- **来源**：[GitHub Changelog：Local sandboxing for GitHub Copilot now generally available](https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/)\n- **发布日期**：2026-10-07\n- **抓取日期**：2026-10-08\n- **事实**：GitHub Copilot 的本地沙箱已在 Copilot CLI、Copilot app，以及使用 Agent Host 的 VS Code 会话中正式可用。它基于 Microsoft eXecution Container，把统一策略转换为 Windows、macOS 与 Linux 的原生控制，可限制 agent 命令访问文件、网络、Git 凭据、GitHub CLI 凭据及受支持的本地 MCP/语言服务器；企业还可以强制执行用户不能削弱的策略。该能力不额外收费，且工具隔离与所选模型相互独立。\n- **意义**：这让“允许 agent 更自主地执行命令”与“限制其可触达范围”可以同时成立。个人系统或团队开发环境若使用 Copilot agent，应先定义最小文件、网络和凭据权限，再逐步放开能力；沙箱是执行边界，仍不能替代审批、审查与敏感信息管理。\n- **置信度**：高（GitHub 官方正式发布，范围、控制项和底层机制明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #Sandbox #Agent安全 #最小权限 #开发工具\n\n## 2. GitHub 推出上下文感知的密钥检测模型，并明确新检查的启用与计费边界\n\n- **来源**：[GitHub Changelog：Purpose-built model for leaked secret detection](https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/)\n- **发布日期**：2026-10-07\n- **抓取日期**：2026-10-08\n- **事实**：GitHub 发布了专门用于泄漏密钥检测的微调模型，它会结合周边代码识别没有固定 token 格式的密码等凭据。现有 AI-detected Password alerts 已自动切换到新模型且仍包含在 GHSP/GHAS 中；push protection 的 AI 检测处于私有预览，Copilot `/security-review` 的相关检查也将进入私有预览。后两类可选检查将消耗 AI Credits，默认关闭，需要显式启用；预算提醒本身不会自动停止使用。\n- **意义**：密钥扫描正在从正则/已知格式扩展到上下文判断，能覆盖 agent 生成代码和非结构化凭据，但也引入新的策略、预算和误报管理问题。若后续采用，应把“启用前明确授权、设置可停止用量的预算、提交前只读复查、复核告警后再修复”写成一套流程，不能让 agent 自行开启付费功能或更改预算。\n- **置信度**：高（GitHub 官方说明了模型用途、发布阶段、适用套餐与计费方式）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubSecurity #SecretScanning #Copilot #AI Credits #供应链安全\n\n## 今日结论\n\n- 达标素材：2 条\n- 两项更新共同指向 agent 开发的安全边界：一项约束本机执行权限，另一项增强凭据泄漏检测；采用时都需要把权限、审批和费用控制写进流程。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-10-08.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "growth-weekly-2026-W41.md",
