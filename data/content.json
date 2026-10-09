@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-08 21:16",
-  "generatedAtIso": "2026-10-08T13:16:26.644Z",
+  "generatedAt": "2026-10-09 21:11",
+  "generatedAtIso": "2026-10-09T13:11:27.672Z",
   "latestReportDate": "2026-10-08",
-  "latestDailyDate": "2026-10-08",
+  "latestDailyDate": "2026-10-09",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 12,
-    "educationDaily": 63,
-    "growthDaily": 61,
-    "latestSignals": 2,
+    "educationDaily": 64,
+    "growthDaily": 62,
+    "latestSignals": 3,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-09.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-09",
+      "date": "2026-10-09",
+      "period": "2026-10-09",
+      "excerpt": "发布日期：2026-10-08",
+      "body": "# 教育行业素材｜2026-10-09\n\n## 1. 教育部、财政部部署 2026 年“三区”教师专项计划，选派 11356 名教师\n\n- **来源**：[教育部：教育部、财政部部署实施2026年“三区”人才支持计划教师专项计划](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202610/t20261008_1453292.html)\n- **发布日期**：2026-10-08\n- **抓取日期**：2026-10-09\n- **事实**：2026—2027 学年“三区”人才支持计划主要面向脱贫地区，重点倾斜国家乡村振兴重点帮扶县、民族县、革命老区县和边境县，计划选派 11356 名教师。原则上选派中级以上职称的骨干教师，以全日制形式服务 1 年，鼓励组团式选派教师与教育管理人员。受援县义务教育阶段选派工作经费按年人均 2 万元标准由中央和地方财政分担，原工资福利待遇保持不变。\n- **意义**：政策重点不仅是短期补充教师数量，还要求结合学龄人口变化跨县、跨地市调配师资，并通过组团、结对和教研带动当地教师队伍。对教育机构和教师发展服务商而言，可关注受援地区在学科培训、教研协同、管理能力与数字化支持方面的配套需求，但不能把财政选派计划直接等同于商业采购机会。\n- **置信度**：高（教育部官方发布，人数、范围、期限和经费标准明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#教育政策 #教师发展 #乡村教育 #基础教育 #三区支教\n\n## 今日结论\n\n- 达标素材：1 条\n- 该政策提供了县域师资配置与教师发展需求的明确观察点，后续应关注地方实施方案和实际需求，不提前推断商业机会。\n\n## 备注\n\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-10-09.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-10-09.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-09",
+      "date": "2026-10-09",
+      "period": "2026-10-09",
+      "excerpt": "发布日期：2026-10-08",
+      "body": "# 成长外部信号素材｜2026-10-09\n\n## 1. GitHub 的 PR 数量限制可纳入草稿 PR，堵住无限草稿绕过限制的缺口\n\n- **来源**：[GitHub Changelog：Draft pull requests count toward pull request limits](https://github.blog/changelog/2026-10-08-draft-pull-requests-count-toward-pull-request-limits/)\n- **发布日期**：2026-10-08\n- **抓取日期**：2026-10-09\n- **事实**：GitHub 现在允许仓库维护者配置 pull request 数量限制时，把 draft pull requests 一并计入。此前用户即使受到普通 PR 数量限制，仍可以无限创建草稿 PR；新设置可减少低质量贡献、通知噪声和由垃圾 PR 触发的 CI 运行。\n- **意义**：随着 coding agent 更容易批量创建分支和 PR，仓库治理需要同时约束“未准备好”的草稿状态，不能只限制正式 PR。开放贡献仓库或大量使用 agent 的团队可将草稿纳入配额，并结合贡献指南、CI 触发条件和异常关闭规则，避免自动化把维护者注意力和计算资源耗尽。\n- **置信度**：高（GitHub 官方发布，变化及其治理目的明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHub #PullRequest #仓库治理 #AgenticDevelopment #CI成本\n\n## 2. GitHub 将归档 PR 权限下放给 triage 角色，并把归档内容彻底设为只读\n\n- **来源**：[GitHub Changelog：Triage role users or higher can now archive pull requests](https://github.blog/changelog/2026-10-08-triage-role-users-or-higher-can-now-archive-pull-requests/)\n- **发布日期**：2026-10-08\n- **抓取日期**：2026-10-09\n- **事实**：拥有 triage、write、maintain 或 admin 角色的用户现在都可以归档和取消归档 PR。归档会自动关闭 PR、阻止新评论、反应和自动化评论，并从公开视图隐藏，但仓库管理员仍可查看；取消归档会恢复互动能力，但不会重新打开 PR。\n- **意义**：维护者可以把垃圾、重复或废弃 PR 的清理工作交给不具备代码写权限的可信协作者，符合最小权限原则。团队采用前应明确归档判定标准与申诉路径，并注意归档具有“公开隐藏 + 讨论冻结”的效果，不能把它当作普通关闭操作滥用。\n- **置信度**：高（GitHub 官方说明了权限范围和归档后的完整行为）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 1/2｜总分 7/8\n- **标签**：#GitHub #Triage #权限管理 #开源维护 #最小权限\n\n## 今日结论\n\n- 达标素材：2 条\n- 两项更新都在回应高频或低质量贡献带来的维护压力：一项限制入口数量，另一项将清理权限安全地下放；是否启用应取决于仓库规模和实际噪声。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-10-09.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-08.md",
