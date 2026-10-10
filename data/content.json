@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-09 21:11",
-  "generatedAtIso": "2026-10-09T13:11:27.672Z",
+  "generatedAt": "2026-10-10 21:47",
+  "generatedAtIso": "2026-10-10T13:47:17.890Z",
   "latestReportDate": "2026-10-08",
-  "latestDailyDate": "2026-10-09",
+  "latestDailyDate": "2026-10-10",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 12,
-    "educationDaily": 64,
-    "growthDaily": 62,
-    "latestSignals": 3,
+    "educationDaily": 65,
+    "growthDaily": 63,
+    "latestSignals": 0,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-10.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-10",
+      "date": "2026-10-10",
+      "period": "2026-10-10",
+      "excerpt": "已按来源与竞品清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-10-10\n\n## 今日无重大更新\n\n- 已按来源与竞品清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；教育部可见的新内容主要为宏观政策转载，未形成对当前观察主题足够具体的教育行业变化；IELTS、ETS 与指定竞品也未确认到新的考试规则、价格、产品、渠道、财务或组织变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入下一期周报候选池的新事实。\n\n## 备注\n\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-10-10.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-10.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-10",
+      "date": "2026-10-10",
+      "period": "2026-10-10",
+      "excerpt": "已检查 AI、编程技术、开发工具与效率方法相关的官方发布、原始文档和项目公告。",
+      "body": "# 成长外部信号素材｜2026-10-10\n\n## 今日无重大更新\n\n- 已检查 AI、编程技术、开发工具与效率方法相关的官方发布、原始文档和项目公告。\n- 未发现相较昨日素材新增、且综合评分达到 5 分的实质变化；GitHub 官方最新可见更新仍为 10 月 8 日的 PR 治理改进，OpenAI 官方入口未确认到新的可行动产品或开发者公告。社区个案不作为官方事实来源保存。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入下一期周报候选池的新外部信号。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-10-10.md",
+      "actionCard": false,
+      "signalCount": 0
     },
     {
       "id": "education-inbox-2026-10-09.md",
