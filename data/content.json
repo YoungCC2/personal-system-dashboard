@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-10 21:47",
-  "generatedAtIso": "2026-10-10T13:47:17.890Z",
+  "generatedAt": "2026-10-11 21:07",
+  "generatedAtIso": "2026-10-11T13:07:58.391Z",
   "latestReportDate": "2026-10-08",
-  "latestDailyDate": "2026-10-10",
+  "latestDailyDate": "2026-10-11",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 12,
-    "educationDaily": 65,
-    "growthDaily": 63,
-    "latestSignals": 0,
+    "educationDaily": 66,
+    "growthDaily": 64,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-11.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-11",
+      "date": "2026-10-11",
+      "period": "2026-10-11",
+      "excerpt": "已按来源与竞品清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。",
+      "body": "# 教育行业素材｜2026-10-11\n\n## 今日无重大更新\n\n- 已按来源与竞品清单检查教育政策、教培、留学签证、托福/雅思、少儿英语及指定竞品的官方入口与可核验新动态。\n- 未发现相较既有素材新增、且综合评分达到 5 分的实质变化；IELTS、ETS 与指定竞品均未确认到新的考试规则、价格、产品、渠道、财务或组织变化。\n\n## 今日结论\n\n- 达标素材：0 条\n- 暂无需要进入下一期周报候选池的新事实。\n\n## 备注\n\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "education/inbox/2026-10-11.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-11.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-11",
+      "date": "2026-10-11",
+      "period": "2026-10-11",
+      "excerpt": "发布日期：2026-10-10",
+      "body": "# 成长外部信号素材｜2026-10-11\n\n## 1. GitHub Copilot for JetBrains 增加默认模型与 MCP 自动启动控制\n\n- **来源**：[GitHub Changelog：New controls and chat improvements in Copilot for JetBrains](https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/)\n- **发布日期**：2026-10-10\n- **抓取日期**：2026-10-11\n- **事实**：GitHub Copilot for JetBrains 新增企业托管的默认 agent 模型设置，以及关闭 Copilot 和 Claude MCP server 自动启动的选项；诊断菜单也可直接通过 inline chat 请求修复。此次更新同时终止了对 JetBrains IDE 2025.1 的支持，插件要求 2025.2 或更高版本。\n- **意义**：团队现在可以集中控制新会话默认模型，并按需启动 MCP 工具，减少无意激活外部工具的风险。使用 JetBrains 的个人或团队应先检查 IDE 版本，再根据工具信任边界决定是否关闭 MCP 自动启动；诊断到修复的一步式入口则适合纳入日常排错流程。\n- **置信度**：高（GitHub 官方发布，功能、版本要求和控制范围明确）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#GitHubCopilot #JetBrains #MCP #模型治理 #开发工具\n\n## 2. CodeQL 2.27.2 扩展多语言分析，并明确 macOS 27 的编译语言构建限制\n\n- **来源**：[GitHub Changelog：CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis](https://github.blog/changelog/2026-10-09-codeql-2-27-2-improves-c-go-rust-and-javascript-analysis/)\n- **发布日期**：2026-10-09\n- **抓取日期**：2026-10-11\n- **事实**：CodeQL 2.27.2 新增 C++ `std::regex` 的 ECMAScript 语法解析，并改进 Go、Rust、JavaScript/TypeScript 等语言的数据流和框架建模。由于 macOS 27 与 Xcode 27 不再提供 CodeQL 跟踪分析所需的多架构二进制，编译语言的 `autobuild` 和 `manual` 模式不支持 macOS 27，也不支持选择 Xcode 27 的 macOS 26；Go 控制流图库另有破坏性变更。\n- **意义**：使用 GitHub code scanning 的项目会自动获得检测改进，但自托管或固定版本流水线需要关注升级兼容性。依赖 macOS runner 分析 Swift 之外编译语言的团队应暂时固定在 macOS 26 + Xcode 26 或评估 `none` 构建模式；维护自定义 Go 查询的团队则应先回归验证 CFG 相关逻辑。\n- **置信度**：高（GitHub 官方发布，能力变化、兼容限制和破坏性变更均有明确说明）\n- **评分**：新颖度 2/2｜可靠度 2/2｜相关度 2/2｜可行动性 2/2｜总分 8/8\n- **标签**：#CodeQL #代码安全 #macOS #Go #静态分析\n\n## 今日结论\n\n- 达标素材：2 条\n- 两项更新都提供了可立即检查的控制点：一项关系到 agent 工具启用与 IDE 版本，另一项关系到安全扫描能力及 CI 构建兼容性。\n\n## 备注\n\n- 外部信号仅写入 `growth/inbox/`；未修改 `growth/daily/`，也未把外部信息冒充个人实践。\n- 本次未修改或补写历史日期文件，也未触碰旧 OpenClaw 目录。\n",
+      "path": "growth/inbox/2026-10-11.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-10.md",
