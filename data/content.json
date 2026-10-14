@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-11 21:59",
-  "generatedAtIso": "2026-10-11T13:59:52.950Z",
+  "generatedAt": "2026-10-15 00:47",
+  "generatedAtIso": "2026-10-14T16:47:32.306Z",
   "latestReportDate": "2026-10-08",
-  "latestDailyDate": "2026-10-11",
+  "latestDailyDate": "2026-10-14",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 41,
+    "isoWeek": 42,
     "monthLabel": "10月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 12,
-    "educationDaily": 66,
-    "growthDaily": 64,
-    "latestSignals": 2,
+    "educationDaily": 67,
+    "growthDaily": 65,
+    "latestSignals": 3,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-14.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-14",
+      "date": "2026-10-14",
+      "period": "2026-10-14",
+      "excerpt": "发布日期：页面未标明；明确生效日期为2026-10-02。属于今日首次发现的已生效变化，不是今日发布。",
+      "body": "# 教育行业素材｜2026-10-14\n\n## 1. 澳大利亚学生签证规则调整涉及境内续签与家属申请\n\n- **来源**：[澳大利亚内政部 Subclass 500 官方说明](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500)\n- **发布日期**：页面未标明；明确生效日期为2026-10-02。属于今日首次发现的已生效变化，不是今日发布。\n- **抓取日期**：2026-10-14\n- **事实**：官方页面提示，10月2日起学生签证500及监护人签证590规则变化，涉及在澳申请和获签资格，以及学生签证能否纳入家属。500说明指出，多数现有学生签证持有人再次在澳申请需符合豁免；多数申请人纳入家属也需符合豁免，10月2日前递交的申请按递交时规则审理。\n- **意义**：续读、家属随行的咨询材料需要重新核查申请地点、递交日期与豁免条件，不能沿用一般化的续签建议。本文不列个案资格结论。\n- **置信度**：中高（来自官方页面的检索正文；基础URL直连只返回动态页面框架，具体豁免须继续核对官方详细页面或原始法规）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分7/8\n- **标签**：#澳大利亚 #留学签证 #家属随行 #申请流程\n\n## 检查范围与核验缺口\n\n- 先检查教育部、IELTS、ETS、指定竞品官网与上市公司IR，再检索教育政策、考试和签证变化。\n- IELTS可见最新文章仍为10月1日的成绩可信度说明；英国10月8日费用表中Student、Child Student项目本次费用变化为0，不作为新涨价保存。\n- 新东方可见财报安排为9月29日公告的10月28日发布计划；未将日程当作新业绩。其余指定竞品未确认可保存的新事实。\n- 教育部入口出现重定向循环，VIPKID读取失败，有道、斑马页面缺乏可提取正文；这些是核验缺口，不能据此断言无更新。后续优先复查官方公告、官方应用商店与原始法规。\n- 达标素材：1 条。未回填历史日报，未新增行动卡。\n",
+      "path": "education/inbox/2026-10-14.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-10-14.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-14",
+      "date": "2026-10-14",
+      "period": "2026-10-14",
+      "excerpt": "发布日期：2026-10-14",
+      "body": "# 成长外部信号素材｜2026-10-14\n\n## 1. GitHub Actions 工作流依赖锁文件进入公开预览\n\n- **来源**：[GitHub 官方公告](https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/)\n- **发布日期**：2026-10-14\n- **抓取日期**：2026-10-14\n- **事实**：GitHub Enterprise Cloud及其数据驻留版本开始预览工作流依赖锁文件。`gh actions-lock`可生成`.github/workflows/actions.lock`，记录action及其传递依赖、可复用工作流的提交；已接入工作流按锁定提交执行，支持逐工作流采用、只读过期检查及要求使用锁文件的策略。Dependabot升级action时可同步更新相应锁条目。\n- **意义**：可降低标签或分支移动导致CI执行未经复核代码的风险；锁定并不证明依赖安全。评估时先确认企业版适用范围，再在测试工作流比较可复现性和维护成本，不能直接假设个人仓库已可用。\n- **置信度**：高（官方原文核验，公开预览范围明确）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分7/8\n- **标签**：#GitHubActions #供应链安全 #依赖锁定 #CI\n\n## 2. GitHub 将建仓与应用安装管理权限进一步细分\n\n- **来源**：[GitHub 官方公告](https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management/)\n- **发布日期**：2026-10-13\n- **抓取日期**：2026-10-14\n- **事实**：GitHub Apps和fine-grained PAT新增`repository_creation:write`及`installation_repositories:write`，前者允许建仓而不要求含删除、转移能力的广泛管理权限，后者支持通过API管理安装可访问的仓库。GitHub Apps还支持用`offline_access`逐步迁移到可过期用户访问令牌，仅作用于对应认证，不全量改变用户会话。\n- **意义**：自动建仓与应用接入流程可以缩小授权范围，逐步减少宽权限classic PAT。已有集成应先核对实际使用的管理操作与刷新令牌处理，不能仅替换权限名就认定迁移成功。\n- **置信度**：高（官方原文说明权限边界与迁移方式）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分8/8\n- **标签**：#GitHubApps #最小权限 #访问令牌 #自动化\n\n## 今日结论\n\n- 达标素材：2 条。已检查GitHub Changelog、VS Code更新与Anthropic新闻官方入口，优先保留影响实际工作流的变化。\n- 无新增个人实践或行动卡；外部信号仅存入growth/inbox，不计为真实实践。\n- 未修改或补写历史日期文件。\n",
+      "path": "growth/inbox/2026-10-14.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-11.md",
