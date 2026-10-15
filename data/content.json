@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-15 09:06",
-  "generatedAtIso": "2026-10-15T01:06:00.804Z",
+  "generatedAt": "2026-10-15 21:15",
+  "generatedAtIso": "2026-10-15T13:15:36.123Z",
   "latestReportDate": "2026-10-15",
-  "latestDailyDate": "2026-10-14",
+  "latestDailyDate": "2026-10-15",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 13,
-    "educationDaily": 67,
-    "growthDaily": 65,
+    "educationDaily": 68,
+    "growthDaily": 66,
     "latestSignals": 3,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-15.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-15",
+      "date": "2026-10-15",
+      "period": "2026-10-15",
+      "excerpt": "发布日期：2026-10-15（官方页面检索正文日期，URL日期不作为发布日期）",
+      "body": "# 教育行业素材｜2026-10-15\n\n## 1. 湖北以高中扩容和资源统筹应对学龄人口变化\n\n- **来源**：[教育部简报：湖北优化教育资源配置](https://www.moe.gov.cn/jyb_sjzl/s3165/202610/t20261013_1454051.html)\n- **发布日期**：2026-10-15（官方页面检索正文日期，URL日期不作为发布日期）\n- **抓取日期**：2026-10-15\n- **事实**：教育部当日简报介绍，湖北2026年以来新建、改扩建普通高中项目66个，新增高中学位7万个以上；2025年以来新增基础教育财政投入30亿元。该信息是地方资源配置成效披露，不是今日新出台的全国招生政策。\n- **意义**：这是学龄人口变化背景下地方扩容的具体案例，可用于跟踪国家教育规划的地方落实。学位增加不直接等于招生人数、录取率或教培需求增加，后续需结合当地招生数据判断。\n- **置信度**：中（教育部官方检索正文可读，原文直连出现重定向循环；仅保存可见明确数字，不外推）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分6/8\n- **标签**：#基础教育 #湖北 #高中学位 #人口适配\n\n## 核验范围与限制\n\n- 已先检查教育部、IELTS、ETS、指定竞品官网和公司IR，再补查教育政策、签证与语言考试官方线索。\n- IELTS最新可见新闻仍为10月1日的成绩可信度文章；ETS可见伊朗暂停测试提示未确认首次发布日期，未包装为今日新变化。英国学生担保名单常规更新不单独保存。\n- 伴鱼、VIPKID页面可读，未确认可保存的产品、价格或渠道新变化；其余竞品可见IR或官网未确认实质新动态。\n- 教育部原文重定向、有道和斑马缺少可提取正文、叽里呱啦读取失败，均是核验缺口，不代表无变化。下次优先复查官方原文、应用商店与IR。\n- 达标素材：1 条；无新增行动卡。未补写历史日报。\n",
+      "path": "education/inbox/2026-10-15.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-10-15.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-15",
+      "date": "2026-10-15",
+      "period": "2026-10-15",
+      "excerpt": "发布日期：2026-10-14",
+      "body": "# 成长外部信号素材｜2026-10-15\n\n## 1. HydraFusion按阶段分配推理强度，并推出Max选项\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option/)\n- **发布日期**：2026-10-14\n- **抓取日期**：2026-10-15\n- **事实**：HydraFusion更新模型池与编排流程，初稿采用中等推理、复核采用高推理；Cascade可增加判断后按需修复，Critique更依赖工具检查真实工作区并使用并行复核模型。新增Max选项，面向更复杂任务。两种选项在VS Code、Copilot app、CLI保持研究预览，受套餐、预览开关与组织模型策略约束。\n- **意义**：可借鉴的效率方法是把初稿、检查和修复分阶段安排，而不是所有步骤都用最高推理。产品本身仍需用真实任务比较正确率、延迟与费用，官方描述不等于个人已验证收益。\n- **置信度**：高（GitHub官方原文，预览与可用范围明确）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分7/8\n- **标签**：#多模型编排 #GitHubCopilot #推理成本 #工程复核\n\n## 2. GitHub默认推送保护新增两种Anthropic密钥检测\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce/)\n- **发布日期**：2026-10-13\n- **抓取日期**：2026-10-15\n- **事实**：Secret scanning新增Anthropic服务和用户API密钥、Cloudsmith API密钥检测，并增加Salesforce合作检测。在已启用secret scanning的仓库（含免费公开仓库）中，两种新增Anthropic密钥类型默认纳入push protection，包含它们的提交会被拦截。\n- **意义**：使用Anthropic的开发流程可补充这一泄漏防线，但默认支持某种格式不代表所有凭据和历史泄漏都被覆盖。真实泄漏仍需撤销或轮换，不能仅删除文本后认定风险解除。\n- **置信度**：高（GitHub官方原文列出密钥类型与启用条件）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分8/8\n- **标签**：#SecretScanning #Anthropic #凭据保护 #GitHub\n\n## 今日结论\n\n- 达标素材：2 条。检查GitHub Changelog、VS Code与Anthropic官方入口，未重复保存昨日Actions锁文件与Apps权限变化。\n- 无新增真实实践或行动卡。外部信息仅写入growth/inbox，不作为个人实践。\n- 本次未补写历史文件，未修改旧OpenClaw目录。\n",
+      "path": "growth/inbox/2026-10-15.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "growth-weekly-2026-W42.md",
