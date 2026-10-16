@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-15 21:15",
-  "generatedAtIso": "2026-10-15T13:15:36.123Z",
+  "generatedAt": "2026-10-16 21:12",
+  "generatedAtIso": "2026-10-16T13:12:49.429Z",
   "latestReportDate": "2026-10-15",
-  "latestDailyDate": "2026-10-15",
+  "latestDailyDate": "2026-10-16",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 13,
-    "educationDaily": 68,
-    "growthDaily": 66,
+    "educationDaily": 69,
+    "growthDaily": 67,
     "latestSignals": 3,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-16.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-16",
+      "date": "2026-10-16",
+      "period": "2026-10-16",
+      "excerpt": "发布日期：2026-10-16为公开页面更新时间；正文v15.0注明2026-10-09向工作人员发布，二者不同。",
+      "body": "# 教育行业素材｜2026-10-16\n\n## 1. 英国更新Student与Child Student审理指引，涉及Erasmus+与材料要求\n\n- **来源**：[UKVI更新记录](https://www.gov.uk/government/publications/student-route-caseworker-guidance)、[官方指引与修订表](https://www.gov.uk/government/publications/student-route-caseworker-guidance/student-and-child-student)\n- **发布日期**：2026-10-16为公开页面更新时间；正文v15.0注明2026-10-09向工作人员发布，二者不同。\n- **抓取日期**：2026-10-16\n- **事实**：修订表新增Erasmus+学习及兼职学习说明，将Ecctis名称更新为Qualification and Language Service；调整住宿押金抵扣说明以对应2026-11-30起生活费要求变化，并删除申请提交或获批签发实体BRP的相关措辞。本次不是全部条款从10月16日起生效。\n- **意义**：英国留学咨询清单应核对版本、适用项目和生效日，尤其避免继续使用旧机构名称或实体BRP材料指引。涉及资金金额与个案资格应另查对应现行规则，本文不据修订目录推断金额。\n- **置信度**：高（官方更新记录及正文修订表均可读取）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分8/8\n- **标签**：#英国留学 #StudentVisa #申请材料 #政策指引\n\n## 核验范围与限制\n\n- 已先查教育部、IELTS、ETS、指定竞品官网及上市公司IR，再检索政策、教培、签证与考试变化。教育部当日可见职业教育大会报道未据此推断教培市场变化。\n- IELTS最新可见新闻仍为10月1日；ETS伊朗暂停测试提示未确认首次发布日期，未作为今日新变化。\n- 未核得指定竞品新的实质产品、价格、渠道、财务或组织变化；教育部入口超时、叽里呱啦读取失败，有道和斑马正文不足，均属核验缺口，不等于没有更新。\n- 达标素材：1 条；无新增行动卡。后续优先复查受限官方入口，不补写历史文件。\n",
+      "path": "education/inbox/2026-10-16.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-10-16.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-16",
+      "date": "2026-10-16",
+      "period": "2026-10-16",
+      "excerpt": "发布日期：2026-10-15",
+      "body": "# 成长外部信号素材｜2026-10-16\n\n## 1. GitHub PR AI Scan正式可用，但告警不能作为合并阻断条件\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/)\n- **发布日期**：2026-10-15\n- **抓取日期**：2026-10-16\n- **事实**：PR AI Scan正式可用，补充CodeQL尚未覆盖的语言与框架；启用code scanning和有效AI Scan设置后运行。结果为建议性告警，不导致扫描检查失败，也不能通过ruleset阻止合并；fork与Dependabot PR不运行。公开仓库可用，私有组织仓库需Code Security或Advanced Security，使用消耗Code Security AI Credits。\n- **意义**：采用时要分别检查覆盖、费用与合并策略，不能把AI扫描开启当作强制安全门禁。评价价值应看实际发现质量和盲区，不仅看是否有运行标记。\n- **置信度**：高（官方原文明确适用范围、排除项与计费）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分8/8\n- **标签**：#AIScan #代码安全 #PullRequest #合并门禁\n\n## 2. Agentic autofix正式可用，复跑CodeQL后提出草稿PR\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/)\n- **发布日期**：2026-10-15\n- **抓取日期**：2026-10-16\n- **事实**：GitHub企业云的Code Security/Advanced Security客户可使用agentic autofix处理默认分支扫描告警：探索代码、提出修复、复跑CodeQL并按需迭代，随后创建草稿PR供审查；最多可把25个告警合入单个修复PR。需企业策略启用和管理员配置，消耗Code Security AI Credits及Actions分钟。\n- **意义**：自动修复流程开始明确包含验证证据与人工审查入口；但告警关闭不证明业务行为没有回归。评估应保留正常测试、权限和费用控制，不因正式发布直接启用付费功能。\n- **置信度**：高（官方原文说明处理流程、权限及计费边界）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分7/8\n- **标签**：#AgenticAutofix #CodeQL #自动修复 #工程验证\n\n## 今日结论\n\n- 达标素材：2 条。已检查GitHub Changelog及Anthropic官方新闻；VS Code更新入口本次读取失败，未据此推断无更新。\n- 两条分别涉及发现与修复，均需保留验证与审查边界；未重复保存昨日编排和密钥检测条目。\n- 无新增真实实践或行动卡。仅写入growth/inbox，未补写历史文件。\n",
+      "path": "growth/inbox/2026-10-16.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-15.md",
