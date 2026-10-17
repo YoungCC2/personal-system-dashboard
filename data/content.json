@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-16 21:12",
-  "generatedAtIso": "2026-10-16T13:12:49.429Z",
+  "generatedAt": "2026-10-17 21:07",
+  "generatedAtIso": "2026-10-17T13:07:49.161Z",
   "latestReportDate": "2026-10-15",
-  "latestDailyDate": "2026-10-16",
+  "latestDailyDate": "2026-10-17",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 13,
-    "educationDaily": 69,
-    "growthDaily": 67,
-    "latestSignals": 3,
+    "educationDaily": 70,
+    "growthDaily": 68,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-17.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-17",
+      "date": "2026-10-17",
+      "period": "2026-10-17",
+      "excerpt": "抓取日期：2026-10-17",
+      "body": "# 教育行业素材｜2026-10-17\n\n抓取日期：2026-10-17\n\n## 今日无重大更新\n\n- 达标素材：0 条。此结论仅限本次可核验来源，不代表整个行业没有变化。\n- 先检查教育部、IELTS、ETS、竞品官网及上市公司IR，再检索教育政策、教培、签证和语言考试官方线索。未确认相较既有素材新增且评分达到5分的事实。\n- [IELTS官方新闻](https://ielts.org/news-and-insights)最新可见条目仍为10月1日；[ETS TOEFL](https://www.ets.org/toefl.html)未确认新的有日期规则公告。昨日保存的英国学生签证指引不重复收录。\n- 指定竞品可读官网、IR未确认实质新变化；笼统营销与常规维护不入池。教育部入口超时、叽里呱啦读取失败，有道和斑马正文不足，均保留为核验缺口，不判作无更新。下次优先重查官方公告与官方应用商店。\n- 无新增行动卡，未补写历史文件，未触碰旧OpenClaw目录。\n",
+      "path": "education/inbox/2026-10-17.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-17.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-17",
+      "date": "2026-10-17",
+      "period": "2026-10-17",
+      "excerpt": "发布日期：2026-10-15",
+      "body": "# 成长外部信号素材｜2026-10-17\n\n## 1. GitHub Actions的Xcode 27镜像正式可用，仅支持Apple Silicon\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available/)\n- **发布日期**：2026-10-15\n- **抓取日期**：2026-10-17\n- **事实**：Xcode 27托管runner镜像由公开预览转为正式可用，运行macOS 27并包含Xcode 27工具链和Apple SDK。工作流可使用`xcode-27`或`xcode-27-xlarge`标签；只支持arm64，不支持Intel。已使用这些标签的工作流无需更改标签。\n- **意义**：Apple应用CI可以更明确地按工具链选镜像，采用前仍需验证架构依赖、构建与测试。结合已有CodeQL兼容性信号，镜像正式可用不代表所有扫描工具已兼容该系统，不宜一次性迁移全部流水线。\n- **置信度**：高（GitHub官方原文，标签与架构限制明确）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分8/8\n- **标签**：#Xcode #GitHubActions #AppleSilicon #CI兼容性\n\n## 2. Copilot部分模型将在11月16日弃用，年付用户存在例外\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/)\n- **发布日期**：2026-10-15\n- **抓取日期**：2026-10-17\n- **事实**：Copilot计划2026-11-16弃用Claude Opus 4.8、Opus 5、GPT-5.6 Terra，建议分别迁移至Opus 5.5、Opus 5.5，以及GPT-6.1 Sol或GPT-6 Luna。个人年付订阅的Opus 4.8保留，不适用该项弃用；企业替代模型可用性取决于默认启用与管理员策略。这是Copilot产品范围公告，不代表模型提供方API同步停用。\n- **意义**：依赖固定模型的工作流应先核对实际订阅与组织策略，再测试替代模型的输出、工具调用和成本；不能只替换名称或忽略例外条件。\n- **置信度**：高（GitHub官方原文，截止日期、替代项与例外明确）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分8/8\n- **标签**：#GitHubCopilot #模型迁移 #弃用日程 #开发工具\n\n## 今日结论\n\n- 达标素材：2 条。已检查GitHub Changelog、VS Code更新与Anthropic官方新闻，优先保留明确兼容边界和迁移时间的变化；不重复收录昨日AI Scan与autofix。\n- 无新增真实实践或行动卡；外部信号仅保存到growth/inbox，不冒充个人实践。\n- 未补写历史文件，未修改旧OpenClaw目录。\n",
+      "path": "growth/inbox/2026-10-17.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-16.md",
