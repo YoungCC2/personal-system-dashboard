@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-17 21:07",
-  "generatedAtIso": "2026-10-17T13:07:49.161Z",
+  "generatedAt": "2026-10-18 21:09",
+  "generatedAtIso": "2026-10-18T13:09:03.365Z",
   "latestReportDate": "2026-10-15",
-  "latestDailyDate": "2026-10-17",
+  "latestDailyDate": "2026-10-18",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 13,
-    "educationDaily": 70,
-    "growthDaily": 68,
+    "educationDaily": 71,
+    "growthDaily": 69,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-18.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-18",
+      "date": "2026-10-18",
+      "period": "2026-10-18",
+      "excerpt": "抓取日期：2026-10-18",
+      "body": "# 教育行业素材｜2026-10-18\n\n抓取日期：2026-10-18\n\n## 今日无重大更新\n\n- 达标素材：0 条。仅表示本次可核验范围未确认评分达到5分的新变化。\n- 已先查教育部、IELTS、ETS、指定竞品官网及上市公司IR，再检索教育政策、教培、学签、托福/雅思和少儿英语的新线索。\n- [IELTS官方新闻](https://ielts.org/news-and-insights)最新可见仍为10月1日的成绩可信度文章；[ETS TOEFL](https://www.ets.org/toefl.html)未确认新的有日期考试规则公告。英国指引及澳大利亚签证变化已在既有素材记录，不重复保存。\n- 伴鱼、VIPKID、叽里呱啦官网可读，但未核得实质产品、价格或渠道变化；可读公司IR未确认新财务或组织事实，未使用常规修复或营销信息凑数。\n- 教育部入口超时，斑马及有道缺少可提取正文，属于核验缺口，不能据此判断无更新；下次优先复查官方公告、IR与应用商店。\n- 无新增行动卡，未回填历史文件，未修改旧OpenClaw目录。\n",
+      "path": "education/inbox/2026-10-18.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-18.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-18",
+      "date": "2026-10-18",
+      "period": "2026-10-18",
+      "excerpt": "发布日期：2026-10-16",
+      "body": "# 成长外部信号素材｜2026-10-18\n\n## 1. GitHub企业云正式提供依赖许可证策略检查与包合规查询API\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available/)\n- **发布日期**：2026-10-16\n- **抓取日期**：2026-10-18\n- **事实**：开源许可证合规功能正式面向启用Code Security的GitHub Enterprise Cloud仓库提供，含数据驻留版本。企业可用ruleset要求合并前通过许可证检查；新增或改变依赖时检查许可策略，支持包例外及专门审批角色。新增策略管理、包合规查询API，策略变更可写入审计日志。\n- **意义**：编码agent引入新依赖前，可以先查组织允许的许可证范围，再提交变更，减少后置返工。此处是工具与策略能力，不等于任何依赖的法律风险已自动判断完毕，也不能假设个人免费仓库具备该功能。\n- **置信度**：高（GitHub官方原文明确功能、套餐与策略边界）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分6/8\n- **标签**：#依赖治理 #GitHub #许可证检查 #Agent开发\n\n## 2. Slack与Teams中的GitHub助手支持单会话跨仓库工作\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates/)\n- **发布日期**：2026-10-15\n- **抓取日期**：2026-10-18\n- **事实**：Slack与Teams中的@GitHub可在一个会话中跨多个仓库创建issue、提出代码修改与PR、查询PR状态或结合前后端代码调查问题；Slack还可把共享消息与线程作为上下文。产品支持在消息任意位置提及@GitHub，不再仅限开头。\n- **意义**：跨前后端问题可减少切换仓库和复制上下文，但真实使用仍应明确目标仓库、授权范围和审查责任，避免聊天中的模糊目标导致修改错误仓库。尚无本人的使用或效率收益证据。\n- **置信度**：高（GitHub官方原文列明跨仓库操作和上下文方式）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分6/8\n- **标签**：#跨仓库协作 #Slack #Teams #GitHubCopilot\n\n## 今日结论\n\n- 达标素材：2 条，均为今日首次保存的近日公告，未写成今日发布。已检查GitHub Changelog、VS Code与Anthropic官方入口，并与既有素材去重。\n- 无新增真实实践或行动卡；仅保存外部信号，不写入growth/daily。\n- 未修改或补写历史日期文件，未触碰旧OpenClaw目录。\n",
+      "path": "growth/inbox/2026-10-18.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-17.md",
