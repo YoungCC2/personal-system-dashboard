@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-18 21:09",
-  "generatedAtIso": "2026-10-18T13:09:03.365Z",
+  "generatedAt": "2026-10-19 21:20",
+  "generatedAtIso": "2026-10-19T13:20:21.141Z",
   "latestReportDate": "2026-10-15",
-  "latestDailyDate": "2026-10-18",
+  "latestDailyDate": "2026-10-19",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 42,
+    "isoWeek": 43,
     "monthLabel": "10月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 11,
     "growthWeekly": 13,
-    "educationDaily": 71,
-    "growthDaily": 69,
+    "educationDaily": 72,
+    "growthDaily": 70,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-19.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-19",
+      "date": "2026-10-19",
+      "period": "2026-10-19",
+      "excerpt": "发布日期：2026-10-15（该官方发布页日期；不据此认定名单于当日首次公布）",
+      "body": "# 教育行业素材｜2026-10-19\n\n## 1. 科技教育实验区、实验校名单提供校内课程观察样本\n\n- **来源**：[北京市政府门户网站／首都教育](https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202610/t20261015_4903587.html)\n- **发布日期**：2026-10-15（该官方发布页日期；不据此认定名单于当日首次公布）\n- **抓取日期**：2026-10-19\n- **事实**：北京市政府转载首都教育信息称，教育部确定首批134个全国中小学科技教育实验区、1246所实验校，北京6区、40校入选；页面列明北京市入选区和学校。\n- **意义**：后续观察科技、编程等非学科课程时，可优先追踪名单学校的实际课程与评价安排，区分校内落地与机构营销。名单本身不能证明新增采购、招生需求或校外培训收入。\n- **置信度**：中高（北京官方教育信息全文可读；教育部原始通知本次未能直接读取，首次公布日期尚未交叉核实）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度1/2｜可行动性1/2｜总分5/8\n- **标签**：#科技教育 #校内课程 #政策落地观察\n\n## 采集说明\n\n- 达标素材：1条，为今日首次保存的近日官方信息，不表述为今日新政策。\n- 已先查教育部、IELTS、ETS、指定竞品官网及公司IR，再检索政策、教培、留学学签、托福/雅思、少儿英语线索。IELTS最新可见文章仍为10月1日；ETS伊朗停考提示未核得首次发布日期，不作为今日新变化。英国10月16日指引已记录，不重复保存。\n- 伴鱼、VIPKID及可读公司IR未确认新增实质产品、价格或财务变化。教育部入口超时、叽里呱啦官网及两家官方应用商店读取失败、斑马与有道缺少可提取正文，属于核验缺口，不等于没有更新；下次优先复查。\n- 无新增行动卡或个人实践；不回填历史文件，不修改旧OpenClaw目录。\n",
+      "path": "education/inbox/2026-10-19.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-10-19.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-19",
+      "date": "2026-10-19",
+      "period": "2026-10-19",
+      "excerpt": "发布日期：2026-10-14",
+      "body": "# 成长外部信号素材｜2026-10-19\n\n## 1. VS Code 1.142为agent协作增加共享画布，并细化企业权限控制\n\n- **来源**：[VS Code官方版本说明](https://code.visualstudio.com/updates/v1_142)\n- **发布日期**：2026-10-14\n- **抓取日期**：2026-10-19\n- **事实**：1.142提供预览版共享画布，可在聊天旁共同操作看板等产物，限桌面端使用Copilot harness的本地会话，需启用chat.canvases.enabled。企业可分别限制Assisted与Allow All权限模式；官方同时指出Assisted目前不兼容permissions.allow/ask/deny，使用这些规则时应禁用Assisted。\n- **意义**：协作工具开始把可直接操作的任务产物与权限治理结合。试用前应核对运行模式和组织策略，不能把“有审批”当作精细允许/拒绝规则已经生效，也不代表本系统应立即接入新画布。\n- **置信度**：高（官方版本说明明确预览条件与兼容限制）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分6/8\n- **标签**：#VSCode #Agent协作 #权限治理 #预览功能\n\n## 今日结论\n\n- 达标素材：1条，为今日首次保存的近日发布，不写成今日更新；已与本月素材去重。检查了GitHub Changelog、VS Code及Anthropic官方入口，并检索新线索；未将非官方转载、泛化收益或无实质说明的修复凑入素材。\n- 无新增真实实践或行动卡；仅为外部信号，不写入growth/daily，不回填历史日期。\n",
+      "path": "growth/inbox/2026-10-19.md",
+      "actionCard": false,
+      "signalCount": 1
     },
     {
       "id": "education-inbox-2026-10-18.md",
