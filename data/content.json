@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20 09:13",
-  "generatedAtIso": "2026-10-20T01:13:05.632Z",
+  "generatedAt": "2026-10-20 21:07",
+  "generatedAtIso": "2026-10-20T13:07:57.038Z",
   "latestReportDate": "2026-10-20",
-  "latestDailyDate": "2026-10-19",
+  "latestDailyDate": "2026-10-20",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 12,
     "growthWeekly": 13,
-    "educationDaily": 72,
-    "growthDaily": 70,
-    "latestSignals": 2,
+    "educationDaily": 73,
+    "growthDaily": 71,
+    "latestSignals": 3,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-20.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-20",
+      "date": "2026-10-20",
+      "period": "2026-10-20",
+      "excerpt": "发布日期：2026-10-20（通稿日期；通知具体印发日期未在可读正文中确认）",
+      "body": "# 教育行业素材｜2026-10-20\n\n## 1. 三部门部署高度近视防控，强调教学用眼环境与电子产品时长\n\n- **来源**：[教育部官方通稿](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202610/t20261020_1455232.html)\n- **发布日期**：2026-10-20（通稿日期；通知具体印发日期未在可读正文中确认）\n- **抓取日期**：2026-10-20\n- **事实**：教育部、国家卫生健康委、国家疾控局近日联合印发高度近视防控通知。官方通稿列出6方面预防举措，其中要求学校落实照明要求、定期维护设施、配备适配身高发育的可调节课桌椅，并减少教学过程中电子产品使用时长。\n- **意义**：观察数字课程与少儿学习产品时，应同时关注屏幕使用安排和线下活动设计，不能只看互动时长。该通稿没有在本次可读部分给出统一屏幕时长上限，也不能据此判断具体产品合规或作个人医疗建议。\n- **置信度**：中高（教育部官方检索正文可读，原文直连重定向失败；仅保存已核得的明确要求）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分7/8\n- **标签**：#基础教育 #数字课程 #用眼环境 #政策要求\n\n## 采集范围与缺口\n\n- 达标素材：1条。先查教育部、IELTS、ETS、指定竞品官网及IR，再检索政策、教培、学签、考试与少儿英语变化。\n- [双减推进会官方报道](https://www.moe.gov.cn/jyb_zzjg/huodong/202610/t20261016_1454877.html)强调治理常态化，但未核得具体新增规则；评分新颖度0、可靠度2、相关度2、可行动性0，总分4/8，不作为独立信号保存。\n- IELTS可见最新仍为10月1日文章；ETS伊朗提示首次发布日期未确认；英国、澳大利亚既有变化不重复收录。指定竞品可读入口未确认实质新增变化，不用营销或笼统修复凑数。\n- 教育部直连重定向、叽里呱啦及两家官方应用商店读取失败、斑马与有道正文不足均为核验缺口，不等于没有更新；下次优先复查官方全文与公告。\n- 无新增行动卡或个人实践，不补写历史日报，不修改旧目录。\n",
+      "path": "education/inbox/2026-10-20.md",
+      "actionCard": false,
+      "signalCount": 1
+    },
+    {
+      "id": "growth-inbox-2026-10-20.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-20",
+      "date": "2026-10-20",
+      "period": "2026-10-20",
+      "excerpt": "发布日期：2026-10-19",
+      "body": "# 成长外部信号素材｜2026-10-20\n\n## 1. GitHub部分匿名HTTPS拉取可能临时要求认证\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication/)\n- **发布日期**：2026-10-19\n- **抓取日期**：2026-10-20\n- **事实**：异常流量期间，GitHub可能临时要求部分公开仓库HTTPS clone、fetch认证，受影响操作会返回认证提示。这不是公开仓库普遍强制登录；已认证HTTPS、SSH、push及无关网页和API流量不受该措施影响。官方建议自动化拉取配置认证，无法认证时等待保护解除后重试。\n- **意义**：公开仓库拉取失败时，先区分匿名访问保护、网络与权限错误，不应直接认定仓库变私有或删除；也不能用此公告解释所有push失败。凭据仍应通过安全配置使用，不写入仓库或日志。\n- **置信度**：高（官方全文明确范围与例外）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分8/8\n- **标签**：#GitHub #Git #自动化可靠性 #认证\n\n## 2. CodeQL补充Apple新工具链限制和迁移边界\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4/)\n- **发布日期**：2026-10-19\n- **抓取日期**：2026-10-20\n- **事实**：官方进一步说明，Xcode27下C/C++、C#、Go、Java、Kotlin、Swift无法进行traced extraction；Swift6.4在任何平台均不受CodeQL支持，Intel Mac支持将在2026年12月中旬弃用。需追踪构建的工作流应固定macOS26及Xcode26或更早版本；C/C++、C#、Java可评估build-mode none。\n- **意义**：相较既有素材，本次新增跨平台Swift边界、Intel退出时间及替代模式。CI升级不能只看runner可用，要核对扫描方式；不能把none模式建议套用所有语言，也不能把缺少扫描当成已通过安全检查。\n- **置信度**：高（官方全文列明语言、平台与替代路径）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分7/8\n- **标签**：#CodeQL #CI #Swift #工具链兼容\n\n## 今日结论\n\n- 达标素材：2条。检查GitHub Changelog、VS Code及Anthropic官方入口后，优先保留影响实际开发流程的新增边界；不重复保存昨日VS Code画布与权限说明。CodeQL仅保存相较既有兼容提醒的新增进展，周报应合并主题。\n- 无新增真实实践或行动卡，仅为外部信号；未写入growth/daily，未回填历史文件，未修改旧目录。\n",
+      "path": "growth/inbox/2026-10-20.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-weekly-2026-W43.md",
