@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-21 21:16",
-  "generatedAtIso": "2026-10-21T13:16:29.827Z",
+  "generatedAt": "2026-10-23 22:45",
+  "generatedAtIso": "2026-10-23T14:45:43.857Z",
   "latestReportDate": "2026-10-20",
-  "latestDailyDate": "2026-10-21",
+  "latestDailyDate": "2026-10-23",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,9 +15,9 @@
   "metrics": {
     "educationWeekly": 12,
     "growthWeekly": 13,
-    "educationDaily": 74,
-    "growthDaily": 72,
-    "latestSignals": 3,
+    "educationDaily": 75,
+    "growthDaily": 73,
+    "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
   },
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-23.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-23",
+      "date": "2026-10-23",
+      "period": "2026-10-23",
+      "excerpt": "抓取日期：2026-10-23（上海时间22:44起执行，本次晚间唤醒延后）",
+      "body": "# 教育行业素材｜2026-10-23\n\n抓取日期：2026-10-23（上海时间22:44起执行，本次晚间唤醒延后）\n\n## 今日无重大更新\n\n- 达标素材：0条。仅表示本次可核验范围未确认新增且评分达到5分的信号，不代表行业没有变化。\n- 先查教育部、IELTS、ETS、指定竞品官网与上市公司IR，再检索政策、教培、留学签证、托福/雅思、少儿英语和竞品新线索。会议、论坛日程和常规公告未构成相关实质规则变化，不为凑数保存。\n- [IELTS官方新闻](https://ielts.org/news-and-insights)未确认新的达标考试变化；[ETS TOEFL](https://www.ets.org/toefl.html)伊朗停考提示仍缺首次发布日期，不包装成今日发布。[英国学生指引](https://www.gov.uk/government/publications/student-route-caseworker-guidance/student-and-child-student)和澳大利亚10月2日规则已记录，不重复保存。\n- 伴鱼、VIPKID、叽里呱啦及可读公司入口未核得有日期、可比较的产品、定价、渠道或财务新变化；笼统营销与常规维护不入池。\n- 教育部主入口重定向循环、有道IR超时、斑马无可提取正文，属于核验缺口，不能写成来源确认无更新；下次优先复查官方原文、应用商店与公告。\n- 无新增行动卡或个人实践；未回填历史文件，未修改旧OpenClaw目录。\n",
+      "path": "education/inbox/2026-10-23.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-23.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-23",
+      "date": "2026-10-23",
+      "period": "2026-10-23",
+      "excerpt": "发布日期：2026-10-21",
+      "body": "# 成长外部信号素材｜2026-10-23\n\n## 1. GitHub CLI预览短期OAuth凭据与自动刷新\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens/)\n- **发布日期**：2026-10-21\n- **抓取日期**：2026-10-23\n- **事实**：gh从2.103.0起支持通过登录选项主动启用过期、自动刷新的OAuth凭据，当前为公开预览；未选择启用时，既有登录和手动token行为不变。使用HTTPS Git时官方建议由gh担任credential helper，并使用Git2.46或更新版本。一次导出后长期缓存的access token会过期，外部调用需每次获取新值。\n- **意义**：缩短泄漏凭据有效期的同时，也带来脚本兼容性检查需求；采用前应确认是否有缓存token的工具。本次不修改登录、凭据或Git配置，也不把短期token误认为泄漏后无需撤销。\n- **置信度**：高（官方全文明确主动启用、版本及缓存风险）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性2/2｜总分8/8\n- **标签**：#GitHubCLI #凭据安全 #自动化兼容\n\n## 2. Copilot用量报告开始区分自定义skill、agent和MCP名称\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api/)\n- **发布日期**：2026-10-22\n- **抓取日期**：2026-10-23\n- **事实**：企业和组织Copilot指标报告可显示自定义skill、agent、MCP、命令及插件名称，各列表由最多5项扩为25项；计数字段计算方式不变。名称覆盖取决于客户端和SDK版本，IDE内置聊天遥测不报告这些名称；历史已处理日期不回填，旧客户端或遥测受阻仍可能漏计。\n- **意义**：可用于观察内部工具采用趋势，但不能把名称细分增加理解为总使用量增长，也不能代替精确计费或真实效率验证。对外分享报告前需检查配置名称是否泄露内部信息；并非个人账户普遍开放的新面板。\n- **置信度**：高（官方全文明确统计口径、覆盖及历史边界）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分7/8\n- **标签**：#Copilot #使用指标 #MCP #工具评估\n\n## 今日结论\n\n- 达标素材：2条，为今日首次保存的近日公告。已检查GitHub Changelog、VS Code与Anthropic官方入口，并按已有素材去重。\n- 无新增真实实践或行动卡；仅保存外部信号，不写入growth/daily，不补写缺失历史日报，未修改旧目录。\n",
+      "path": "growth/inbox/2026-10-23.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-21.md",
