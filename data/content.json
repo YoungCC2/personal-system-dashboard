@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-23 22:45",
-  "generatedAtIso": "2026-10-23T14:45:43.857Z",
+  "generatedAt": "2026-10-25 21:12",
+  "generatedAtIso": "2026-10-25T13:12:15.259Z",
   "latestReportDate": "2026-10-20",
-  "latestDailyDate": "2026-10-23",
+  "latestDailyDate": "2026-10-25",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
@@ -15,8 +15,8 @@
   "metrics": {
     "educationWeekly": 12,
     "growthWeekly": 13,
-    "educationDaily": 75,
-    "growthDaily": 73,
+    "educationDaily": 76,
+    "growthDaily": 74,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-25.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-25",
+      "date": "2026-10-25",
+      "period": "2026-10-25",
+      "excerpt": "抓取日期：2026-10-25",
+      "body": "# 教育行业素材｜2026-10-25\n\n抓取日期：2026-10-25\n\n## 今日无重大更新\n\n- 达标素材：0条，仅限本次可核验范围；不代表行业没有变化。\n- 已先查教育部、IELTS、ETS、指定竞品官网及上市公司IR，再检索教育政策、教培、学签、托福/雅思、少儿英语和竞品新线索。英国与澳大利亚已收录的规则不重复保存，印度—新西兰签证承诺与当前对象相关度及可行动性不足，不作为通用中国留学申请规则保存。\n- [IELTS官方新闻](https://ielts.org/news-and-insights)及[ETS TOEFL](https://www.ets.org/toefl.html)未核得新增达标考试变化；ETS伊朗提示首次发布日期未确认，不包装为今日新公告。\n- 伴鱼、VIPKID及可读公司入口未确认有日期、可比较的实质产品、价格、渠道或财务变化；常规营销和笼统修复不入池。\n- 教育部入口、叽里呱啦及有道IR超时，斑马缺少可提取正文，均属核验缺口，不判作确认无更新；下次优先复查官方原文、公告和官方应用商店。\n- 无新增行动卡或个人实践；不补写历史日期，不修改旧OpenClaw目录。\n",
+      "path": "education/inbox/2026-10-25.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-25.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-25",
+      "date": "2026-10-25",
+      "period": "2026-10-25",
+      "excerpt": "发布日期：2026-10-22",
+      "body": "# 成长外部信号素材｜2026-10-25\n\n## 1. Agent Skills开放标准转交AAIF治理\n\n- **来源**：[Anthropic官方公告](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)\n- **发布日期**：2026-10-22\n- **抓取日期**：2026-10-25\n- **事实**：Anthropic宣布向Linux Foundation旗下Agentic AI Foundation捐赠Agent Skills标准的名称、标识、GitHub组织和域名；使用或贡献标准不要求加入基金会。版本化发布、正式提案流程和安全指南列为拟议路线图，不是已经全部实施的能力。\n- **意义**：跨工具复用流程知识有了更中立的治理方向，但标准开放不等于第三方skill可信、可直接执行或在所有客户端行为相同。选用时仍需审阅脚本、权限和实际兼容性；本次不安装或修改skill。\n- **置信度**：高（发布方原文明确捐赠范围与路线图状态）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分6/8\n- **标签**：#AgentSkills #开放标准 #互操作 #安全审阅\n\n## 2. Copilot指标新增第三方客户端模型流量，需区分请求与提示词\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode/)\n- **发布日期**：2026-10-23\n- **抓取日期**：2026-10-25\n- **事实**：企业、组织及其用户的1日和28日报告新增totals_by_client，可按OpenCode等使用Copilot模型服务的客户端统计成功请求、会话、token和模型。该流量由服务端统计，不同于GitHub agent应用启动作业数；request_count是模型调用，不是提示词数，客户端名称是按integration ID尽力归类，并非已验证身份。原字段保持不变，报告访问仍需权限及启用指标策略。\n- **意义**：与10月22日自定义工具名称细分不同，本次补充客户端流量覆盖。评估使用增长应标记统计覆盖变化，不能将更多被计入的请求直接认定为效率提升，也不能把所有第三方工具API流量都算入Copilot。\n- **置信度**：高（官方全文明确统计范围与口径限制）\n- **评分**：新颖度2/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分7/8\n- **标签**：#Copilot #使用指标 #OpenCode #数据口径\n\n## 今日结论\n\n- 达标素材：2条，为今日首次保存的近日公告。已检查GitHub Changelog、VS Code与Anthropic官方入口并去重；不重复保存模型对比、凭据刷新与CodeQL既有变化。\n- 无新增真实实践或行动卡；仅为外部信号，不写入growth/daily，不补写历史日期，未修改旧OpenClaw目录。\n",
+      "path": "growth/inbox/2026-10-25.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-23.md",
