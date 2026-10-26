@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-25 21:12",
-  "generatedAtIso": "2026-10-25T13:12:15.259Z",
+  "generatedAt": "2026-10-26 21:10",
+  "generatedAtIso": "2026-10-26T13:10:06.929Z",
   "latestReportDate": "2026-10-20",
-  "latestDailyDate": "2026-10-25",
+  "latestDailyDate": "2026-10-26",
   "freshness": {
     "status": "current",
     "label": "数据已同步"
   },
   "calendar": {
-    "isoWeek": 43,
+    "isoWeek": 44,
     "monthLabel": "10月",
     "yearLabel": "2026年"
   },
   "metrics": {
     "educationWeekly": 12,
     "growthWeekly": 13,
-    "educationDaily": 76,
-    "growthDaily": 74,
+    "educationDaily": 77,
+    "growthDaily": 75,
     "latestSignals": 2,
     "actionCards": 1,
     "practiceRecords": 5
@@ -34,6 +34,32 @@
       "path": "decisions.md",
       "actionCard": false,
       "signalCount": null
+    },
+    {
+      "id": "education-inbox-2026-10-26.md",
+      "type": "education",
+      "kind": "daily",
+      "title": "教育行业素材｜2026-10-26",
+      "date": "2026-10-26",
+      "period": "2026-10-26",
+      "excerpt": "抓取日期：2026-10-26",
+      "body": "# 教育行业素材｜2026-10-26\n\n抓取日期：2026-10-26\n\n## 今日无重大更新\n\n- 达标素材：0条，仅限本次可核验范围，不能推断整个行业没有变化。\n- 已先查教育部、IELTS、ETS、指定竞品官网与上市公司IR，再检索教育政策、教培、留学学签、语言考试和少儿英语新线索。会议报道、观点文章和英国担保机构名单常规更新未核得足以形成独立达标信号的新规则，不凑条数。\n- [IELTS官方新闻](https://ielts.org/news-and-insights)及[ETS TOEFL](https://www.ets.org/toefl.html)未确认新的达标考试变化；ETS伊朗提示首次发布日期仍不明确。既有北京托幼规划、近视防控及英澳签证变化不重复保存。\n- 伴鱼、VIPKID及可读公司入口未确认有日期、可比较的实质产品、价格、渠道或财务新变化；常规营销、笼统维护不保存。\n- 教育部入口重定向循环、叽里呱啦超时、斑马缺少正文、有道IR仅返回JavaScript提示，属于核验缺口，不写成已确认无更新；下次优先复查官方原文、公告和应用商店。\n- 无新增行动卡或个人实践，未补写历史日报，未修改旧OpenClaw目录。\n",
+      "path": "education/inbox/2026-10-26.md",
+      "actionCard": false,
+      "signalCount": 0
+    },
+    {
+      "id": "growth-inbox-2026-10-26.md",
+      "type": "growth",
+      "kind": "daily",
+      "title": "成长外部信号素材｜2026-10-26",
+      "date": "2026-10-26",
+      "period": "2026-10-26",
+      "excerpt": "发布日期：2026-10-20",
+      "body": "# 成长外部信号素材｜2026-10-26\n\n## 1. Dependabot告警接口补充仓库依赖版本，但不是完整版本清单\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions/)\n- **发布日期**：2026-10-20\n- **抓取日期**：2026-10-26\n- **事实**：Dependabot REST告警及webhook中的dependency对象新增version_requirement，返回最后记录的依赖版本或约束。锁文件对应已解析版本，无锁文件时可能只是manifest约束；缺失为null，多版本告警可能只返回一个值，长约束可能截断。github.com及数据驻留企业云已提供，GHES计划3.24提供。\n- **意义**：同步漏洞告警时可减少额外查版本的步骤，但不能把该字段当成完整、实时依赖盘点；修复前仍需核对目标仓库与锁文件，避免只修到其中一个版本。\n- **置信度**：高（官方明确字段语义和空值、多版本限制）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分6/8\n- **标签**：#Dependabot #API #依赖治理 #数据边界\n\n## 2. 企业公开泄漏监控新增有效性检查与事件接口\n\n- **来源**：[GitHub官方公告](https://github.blog/changelog/2026-10-23-public-monitoring-adds-triage-validity-api-and-webhooks/)\n- **发布日期**：2026-10-23\n- **抓取日期**：2026-10-26\n- **事实**：public monitoring新增告警关闭/重开、时间线、过滤，以及受支持凭据类型的持续有效性检查，显示Active、Inactive或Unknown；新增企业REST查询及secret_scanning_public_monitoring_alert webhook。仍为Enterprise Cloud公开预览，需要相应安全许可及管理员配置。关闭告警不会撤销凭据，也不会删除公开仓库中的泄漏内容。\n- **意义**：告警可接入响应流程，但“已关闭”不是“凭据已失效”的证据；需把告警状态、轮换/撤销和泄漏位置处理分开验收。不假设个人仓库自动具备此能力，本次不调整权限或监控配置。\n- **置信度**：高（官方全文明确功能与操作效果边界）\n- **评分**：新颖度1/2｜可靠度2/2｜相关度2/2｜可行动性1/2｜总分6/8\n- **标签**：#凭据安全 #事件响应 #GitHub #状态验收\n\n## 今日结论\n\n- 达标素材：2条，为今日首次保存的近日公告，不表述为今日发布；已检查GitHub Changelog、VS Code与Anthropic官方入口并去重。未重复收录昨日Agent Skills治理与客户端指标。\n- 无新增真实实践或行动卡；仅保存外部信号，不写入growth/daily，不补写历史文件，未修改旧目录。\n",
+      "path": "growth/inbox/2026-10-26.md",
+      "actionCard": false,
+      "signalCount": 2
     },
     {
       "id": "education-inbox-2026-10-25.md",
